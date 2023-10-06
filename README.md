@@ -4,7 +4,7 @@ Evaluating GitHub Code Search API feasibility for the Thing Catalogue hosted on 
 
 ## Test Scenarios
 
-Two GitHub repositories were created. Public one with 3220 thing models and private one with 398 thing models.
+Two GitHub repositories were created. Public one with 3220 thing models and [private one](https://github.com/ondrejtomcik/things-catalogue-Mfg35c56ebe) with 398 thing models.
 
 Following search scenarios were tested:
 
