@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product33f05361",
+  "description": "Product33f05361 by Mfgc8bf4ae",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        },
+        "latency": {
+          "type": "object",
+          "description": "The latency of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

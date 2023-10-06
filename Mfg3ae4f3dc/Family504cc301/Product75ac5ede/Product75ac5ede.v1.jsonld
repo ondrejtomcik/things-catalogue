@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75ac5ede",
+  "description": "Product75ac5ede by Mfg3ae4f3dc",
+  "properties": {
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "safetyRating": {
+          "type": "string",
+          "description": "The safetyRating of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

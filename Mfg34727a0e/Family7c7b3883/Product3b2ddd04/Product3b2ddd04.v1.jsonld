@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b2ddd04",
+  "description": "Product3b2ddd04 by Mfg34727a0e",
+  "properties": {
+    "apparentPower": {
+      "type": "number",
+      "description": "The apparentPower of the device"
+    },
+    "arcFlashRisk": {
+      "type": "string",
+      "description": "The arcFlashRisk of the device"
+    },
+    "current": {
+      "type": "boolean",
+      "description": "The current of the device"
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

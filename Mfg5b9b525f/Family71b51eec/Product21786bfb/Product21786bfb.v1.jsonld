@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product21786bfb",
+  "description": "Product21786bfb by Mfg5b9b525f",
+  "properties": {
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "overloadIndicator": {
+          "type": "boolean",
+          "description": "The overloadIndicator of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

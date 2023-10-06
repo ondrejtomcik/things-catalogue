@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5b7d95eb",
+  "description": "Product5b7d95eb by Mfg34727a0e",
+  "properties": {
+    "apparentPower": {
+      "type": "string",
+      "description": "The apparentPower of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "oilQuality": {
+      "type": "boolean",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "number",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "environmentalImpact": {
+          "type": "boolean",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "string",
+      "description": "The voltage of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "carbonEmission": {
+          "type": "string",
+          "description": "The carbonEmission of the nested object"
+        },
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

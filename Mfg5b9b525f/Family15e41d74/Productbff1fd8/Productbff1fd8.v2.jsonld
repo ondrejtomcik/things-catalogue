@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productbff1fd8",
+  "description": "Productbff1fd8 by Mfg5b9b525f",
+  "properties": {
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "busbarLoad": {
+          "type": "boolean",
+          "description": "The busbarLoad of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    },
+    "reactivePower": {
+      "type": "string",
+      "description": "The reactivePower of the device"
+    },
+    "uptime": {
+      "type": "boolean",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

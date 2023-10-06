@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "apparentPower": {
+      "type": "string",
+      "description": "The apparentPower of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "string",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "emergencyMode": {
+      "type": "number",
+      "description": "The emergencyMode of the device"
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

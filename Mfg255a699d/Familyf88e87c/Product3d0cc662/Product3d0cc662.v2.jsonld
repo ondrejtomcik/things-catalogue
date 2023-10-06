@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3d0cc662",
+  "description": "Product3d0cc662 by Mfg255a699d",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "The safetyRating of the device",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product666cabe2",
+  "description": "Product666cabe2 by Mfg5b9b525f",
+  "properties": {
+    "capacity": {
+      "type": "number",
+      "description": "The capacity of the device"
+    },
+    "communicationStatus": {
+      "type": "string",
+      "description": "The communicationStatus of the device"
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    },
+    "varistorStatus": {
+      "type": "string",
+      "description": "The varistorStatus of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "number",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

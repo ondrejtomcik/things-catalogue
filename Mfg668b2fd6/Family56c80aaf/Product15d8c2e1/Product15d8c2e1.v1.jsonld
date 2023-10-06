@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product15d8c2e1",
+  "description": "Product15d8c2e1 by Mfg668b2fd6",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "An object containing nested properties for capacity",
+      "properties": {
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "phase": {
+          "type": "object",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

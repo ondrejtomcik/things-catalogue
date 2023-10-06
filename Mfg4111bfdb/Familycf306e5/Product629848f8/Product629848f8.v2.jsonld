@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product629848f8",
+  "description": "Product629848f8 by Mfg4111bfdb",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "breakerStatus": {
+          "type": "boolean",
+          "description": "The breakerStatus of the nested object"
+        },
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "The circuitIntegrity of the device"
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "breakerStatus": {
+          "type": "boolean",
+          "description": "The breakerStatus of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "string",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

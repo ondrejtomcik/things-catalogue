@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ac3a5f",
+  "description": "Product62ac3a5f by Mfg3ae4f3dc",
+  "properties": {
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "energyConsumption": {
+          "type": "number",
+          "description": "The energyConsumption of the nested object"
+        },
+        "phase": {
+          "type": "object",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "chargeStatus": {
+          "type": "number",
+          "description": "The chargeStatus of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "string",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

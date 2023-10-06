@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b2ddd04",
+  "description": "Product3b2ddd04 by Mfg34727a0e",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "string",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

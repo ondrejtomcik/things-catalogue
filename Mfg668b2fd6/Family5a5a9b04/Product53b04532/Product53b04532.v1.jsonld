@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "object",
+      "description": "An object containing nested properties for diagnosticMessage",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "string",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

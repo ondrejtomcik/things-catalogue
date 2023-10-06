@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "operationalHours": {
+      "type": "number",
+      "description": "The operationalHours of the device"
+    },
+    "solarPanelHealth": {
+      "type": "number",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

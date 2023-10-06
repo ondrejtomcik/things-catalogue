@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "brightness": {
+          "type": "object",
+          "description": "The brightness of the nested object"
+        },
+        "oilLevel": {
+          "type": "string",
+          "description": "The oilLevel of the nested object"
+        },
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "earthResistance": {
+          "type": "object",
+          "description": "The earthResistance of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product231a0500",
+  "description": "Product231a0500 by Mfg255a699d",
+  "properties": {
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "earthResistance": {
+          "type": "number",
+          "description": "The earthResistance of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "string",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

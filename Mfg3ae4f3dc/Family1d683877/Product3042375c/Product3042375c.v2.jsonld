@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3042375c",
+  "description": "Product3042375c by Mfg3ae4f3dc",
+  "properties": {
+    "faultIndicator": {
+      "type": "number",
+      "description": "The faultIndicator of the device"
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "The harmonics of the device",
+      "properties": {
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "string",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "thermalSensor": {
+          "type": "string",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

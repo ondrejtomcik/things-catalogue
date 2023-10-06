@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "number",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "overloadIndicator": {
+      "type": "string",
+      "description": "The overloadIndicator of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

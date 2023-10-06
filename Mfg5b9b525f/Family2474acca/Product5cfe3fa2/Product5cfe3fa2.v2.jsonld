@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "The earthResistance of the device",
+      "properties": {
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "faultIndicator": {
+          "type": "string",
+          "description": "The faultIndicator of the nested object"
+        },
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "boolean",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

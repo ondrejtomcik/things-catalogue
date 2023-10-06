@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product54bffcc0",
+  "description": "Product54bffcc0 by Mfg4111bfdb",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "assetID": {
+          "type": "object",
+          "description": "The assetID of the nested object"
+        },
+        "brightness": {
+          "type": "number",
+          "description": "The brightness of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "overloadIndicator": {
+          "type": "string",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "object",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "boolean",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

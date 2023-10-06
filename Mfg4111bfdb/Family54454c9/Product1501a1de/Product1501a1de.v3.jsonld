@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1501a1de",
+  "description": "Product1501a1de by Mfg4111bfdb",
+  "properties": {
+    "groundingStatus": {
+      "type": "string",
+      "description": "The groundingStatus of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "The sf6Pressure of the device"
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

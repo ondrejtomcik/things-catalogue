@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2eeaaf74",
+  "description": "Product2eeaaf74 by Mfg668b2fd6",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "The circuitIdentifier of the device"
+    },
+    "operationalLog": {
+      "type": "number",
+      "description": "The operationalLog of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

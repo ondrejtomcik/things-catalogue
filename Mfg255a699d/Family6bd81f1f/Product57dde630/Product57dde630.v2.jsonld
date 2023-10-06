@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57dde630",
+  "description": "Product57dde630 by Mfg255a699d",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "oilQuality": {
+          "type": "boolean",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

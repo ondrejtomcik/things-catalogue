@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5b7d95eb",
+  "description": "Product5b7d95eb by Mfg34727a0e",
+  "properties": {
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "manualOverride": {
+      "type": "boolean",
+      "description": "The manualOverride of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

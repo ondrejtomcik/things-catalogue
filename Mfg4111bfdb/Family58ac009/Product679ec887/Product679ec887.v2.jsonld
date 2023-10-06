@@ -1,0 +1,80 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product679ec887",
+  "description": "Product679ec887 by Mfg4111bfdb",
+  "properties": {
+    "frequency": {
+      "type": "object",
+      "description": "The frequency of the device",
+      "properties": {
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "latency": {
+          "type": "object",
+          "description": "The latency of the nested object"
+        }
+      }
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "The varistorStatus of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "firmwareVersion": {
+          "type": "object",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

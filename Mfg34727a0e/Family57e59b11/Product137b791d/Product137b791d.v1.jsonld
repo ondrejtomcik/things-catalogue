@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product137b791d",
+  "description": "Product137b791d by Mfg34727a0e",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

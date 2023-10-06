@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ce5c1c",
+  "description": "Product62ce5c1c by Mfg255a699d",
+  "properties": {
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "current": {
+      "type": "number",
+      "description": "The current of the device"
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "meterReading": {
+          "type": "boolean",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

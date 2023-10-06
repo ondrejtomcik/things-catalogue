@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dbad594",
+  "description": "Product6dbad594 by Mfg34727a0e",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "boolean",
+      "description": "The arcFlashRisk of the device"
+    },
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        },
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

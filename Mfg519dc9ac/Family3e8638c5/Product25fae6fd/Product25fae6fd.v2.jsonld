@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25fae6fd",
+  "description": "Product25fae6fd by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "assetID": {
+          "type": "object",
+          "description": "The assetID of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "boolean",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "latency": {
+          "type": "number",
+          "description": "The latency of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        },
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

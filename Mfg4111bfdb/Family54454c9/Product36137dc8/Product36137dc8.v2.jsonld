@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36137dc8",
+  "description": "Product36137dc8 by Mfg4111bfdb",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "object",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

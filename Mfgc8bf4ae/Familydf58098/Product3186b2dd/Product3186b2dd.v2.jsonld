@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3186b2dd",
+  "description": "Product3186b2dd by Mfgc8bf4ae",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "apparentPower": {
+      "type": "string",
+      "description": "The apparentPower of the device"
+    },
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "The busbarLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

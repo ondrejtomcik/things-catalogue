@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product60a563b4",
+  "description": "Product60a563b4 by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        },
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "busbarLoad": {
+      "type": "number",
+      "description": "The busbarLoad of the device"
+    },
+    "connectorType": {
+      "type": "object",
+      "description": "The connectorType of the device",
+      "properties": {
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "number",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "string",
+      "description": "The protectionSetpoint of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

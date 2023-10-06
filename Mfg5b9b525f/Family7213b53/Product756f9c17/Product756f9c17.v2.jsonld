@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product756f9c17",
+  "description": "Product756f9c17 by Mfg5b9b525f",
+  "properties": {
+    "emergencyMode": {
+      "type": "number",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "boolean",
+      "description": "The oilQuality of the device"
+    },
+    "reactivePower": {
+      "type": "string",
+      "description": "The reactivePower of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "totalYield": {
+          "type": "string",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

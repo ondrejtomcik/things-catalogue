@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b52cc3f",
+  "description": "Product4b52cc3f by Mfg255a699d",
+  "properties": {
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "connectorType": {
+      "type": "object",
+      "description": "The connectorType of the device",
+      "properties": {
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        },
+        "volume": {
+          "type": "string",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

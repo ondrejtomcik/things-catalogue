@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producte0187c9",
+  "description": "Producte0187c9 by Mfg34727a0e",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "synchronizationStatus": {
+          "type": "string",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

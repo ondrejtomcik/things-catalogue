@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dfa2ee5",
+  "description": "Product6dfa2ee5 by Mfg4111bfdb",
+  "properties": {
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "demandResponse": {
+      "type": "number",
+      "description": "The demandResponse of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

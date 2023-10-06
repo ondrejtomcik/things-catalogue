@@ -1,0 +1,82 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product137b791d",
+  "description": "Product137b791d by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "An object containing nested properties for capacity",
+      "properties": {
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "faultCode": {
+      "type": "boolean",
+      "description": "The faultCode of the device"
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "An object containing nested properties for gridStatus",
+      "properties": {
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "object",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        },
+        "latency": {
+          "type": "number",
+          "description": "The latency of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

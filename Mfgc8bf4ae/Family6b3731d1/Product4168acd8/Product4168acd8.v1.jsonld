@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4168acd8",
+  "description": "Product4168acd8 by Mfgc8bf4ae",
+  "properties": {
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "circuitIntegrity": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "number",
+      "description": "The fuelLevel of the device"
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

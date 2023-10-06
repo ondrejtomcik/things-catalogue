@@ -1,0 +1,80 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36137dc8",
+  "description": "Product36137dc8 by Mfg4111bfdb",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "number",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "boolean",
+      "description": "The sf6Pressure of the device"
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "powerFactor": {
+          "type": "string",
+          "description": "The powerFactor of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "communicationStatus": {
+          "type": "number",
+          "description": "The communicationStatus of the nested object"
+        },
+        "energyConsumption": {
+          "type": "number",
+          "description": "The energyConsumption of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

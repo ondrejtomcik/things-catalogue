@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product9d5173a",
+  "description": "Product9d5173a by Mfg255a699d",
+  "properties": {
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "operationalMode": {
+          "type": "boolean",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "busbarLoad": {
+          "type": "number",
+          "description": "The busbarLoad of the nested object"
+        },
+        "feedDirection": {
+          "type": "number",
+          "description": "The feedDirection of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "battery": {
+          "type": "number",
+          "description": "The battery of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "number",
+      "description": "The oilQuality of the device"
+    },
+    "operationalHours": {
+      "type": "number",
+      "description": "The operationalHours of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

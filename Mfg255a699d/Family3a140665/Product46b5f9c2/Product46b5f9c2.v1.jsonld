@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46b5f9c2",
+  "description": "Product46b5f9c2 by Mfg255a699d",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        },
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

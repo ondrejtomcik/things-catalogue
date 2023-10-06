@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product72d6ade7",
+  "description": "Product72d6ade7 by Mfgc8bf4ae",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        },
+        "backupGeneratorStatus": {
+          "type": "object",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "faultCode": {
+          "type": "boolean",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "boolean",
+      "description": "The firmwareVersion of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "number",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "object",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Pressure",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

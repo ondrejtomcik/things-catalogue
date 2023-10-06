@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3186b2dd",
+  "description": "Product3186b2dd by Mfgc8bf4ae",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

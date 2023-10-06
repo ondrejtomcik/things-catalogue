@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "manualOverride": {
+      "type": "string",
+      "description": "The manualOverride of the device"
+    },
+    "operationalLog": {
+      "type": "boolean",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

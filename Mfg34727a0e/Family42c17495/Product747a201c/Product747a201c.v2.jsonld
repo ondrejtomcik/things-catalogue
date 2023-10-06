@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product747a201c",
+  "description": "Product747a201c by Mfg34727a0e",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "earthResistance": {
+      "type": "number",
+      "description": "The earthResistance of the device"
+    },
+    "harmonics": {
+      "type": "string",
+      "description": "The harmonics of the device"
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "The locationIdentifier of the device",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

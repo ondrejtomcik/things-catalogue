@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product18e2f918",
+  "description": "Product18e2f918 by Mfg4111bfdb",
+  "properties": {
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "inductorHealth": {
+      "type": "string",
+      "description": "The inductorHealth of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "diagnosticMessage": {
+          "type": "object",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

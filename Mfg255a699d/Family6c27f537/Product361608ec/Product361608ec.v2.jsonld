@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product361608ec",
+  "description": "Product361608ec by Mfg255a699d",
+  "properties": {
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "inductorHealth": {
+      "type": "string",
+      "description": "The inductorHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

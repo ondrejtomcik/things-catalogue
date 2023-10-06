@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46b5f9c2",
+  "description": "Product46b5f9c2 by Mfg255a699d",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "number",
+      "description": "The humidity of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

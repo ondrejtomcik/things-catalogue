@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "The oilLevel of the device",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "boolean",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        },
+        "varistorStatus": {
+          "type": "boolean",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

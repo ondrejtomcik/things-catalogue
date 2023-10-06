@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product8f5e704",
+  "description": "Product8f5e704 by Mfg5b9b525f",
+  "properties": {
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "string",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "oilQuality": {
+      "type": "boolean",
+      "description": "The oilQuality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

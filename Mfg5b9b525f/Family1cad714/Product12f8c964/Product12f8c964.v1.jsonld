@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product12f8c964",
+  "description": "Product12f8c964 by Mfg5b9b525f",
+  "properties": {
+    "energyConsumption": {
+      "type": "boolean",
+      "description": "The energyConsumption of the device"
+    },
+    "renewableSourceInput": {
+      "type": "number",
+      "description": "The renewableSourceInput of the device"
+    },
+    "temperature": {
+      "type": "number",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

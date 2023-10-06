@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3186b2dd",
+  "description": "Product3186b2dd by Mfgc8bf4ae",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "The battery of the device",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "busbarLoad": {
+          "type": "number",
+          "description": "The busbarLoad of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "loadShedding": {
+      "type": "boolean",
+      "description": "The loadShedding of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

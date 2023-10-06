@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product675a8bba",
+  "description": "Product675a8bba by Mfg519dc9ac",
+  "properties": {
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

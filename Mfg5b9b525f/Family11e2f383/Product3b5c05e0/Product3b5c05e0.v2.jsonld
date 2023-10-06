@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b5c05e0",
+  "description": "Product3b5c05e0 by Mfg5b9b525f",
+  "properties": {
+    "insulationResistance": {
+      "type": "boolean",
+      "description": "The insulationResistance of the device"
+    },
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "The renewableSourceInput of the device",
+      "properties": {
+        "capacity": {
+          "type": "boolean",
+          "description": "The capacity of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "boolean",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "number",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "number",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

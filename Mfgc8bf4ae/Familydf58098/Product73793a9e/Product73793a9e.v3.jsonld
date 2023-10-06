@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "altitude": {
+          "type": "object",
+          "description": "The altitude of the nested object"
+        },
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "string",
+      "description": "The latency of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "battery": {
+          "type": "boolean",
+          "description": "The battery of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "brightness": {
+          "type": "object",
+          "description": "The brightness of the nested object"
+        },
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

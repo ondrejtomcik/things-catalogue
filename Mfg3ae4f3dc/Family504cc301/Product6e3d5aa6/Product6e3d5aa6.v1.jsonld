@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6e3d5aa6",
+  "description": "Product6e3d5aa6 by Mfg3ae4f3dc",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "tripStatus": {
+          "type": "number",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "number",
+      "description": "The fuelLevel of the device"
+    },
+    "locationIdentifier": {
+      "type": "boolean",
+      "description": "The locationIdentifier of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

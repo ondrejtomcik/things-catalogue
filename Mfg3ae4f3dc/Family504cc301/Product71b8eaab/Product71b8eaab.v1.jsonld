@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product71b8eaab",
+  "description": "Product71b8eaab by Mfg3ae4f3dc",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "demandResponse": {
+          "type": "object",
+          "description": "The demandResponse of the nested object"
+        },
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

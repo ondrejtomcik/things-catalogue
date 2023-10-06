@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product137b791d",
+  "description": "Product137b791d by Mfg34727a0e",
+  "properties": {
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

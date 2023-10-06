@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product532c15e0",
+  "description": "Product532c15e0 by Mfg4111bfdb",
+  "properties": {
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "environmentalImpact": {
+      "type": "number",
+      "description": "The environmentalImpact of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        },
+        "operationalMode": {
+          "type": "number",
+          "description": "The operationalMode of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

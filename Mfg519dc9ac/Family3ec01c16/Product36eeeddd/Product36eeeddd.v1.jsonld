@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "number",
+      "description": "The renewableSourceInput of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

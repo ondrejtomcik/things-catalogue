@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "current": {
+      "type": "number",
+      "description": "The current of the device"
+    },
+    "tariffRate": {
+      "type": "object",
+      "description": "An object containing nested properties for tariffRate",
+      "properties": {
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "totalYield": {
+          "type": "boolean",
+          "description": "The totalYield of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "string",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

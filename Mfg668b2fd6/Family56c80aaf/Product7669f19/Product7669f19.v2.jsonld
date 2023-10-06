@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7669f19",
+  "description": "Product7669f19 by Mfg668b2fd6",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "chargeLevel": {
+          "type": "string",
+          "description": "The chargeLevel of the nested object"
+        },
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "boolean",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "The overloadIndicator of the device",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "number",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "totalTrips": {
+          "type": "string",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "boolean",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

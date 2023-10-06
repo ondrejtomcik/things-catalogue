@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2aeac5ad",
+  "description": "Product2aeac5ad by Mfg519dc9ac",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "The breakerStatus of the device"
+    },
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "The faultIndicator of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "phase": {
+      "type": "string",
+      "description": "The phase of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "tariffRate": {
+          "type": "number",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

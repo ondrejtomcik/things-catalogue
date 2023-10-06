@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product488f28cc",
+  "description": "Product488f28cc by Mfg3ae4f3dc",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "demandResponse": {
+          "type": "string",
+          "description": "The demandResponse of the nested object"
+        },
+        "faultCode": {
+          "type": "boolean",
+          "description": "The faultCode of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "inductorHealth": {
+      "type": "number",
+      "description": "The inductorHealth of the device"
+    },
+    "operationalHours": {
+      "type": "number",
+      "description": "The operationalHours of the device"
+    },
+    "sf6Pressure": {
+      "type": "boolean",
+      "description": "The sf6Pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

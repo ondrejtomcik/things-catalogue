@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25fae6fd",
+  "description": "Product25fae6fd by Mfg519dc9ac",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "carbonEmission": {
+          "type": "string",
+          "description": "The carbonEmission of the nested object"
+        },
+        "tariffRate": {
+          "type": "object",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "number",
+      "description": "The loadShedding of the device"
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "dataRate": {
+          "type": "object",
+          "description": "The dataRate of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

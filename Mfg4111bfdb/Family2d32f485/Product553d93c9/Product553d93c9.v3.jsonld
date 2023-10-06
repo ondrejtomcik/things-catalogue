@@ -1,0 +1,82 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "busbarLoad": {
+      "type": "number",
+      "description": "The busbarLoad of the device"
+    },
+    "feedDirection": {
+      "type": "boolean",
+      "description": "The feedDirection of the device"
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "demandResponse": {
+          "type": "boolean",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "feedDirection": {
+          "type": "number",
+          "description": "The feedDirection of the nested object"
+        },
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        },
+        "tripStatus": {
+          "type": "string",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "neutralLoad": {
+          "type": "string",
+          "description": "The neutralLoad of the nested object"
+        },
+        "totalYield": {
+          "type": "string",
+          "description": "The totalYield of the nested object"
+        },
+        "transformerLoad": {
+          "type": "string",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

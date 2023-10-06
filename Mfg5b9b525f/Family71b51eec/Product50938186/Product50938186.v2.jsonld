@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product50938186",
+  "description": "Product50938186 by Mfg5b9b525f",
+  "properties": {
+    "meterReading": {
+      "type": "object",
+      "description": "The meterReading of the device",
+      "properties": {
+        "solarPanelHealth": {
+          "type": "string",
+          "description": "The solarPanelHealth of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

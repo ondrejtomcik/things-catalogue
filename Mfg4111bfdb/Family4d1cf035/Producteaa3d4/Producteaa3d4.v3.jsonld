@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteaa3d4",
+  "description": "Producteaa3d4 by Mfg4111bfdb",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "chargeStatus": {
+      "type": "boolean",
+      "description": "The chargeStatus of the device"
+    },
+    "diagnosticMessage": {
+      "type": "boolean",
+      "description": "The diagnosticMessage of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "boolean",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "chargeStatus": {
+          "type": "string",
+          "description": "The chargeStatus of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "string",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2081631e",
+  "description": "Product2081631e by Mfgc8bf4ae",
+  "properties": {
+    "dataRate": {
+      "type": "number",
+      "description": "The dataRate of the device"
+    },
+    "gridStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridStatus",
+      "properties": {
+        "meterReading": {
+          "type": "boolean",
+          "description": "The meterReading of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "number",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "remainingChargeTime": {
+      "type": "string",
+      "description": "The remainingChargeTime of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "inductorHealth": {
+          "type": "number",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

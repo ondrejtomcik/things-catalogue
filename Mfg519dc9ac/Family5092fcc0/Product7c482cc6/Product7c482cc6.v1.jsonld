@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7c482cc6",
+  "description": "Product7c482cc6 by Mfg519dc9ac",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "synchronizationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for synchronizationStatus",
+      "properties": {
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "number",
+          "description": "The overloadIndicator of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

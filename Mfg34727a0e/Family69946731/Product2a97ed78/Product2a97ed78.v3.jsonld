@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2a97ed78",
+  "description": "Product2a97ed78 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "number",
+      "description": "The capacity of the device"
+    },
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        },
+        "powerFactor": {
+          "type": "number",
+          "description": "The powerFactor of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "number",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    },
+    "solarPanelHealth": {
+      "type": "number",
+      "description": "The solarPanelHealth of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "The thermalSensor of the device",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

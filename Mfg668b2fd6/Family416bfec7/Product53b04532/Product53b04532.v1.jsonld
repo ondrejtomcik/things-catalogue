@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "boolean",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

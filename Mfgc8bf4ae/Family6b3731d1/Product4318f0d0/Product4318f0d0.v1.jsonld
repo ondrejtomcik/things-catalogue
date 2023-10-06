@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4318f0d0",
+  "description": "Product4318f0d0 by Mfgc8bf4ae",
+  "properties": {
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

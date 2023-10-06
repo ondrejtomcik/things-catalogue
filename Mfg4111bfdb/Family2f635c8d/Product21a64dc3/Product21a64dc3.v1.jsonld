@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product21a64dc3",
+  "description": "Product21a64dc3 by Mfg4111bfdb",
+  "properties": {
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "number",
+      "description": "The oilQuality of the device"
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "boolean",
+      "description": "The renewableSourceInput of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "latency": {
+          "type": "string",
+          "description": "The latency of the nested object"
+        },
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        },
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        },
+        "powerFactor": {
+          "type": "string",
+          "description": "The powerFactor of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

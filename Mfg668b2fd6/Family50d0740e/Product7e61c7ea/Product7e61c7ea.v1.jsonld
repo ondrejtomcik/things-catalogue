@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e61c7ea",
+  "description": "Product7e61c7ea by Mfg668b2fd6",
+  "properties": {
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "boolean",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

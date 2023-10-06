@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    },
+    "remoteControlCapability": {
+      "type": "string",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

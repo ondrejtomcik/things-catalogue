@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product485e0f2c",
+  "description": "Product485e0f2c by Mfg4111bfdb",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "object",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "string",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "oilLevel": {
+          "type": "string",
+          "description": "The oilLevel of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

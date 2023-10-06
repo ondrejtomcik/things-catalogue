@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73ccb03c",
+  "description": "Product73ccb03c by Mfg668b2fd6",
+  "properties": {
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "string",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "phase": {
+          "type": "string",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "boolean",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

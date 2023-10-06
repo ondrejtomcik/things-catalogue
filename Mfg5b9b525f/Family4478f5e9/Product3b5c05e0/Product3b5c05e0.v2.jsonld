@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b5c05e0",
+  "description": "Product3b5c05e0 by Mfg5b9b525f",
+  "properties": {
+    "emergencyMode": {
+      "type": "number",
+      "description": "The emergencyMode of the device"
+    },
+    "overloadIndicator": {
+      "type": "string",
+      "description": "The overloadIndicator of the device"
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    },
+    "safetyRating": {
+      "type": "boolean",
+      "description": "The safetyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

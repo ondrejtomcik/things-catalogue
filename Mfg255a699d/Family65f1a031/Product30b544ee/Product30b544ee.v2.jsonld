@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30b544ee",
+  "description": "Product30b544ee by Mfg255a699d",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "faultIndicator": {
+      "type": "string",
+      "description": "The faultIndicator of the device"
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "The varistorStatus of the device"
+    },
+    "volume": {
+      "type": "number",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e7df4c4",
+  "description": "Product2e7df4c4 by Mfg5b9b525f",
+  "properties": {
+    "oilQuality": {
+      "type": "boolean",
+      "description": "The oilQuality of the device"
+    },
+    "overloadIndicator": {
+      "type": "number",
+      "description": "The overloadIndicator of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

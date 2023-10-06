@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product303be032",
+  "description": "Product303be032 by Mfgc8bf4ae",
+  "properties": {
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        },
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

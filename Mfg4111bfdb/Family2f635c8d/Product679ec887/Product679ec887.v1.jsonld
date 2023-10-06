@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product679ec887",
+  "description": "Product679ec887 by Mfg4111bfdb",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "string",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "lastInspectionDate": {
+      "type": "object",
+      "description": "An object containing nested properties for lastInspectionDate",
+      "properties": {
+        "remoteControlCapability": {
+          "type": "boolean",
+          "description": "The remoteControlCapability of the nested object"
+        },
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

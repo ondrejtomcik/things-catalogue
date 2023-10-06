@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

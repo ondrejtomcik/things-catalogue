@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5444e95e",
+  "description": "Product5444e95e by Mfg34727a0e",
+  "properties": {
+    "apparentPower": {
+      "type": "number",
+      "description": "The apparentPower of the device"
+    },
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "environmentalImpact": {
+          "type": "string",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "boolean",
+          "description": "The vibrationSensor of the nested object"
+        },
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

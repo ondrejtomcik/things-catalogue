@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product361608ec",
+  "description": "Product361608ec by Mfg255a699d",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

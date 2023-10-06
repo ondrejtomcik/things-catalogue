@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product70be58bf",
+  "description": "Product70be58bf by Mfg519dc9ac",
+  "properties": {
+    "altitude": {
+      "type": "number",
+      "description": "The altitude of the device"
+    },
+    "diagnosticMessage": {
+      "type": "object",
+      "description": "An object containing nested properties for diagnosticMessage",
+      "properties": {
+        "carbonEmission": {
+          "type": "number",
+          "description": "The carbonEmission of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "object",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "totalYield": {
+          "type": "boolean",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

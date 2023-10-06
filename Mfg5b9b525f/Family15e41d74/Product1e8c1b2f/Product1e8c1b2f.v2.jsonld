@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "busbarLoad": {
+      "type": "object",
+      "description": "The busbarLoad of the device",
+      "properties": {
+        "safetyRating": {
+          "type": "object",
+          "description": "The safetyRating of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "lastInspectionDate": {
+      "type": "object",
+      "description": "An object containing nested properties for lastInspectionDate",
+      "properties": {
+        "powerFactor": {
+          "type": "string",
+          "description": "The powerFactor of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "boolean",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

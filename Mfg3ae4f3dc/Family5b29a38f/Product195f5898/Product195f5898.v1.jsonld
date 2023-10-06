@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product195f5898",
+  "description": "Product195f5898 by Mfg3ae4f3dc",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "environmentalImpact": {
+          "type": "boolean",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

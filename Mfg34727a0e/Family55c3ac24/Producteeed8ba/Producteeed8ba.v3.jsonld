@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteeed8ba",
+  "description": "Producteeed8ba by Mfg34727a0e",
+  "properties": {
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "inductorHealth": {
+          "type": "boolean",
+          "description": "The inductorHealth of the nested object"
+        },
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "faultIndicator": {
+      "type": "number",
+      "description": "The faultIndicator of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

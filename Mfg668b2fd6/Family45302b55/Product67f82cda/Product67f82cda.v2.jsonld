@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67f82cda",
+  "description": "Product67f82cda by Mfg668b2fd6",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "boolean",
+      "description": "The arcFlashRisk of the device"
+    },
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        }
+      }
+    },
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

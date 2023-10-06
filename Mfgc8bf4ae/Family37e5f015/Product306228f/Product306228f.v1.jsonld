@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product306228f",
+  "description": "Product306228f by Mfgc8bf4ae",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "The capacitorHealth of the device"
+    },
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

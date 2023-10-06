@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "sf6Quality": {
+      "type": "string",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

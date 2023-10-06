@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product682d723c",
+  "description": "Product682d723c by Mfg668b2fd6",
+  "properties": {
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "humidity": {
+          "type": "string",
+          "description": "The humidity of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "number",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "voltage": {
+          "type": "string",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

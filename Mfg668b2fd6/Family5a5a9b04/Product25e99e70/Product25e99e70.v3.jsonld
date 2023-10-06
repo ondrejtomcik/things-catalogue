@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25e99e70",
+  "description": "Product25e99e70 by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "faultCode": {
+      "type": "object",
+      "description": "The faultCode of the device",
+      "properties": {
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "string",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

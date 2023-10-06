@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product249e3035",
+  "description": "Product249e3035 by Mfg668b2fd6",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "number",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "lastInspectionDate": {
+      "type": "object",
+      "description": "An object containing nested properties for lastInspectionDate",
+      "properties": {
+        "operationalLog": {
+          "type": "object",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "number",
+      "description": "The loadShedding of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "string",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "pressure": {
+          "type": "object",
+          "description": "The pressure of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11f6d54",
+  "description": "Product11f6d54 by Mfg668b2fd6",
+  "properties": {
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "An object containing nested properties for oilLevel",
+      "properties": {
+        "communicationStatus": {
+          "type": "number",
+          "description": "The communicationStatus of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "boolean",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

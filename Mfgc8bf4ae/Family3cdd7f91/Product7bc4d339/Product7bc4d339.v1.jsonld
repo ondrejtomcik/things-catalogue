@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bc4d339",
+  "description": "Product7bc4d339 by Mfgc8bf4ae",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "The breakerStatus of the device"
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "chargeStatus": {
+          "type": "boolean",
+          "description": "The chargeStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

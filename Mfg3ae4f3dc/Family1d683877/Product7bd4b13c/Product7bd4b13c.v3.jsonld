@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bd4b13c",
+  "description": "Product7bd4b13c by Mfg3ae4f3dc",
+  "properties": {
+    "gridTieStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "connectorType": {
+          "type": "boolean",
+          "description": "The connectorType of the nested object"
+        },
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "breakerStatus": {
+          "type": "number",
+          "description": "The breakerStatus of the nested object"
+        },
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

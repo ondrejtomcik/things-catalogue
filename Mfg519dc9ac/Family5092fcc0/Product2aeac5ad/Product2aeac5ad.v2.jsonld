@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2aeac5ad",
+  "description": "Product2aeac5ad by Mfg519dc9ac",
+  "properties": {
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "chargeStatus": {
+          "type": "string",
+          "description": "The chargeStatus of the nested object"
+        },
+        "demandResponse": {
+          "type": "string",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

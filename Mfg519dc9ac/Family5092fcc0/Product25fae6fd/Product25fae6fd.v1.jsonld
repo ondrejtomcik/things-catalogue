@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25fae6fd",
+  "description": "Product25fae6fd by Mfg519dc9ac",
+  "properties": {
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    },
+    "remainingChargeTime": {
+      "type": "number",
+      "description": "The remainingChargeTime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

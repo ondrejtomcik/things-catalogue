@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product756f9c17",
+  "description": "Product756f9c17 by Mfg5b9b525f",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "fuelLevel": {
+          "type": "number",
+          "description": "The fuelLevel of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "number",
+      "description": "The humidity of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for oilLevel",
+      "properties": {
+        "chargeStatus": {
+          "type": "number",
+          "description": "The chargeStatus of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "number",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

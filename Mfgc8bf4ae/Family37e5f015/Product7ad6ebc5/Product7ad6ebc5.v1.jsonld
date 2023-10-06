@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7ad6ebc5",
+  "description": "Product7ad6ebc5 by Mfgc8bf4ae",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "relayStatus": {
+          "type": "number",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

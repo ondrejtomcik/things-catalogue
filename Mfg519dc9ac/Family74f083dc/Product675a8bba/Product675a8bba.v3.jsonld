@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product675a8bba",
+  "description": "Product675a8bba by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "string",
+      "description": "The activePower of the device"
+    },
+    "communicationStatus": {
+      "type": "object",
+      "description": "The communicationStatus of the device",
+      "properties": {
+        "volume": {
+          "type": "string",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "environmentalImpact": {
+      "type": "number",
+      "description": "The environmentalImpact of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "An object containing nested properties for varistorStatus",
+      "properties": {
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "number",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

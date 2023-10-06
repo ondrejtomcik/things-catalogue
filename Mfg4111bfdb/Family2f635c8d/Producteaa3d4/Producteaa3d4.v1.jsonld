@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteaa3d4",
+  "description": "Producteaa3d4 by Mfg4111bfdb",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "battery": {
+          "type": "number",
+          "description": "The battery of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

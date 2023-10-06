@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6e3d5aa6",
+  "description": "Product6e3d5aa6 by Mfg3ae4f3dc",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "operationalMode": {
+      "type": "boolean",
+      "description": "The operationalMode of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

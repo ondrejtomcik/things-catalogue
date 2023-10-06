@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e477e53",
+  "description": "Product7e477e53 by Mfg34727a0e",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "The faultIndicator of the device"
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

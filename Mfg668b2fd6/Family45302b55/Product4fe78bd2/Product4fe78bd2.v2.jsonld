@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4fe78bd2",
+  "description": "Product4fe78bd2 by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product20a44963",
+  "description": "Product20a44963 by Mfg34727a0e",
+  "properties": {
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "temperature": {
+          "type": "object",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        },
+        "oilQuality": {
+          "type": "object",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53e82231",
+  "description": "Product53e82231 by Mfg5b9b525f",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

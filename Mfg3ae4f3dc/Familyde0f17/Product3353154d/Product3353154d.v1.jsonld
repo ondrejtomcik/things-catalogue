@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3353154d",
+  "description": "Product3353154d by Mfg3ae4f3dc",
+  "properties": {
+    "communicationStatus": {
+      "type": "string",
+      "description": "The communicationStatus of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "capacity": {
+          "type": "boolean",
+          "description": "The capacity of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    },
+    "vibrationSensor": {
+      "type": "number",
+      "description": "The vibrationSensor of the device"
+    },
+    "volume": {
+      "type": "string",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67b2908f",
+  "description": "Product67b2908f by Mfg519dc9ac",
+  "properties": {
+    "carbonEmission": {
+      "type": "object",
+      "description": "The carbonEmission of the device",
+      "properties": {
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "thermalSensor": {
+          "type": "boolean",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "boolean",
+      "description": "The firmwareVersion of the device"
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "earthResistance": {
+          "type": "number",
+          "description": "The earthResistance of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "boolean",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product32ab9de2",
+  "description": "Product32ab9de2 by Mfg519dc9ac",
+  "properties": {
+    "breakerStatus": {
+      "type": "string",
+      "description": "The breakerStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "demandResponse": {
+          "type": "boolean",
+          "description": "The demandResponse of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

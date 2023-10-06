@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a8d0b44",
+  "description": "Product4a8d0b44 by Mfgc8bf4ae",
+  "properties": {
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

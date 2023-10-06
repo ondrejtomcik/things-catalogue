@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "altitude": {
+      "type": "number",
+      "description": "The altitude of the device"
+    },
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "brightness": {
+          "type": "string",
+          "description": "The brightness of the nested object"
+        },
+        "carbonEmission": {
+          "type": "string",
+          "description": "The carbonEmission of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "operationalHours": {
+      "type": "number",
+      "description": "The operationalHours of the device"
+    },
+    "pressure": {
+      "type": "string",
+      "description": "The pressure of the device"
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

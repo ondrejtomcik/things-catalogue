@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3d0cc662",
+  "description": "Product3d0cc662 by Mfg255a699d",
+  "properties": {
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "number",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "boolean",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "boolean",
+      "description": "The renewableSourceInput of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

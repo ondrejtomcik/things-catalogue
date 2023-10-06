@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product12f8c964",
+  "description": "Product12f8c964 by Mfg5b9b525f",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

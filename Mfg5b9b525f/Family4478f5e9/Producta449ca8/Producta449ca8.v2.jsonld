@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "oilLevel": {
+      "type": "string",
+      "description": "The oilLevel of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "latency": {
+          "type": "object",
+          "description": "The latency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

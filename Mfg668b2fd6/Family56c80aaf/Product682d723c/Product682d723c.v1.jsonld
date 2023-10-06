@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product682d723c",
+  "description": "Product682d723c by Mfg668b2fd6",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "boolean",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "varistorStatus": {
+      "type": "string",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

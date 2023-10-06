@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4168acd8",
+  "description": "Product4168acd8 by Mfgc8bf4ae",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "The lastInspectionDate of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "relayStatus": {
+          "type": "number",
+          "description": "The relayStatus of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "number",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "boolean",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "The vibrationSensor of the device",
+      "properties": {
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "number",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "demandResponse": {
+          "type": "number",
+          "description": "The demandResponse of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "capacity": {
+          "type": "boolean",
+          "description": "The capacity of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "The phase of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

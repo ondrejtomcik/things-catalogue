@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product666cabe2",
+  "description": "Product666cabe2 by Mfg5b9b525f",
+  "properties": {
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "latency": {
+      "type": "string",
+      "description": "The latency of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for oilLevel",
+      "properties": {
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product756f9c17",
+  "description": "Product756f9c17 by Mfg5b9b525f",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

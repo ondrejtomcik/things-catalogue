@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product15d8c2e1",
+  "description": "Product15d8c2e1 by Mfg668b2fd6",
+  "properties": {
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "faultIndicator": {
+          "type": "number",
+          "description": "The faultIndicator of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        },
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "boolean",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "boolean",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "string",
+      "description": "The loadShedding of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

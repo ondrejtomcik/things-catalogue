@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3fe364ac",
+  "description": "Product3fe364ac by Mfg3ae4f3dc",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "The circuitIntegrity of the device"
+    },
+    "operationalLog": {
+      "type": "number",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "number",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

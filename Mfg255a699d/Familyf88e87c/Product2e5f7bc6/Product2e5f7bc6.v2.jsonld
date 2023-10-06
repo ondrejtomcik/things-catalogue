@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e5f7bc6",
+  "description": "Product2e5f7bc6 by Mfg255a699d",
+  "properties": {
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "groundingStatus": {
+      "type": "boolean",
+      "description": "The groundingStatus of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "The phase of the device"
+    },
+    "protectionSetpoint": {
+      "type": "boolean",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        },
+        "oilQuality": {
+          "type": "object",
+          "description": "The oilQuality of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "boolean",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

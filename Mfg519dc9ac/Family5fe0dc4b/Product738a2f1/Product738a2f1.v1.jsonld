@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product738a2f1",
+  "description": "Product738a2f1 by Mfg519dc9ac",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "object",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "faultCode": {
+      "type": "object",
+      "description": "An object containing nested properties for faultCode",
+      "properties": {
+        "apparentPower": {
+          "type": "number",
+          "description": "The apparentPower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

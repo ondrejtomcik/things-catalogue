@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product532c15e0",
+  "description": "Product532c15e0 by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "brightness": {
+          "type": "number",
+          "description": "The brightness of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

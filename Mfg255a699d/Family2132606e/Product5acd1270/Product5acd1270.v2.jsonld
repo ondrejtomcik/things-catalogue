@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5acd1270",
+  "description": "Product5acd1270 by Mfg255a699d",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "remainingChargeTime": {
+      "type": "number",
+      "description": "The remainingChargeTime of the device"
+    },
+    "totalTrips": {
+      "type": "boolean",
+      "description": "The totalTrips of the device"
+    },
+    "volume": {
+      "type": "number",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

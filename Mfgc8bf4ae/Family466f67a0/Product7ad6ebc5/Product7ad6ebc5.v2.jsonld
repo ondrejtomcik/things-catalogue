@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7ad6ebc5",
+  "description": "Product7ad6ebc5 by Mfgc8bf4ae",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "The overloadIndicator of the device",
+      "properties": {
+        "earthResistance": {
+          "type": "number",
+          "description": "The earthResistance of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        },
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

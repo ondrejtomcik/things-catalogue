@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e477e53",
+  "description": "Product7e477e53 by Mfg34727a0e",
+  "properties": {
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "gridTieStatus": {
+          "type": "number",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

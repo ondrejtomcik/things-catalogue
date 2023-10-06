@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product33f05361",
+  "description": "Product33f05361 by Mfgc8bf4ae",
+  "properties": {
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "phase": {
+          "type": "string",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

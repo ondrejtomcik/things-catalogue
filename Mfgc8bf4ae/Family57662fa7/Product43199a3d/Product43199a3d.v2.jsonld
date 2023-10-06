@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product43199a3d",
+  "description": "Product43199a3d by Mfgc8bf4ae",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        }
+      }
+    },
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "humidity": {
+      "type": "boolean",
+      "description": "The humidity of the device"
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

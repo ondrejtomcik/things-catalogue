@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product204b5f9a",
+  "description": "Product204b5f9a by Mfg519dc9ac",
+  "properties": {
+    "gridStatus": {
+      "type": "boolean",
+      "description": "The gridStatus of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "feedDirection": {
+          "type": "boolean",
+          "description": "The feedDirection of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

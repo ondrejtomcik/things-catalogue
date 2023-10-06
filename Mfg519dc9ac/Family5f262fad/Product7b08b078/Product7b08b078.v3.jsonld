@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b08b078",
+  "description": "Product7b08b078 by Mfg519dc9ac",
+  "properties": {
+    "overloadIndicator": {
+      "type": "string",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "number",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "object",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "emergencyMode": {
+          "type": "object",
+          "description": "The emergencyMode of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "boolean",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "manualOverride": {
+          "type": "number",
+          "description": "The manualOverride of the nested object"
+        },
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

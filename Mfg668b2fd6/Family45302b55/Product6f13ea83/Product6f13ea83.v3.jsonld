@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6f13ea83",
+  "description": "Product6f13ea83 by Mfg668b2fd6",
+  "properties": {
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "string",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "boolean",
+      "description": "The loadShedding of the device"
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

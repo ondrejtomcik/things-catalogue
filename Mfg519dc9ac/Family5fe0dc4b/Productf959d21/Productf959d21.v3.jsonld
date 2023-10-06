@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

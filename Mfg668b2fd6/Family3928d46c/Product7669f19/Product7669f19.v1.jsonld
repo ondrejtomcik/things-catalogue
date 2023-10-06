@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7669f19",
+  "description": "Product7669f19 by Mfg668b2fd6",
+  "properties": {
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "connectorType": {
+          "type": "number",
+          "description": "The connectorType of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "string",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

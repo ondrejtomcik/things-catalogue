@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30d05a9e",
+  "description": "Product30d05a9e by Mfg3ae4f3dc",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "insulationResistance": {
+          "type": "boolean",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "loadShedding": {
+      "type": "string",
+      "description": "The loadShedding of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

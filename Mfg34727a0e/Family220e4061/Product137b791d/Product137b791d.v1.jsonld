@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product137b791d",
+  "description": "Product137b791d by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "An object containing nested properties for capacity",
+      "properties": {
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        },
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        }
+      }
+    },
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "The circuitIdentifier of the device"
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

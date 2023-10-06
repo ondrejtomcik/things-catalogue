@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b063abf",
+  "description": "Product4b063abf by Mfg4111bfdb",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "boolean",
+      "description": "The arcFlashRisk of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "string",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "remainingChargeTime": {
+      "type": "string",
+      "description": "The remainingChargeTime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

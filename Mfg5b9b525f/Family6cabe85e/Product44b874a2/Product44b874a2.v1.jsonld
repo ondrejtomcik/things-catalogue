@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "object",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "current": {
+          "type": "string",
+          "description": "The current of the nested object"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

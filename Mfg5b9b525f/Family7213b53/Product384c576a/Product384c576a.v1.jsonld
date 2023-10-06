@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product384c576a",
+  "description": "Product384c576a by Mfg5b9b525f",
+  "properties": {
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "The capacitorHealth of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

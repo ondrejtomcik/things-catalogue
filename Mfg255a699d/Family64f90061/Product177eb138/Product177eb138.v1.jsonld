@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product177eb138",
+  "description": "Product177eb138 by Mfg255a699d",
+  "properties": {
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

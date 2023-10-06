@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2099cdc6",
+  "description": "Product2099cdc6 by Mfg519dc9ac",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "The backupGeneratorStatus of the device",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

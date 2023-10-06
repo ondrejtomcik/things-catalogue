@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product169ac5ae",
+  "description": "Product169ac5ae by Mfg519dc9ac",
+  "properties": {
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

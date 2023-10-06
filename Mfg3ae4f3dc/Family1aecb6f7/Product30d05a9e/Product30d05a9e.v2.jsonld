@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30d05a9e",
+  "description": "Product30d05a9e by Mfg3ae4f3dc",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "gridTieStatus": {
+          "type": "boolean",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

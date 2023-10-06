@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product738a2f1",
+  "description": "Product738a2f1 by Mfg519dc9ac",
+  "properties": {
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "An object containing nested properties for frequency",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "harmonics": {
+          "type": "object",
+          "description": "The harmonics of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "boolean",
+      "description": "The operationalLog of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "string",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

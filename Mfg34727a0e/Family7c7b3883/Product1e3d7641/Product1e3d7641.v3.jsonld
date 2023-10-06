@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e3d7641",
+  "description": "Product1e3d7641 by Mfg34727a0e",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "boolean",
+      "description": "The diagnosticMessage of the device"
+    },
+    "locationIdentifier": {
+      "type": "string",
+      "description": "The locationIdentifier of the device"
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "oilQuality": {
+      "type": "number",
+      "description": "The oilQuality of the device"
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

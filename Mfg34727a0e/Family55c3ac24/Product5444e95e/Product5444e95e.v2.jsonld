@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5444e95e",
+  "description": "Product5444e95e by Mfg34727a0e",
+  "properties": {
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "powerFactor": {
+      "type": "string",
+      "description": "The powerFactor of the device"
+    },
+    "varistorStatus": {
+      "type": "number",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product682d723c",
+  "description": "Product682d723c by Mfg668b2fd6",
+  "properties": {
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "tariffRate": {
+      "type": "object",
+      "description": "An object containing nested properties for tariffRate",
+      "properties": {
+        "capacitorHealth": {
+          "type": "object",
+          "description": "The capacitorHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1501a1de",
+  "description": "Product1501a1de by Mfg4111bfdb",
+  "properties": {
+    "connectorType": {
+      "type": "object",
+      "description": "An object containing nested properties for connectorType",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        },
+        "transformerLoad": {
+          "type": "object",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

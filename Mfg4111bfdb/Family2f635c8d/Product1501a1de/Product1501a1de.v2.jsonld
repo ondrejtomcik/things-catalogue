@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1501a1de",
+  "description": "Product1501a1de by Mfg4111bfdb",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    },
+    "latency": {
+      "type": "string",
+      "description": "The latency of the device"
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "The totalTrips of the device",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "boolean",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "apparentPower": {
+          "type": "string",
+          "description": "The apparentPower of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11c0d65e",
+  "description": "Product11c0d65e by Mfg4111bfdb",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

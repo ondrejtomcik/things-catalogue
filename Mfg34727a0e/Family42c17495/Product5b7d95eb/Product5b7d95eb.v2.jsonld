@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5b7d95eb",
+  "description": "Product5b7d95eb by Mfg34727a0e",
+  "properties": {
+    "inverterEfficiency": {
+      "type": "number",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "string",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

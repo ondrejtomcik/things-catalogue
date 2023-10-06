@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product18e2f918",
+  "description": "Product18e2f918 by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "demandResponse": {
+      "type": "string",
+      "description": "The demandResponse of the device"
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

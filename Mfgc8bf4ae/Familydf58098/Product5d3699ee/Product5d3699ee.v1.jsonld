@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5d3699ee",
+  "description": "Product5d3699ee by Mfgc8bf4ae",
+  "properties": {
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "sf6Pressure": {
+          "type": "number",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

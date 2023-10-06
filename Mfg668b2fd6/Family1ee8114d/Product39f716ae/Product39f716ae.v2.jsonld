@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39f716ae",
+  "description": "Product39f716ae by Mfg668b2fd6",
+  "properties": {
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "current": {
+          "type": "boolean",
+          "description": "The current of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "number",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "number",
+          "description": "The overloadIndicator of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

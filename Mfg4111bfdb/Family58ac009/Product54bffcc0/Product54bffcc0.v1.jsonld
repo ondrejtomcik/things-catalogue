@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product54bffcc0",
+  "description": "Product54bffcc0 by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "string",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "string",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "string",
+      "description": "The faultIndicator of the device"
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

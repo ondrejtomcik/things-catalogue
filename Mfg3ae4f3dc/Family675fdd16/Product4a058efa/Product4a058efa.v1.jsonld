@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a058efa",
+  "description": "Product4a058efa by Mfg3ae4f3dc",
+  "properties": {
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "apparentPower": {
+          "type": "object",
+          "description": "The apparentPower of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for synchronizationStatus",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

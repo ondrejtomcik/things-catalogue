@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7eaaa58a",
+  "description": "Product7eaaa58a by Mfg255a699d",
+  "properties": {
+    "connectorType": {
+      "type": "object",
+      "description": "An object containing nested properties for connectorType",
+      "properties": {
+        "chargeStatus": {
+          "type": "object",
+          "description": "The chargeStatus of the nested object"
+        },
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "string",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

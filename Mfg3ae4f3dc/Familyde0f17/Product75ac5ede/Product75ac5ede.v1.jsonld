@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75ac5ede",
+  "description": "Product75ac5ede by Mfg3ae4f3dc",
+  "properties": {
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

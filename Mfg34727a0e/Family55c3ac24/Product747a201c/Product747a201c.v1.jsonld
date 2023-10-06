@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product747a201c",
+  "description": "Product747a201c by Mfg34727a0e",
+  "properties": {
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "transformerLoad": {
+      "type": "string",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

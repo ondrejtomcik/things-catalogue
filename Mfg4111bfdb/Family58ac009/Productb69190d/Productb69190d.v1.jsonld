@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb69190d",
+  "description": "Productb69190d by Mfg4111bfdb",
+  "properties": {
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "loadShedding": {
+          "type": "boolean",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

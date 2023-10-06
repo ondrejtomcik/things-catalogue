@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1b14c209",
+  "description": "Product1b14c209 by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "object",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "frequency": {
+          "type": "boolean",
+          "description": "The frequency of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "waveformDistortion": {
+      "type": "string",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

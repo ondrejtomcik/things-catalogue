@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product666cabe2",
+  "description": "Product666cabe2 by Mfg5b9b525f",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "inductorHealth": {
+          "type": "boolean",
+          "description": "The inductorHealth of the nested object"
+        },
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "string",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

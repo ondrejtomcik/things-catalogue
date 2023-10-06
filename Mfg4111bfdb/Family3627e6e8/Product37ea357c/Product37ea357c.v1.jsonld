@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product37ea357c",
+  "description": "Product37ea357c by Mfg4111bfdb",
+  "properties": {
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

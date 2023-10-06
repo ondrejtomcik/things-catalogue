@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75b14718",
+  "description": "Product75b14718 by Mfg4111bfdb",
+  "properties": {
+    "earthResistance": {
+      "type": "number",
+      "description": "The earthResistance of the device"
+    },
+    "latency": {
+      "type": "object",
+      "description": "The latency of the device",
+      "properties": {
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "capacitorHealth": {
+          "type": "object",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "totalYield": {
+          "type": "number",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

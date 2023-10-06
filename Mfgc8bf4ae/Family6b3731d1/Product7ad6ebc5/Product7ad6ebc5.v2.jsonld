@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7ad6ebc5",
+  "description": "Product7ad6ebc5 by Mfgc8bf4ae",
+  "properties": {
+    "overloadIndicator": {
+      "type": "object",
+      "description": "The overloadIndicator of the device",
+      "properties": {
+        "current": {
+          "type": "number",
+          "description": "The current of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "emergencyMode": {
+          "type": "boolean",
+          "description": "The emergencyMode of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53e82231",
+  "description": "Product53e82231 by Mfg5b9b525f",
+  "properties": {
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "inductorHealth": {
+      "type": "number",
+      "description": "The inductorHealth of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for safetyRating",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "number",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "fuelLevel": {
+          "type": "number",
+          "description": "The fuelLevel of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "The windTurbineEfficiency of the device",
+      "properties": {
+        "inductorHealth": {
+          "type": "number",
+          "description": "The inductorHealth of the nested object"
+        },
+        "operationalHours": {
+          "type": "number",
+          "description": "The operationalHours of the nested object"
+        },
+        "safetyRating": {
+          "type": "string",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

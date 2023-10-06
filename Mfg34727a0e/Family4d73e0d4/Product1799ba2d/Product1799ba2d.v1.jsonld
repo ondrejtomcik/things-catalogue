@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "boolean",
+          "description": "The diagnosticMessage of the nested object"
+        }
+      }
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

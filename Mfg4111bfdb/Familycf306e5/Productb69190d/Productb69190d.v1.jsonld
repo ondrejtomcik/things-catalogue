@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb69190d",
+  "description": "Productb69190d by Mfg4111bfdb",
+  "properties": {
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "humidity": {
+      "type": "boolean",
+      "description": "The humidity of the device"
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

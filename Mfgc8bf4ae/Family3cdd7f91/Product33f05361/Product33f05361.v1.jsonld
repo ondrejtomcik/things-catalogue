@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product33f05361",
+  "description": "Product33f05361 by Mfgc8bf4ae",
+  "properties": {
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "reactivePower": {
+          "type": "boolean",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        },
+        "status": {
+          "type": "object",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    },
+    "volume": {
+      "type": "number",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

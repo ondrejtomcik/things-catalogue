@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a8d0b44",
+  "description": "Product4a8d0b44 by Mfgc8bf4ae",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "totalTrips": {
+          "type": "number",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "carbonEmission": {
+      "type": "object",
+      "description": "An object containing nested properties for carbonEmission",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        },
+        "relayStatus": {
+          "type": "string",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "inductorHealth": {
+      "type": "boolean",
+      "description": "The inductorHealth of the device"
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "The tariffRate of the device"
+    },
+    "uptime": {
+      "type": "number",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dfa2ee5",
+  "description": "Product6dfa2ee5 by Mfg4111bfdb",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "voltage": {
+          "type": "string",
+          "description": "The voltage of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "object",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "temperature": {
+          "type": "object",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "connectorType": {
+          "type": "number",
+          "description": "The connectorType of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "boolean",
+      "description": "The operationalMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

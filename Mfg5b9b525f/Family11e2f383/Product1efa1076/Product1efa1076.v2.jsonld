@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "inductorHealth": {
+          "type": "object",
+          "description": "The inductorHealth of the nested object"
+        },
+        "transformerLoad": {
+          "type": "string",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "object",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "oilLevel": {
+          "type": "object",
+          "description": "The oilLevel of the nested object"
+        },
+        "operationalHours": {
+          "type": "string",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

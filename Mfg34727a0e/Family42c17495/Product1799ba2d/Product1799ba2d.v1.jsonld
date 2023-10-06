@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "windTurbineEfficiency": {
+          "type": "boolean",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        },
+        "busbarLoad": {
+          "type": "boolean",
+          "description": "The busbarLoad of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "solarPanelHealth": {
+      "type": "number",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

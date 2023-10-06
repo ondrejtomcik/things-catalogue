@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product72d6ade7",
+  "description": "Product72d6ade7 by Mfgc8bf4ae",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "meterReading": {
+          "type": "boolean",
+          "description": "The meterReading of the nested object"
+        },
+        "sf6Quality": {
+          "type": "boolean",
+          "description": "The sf6Quality of the nested object"
+        },
+        "volume": {
+          "type": "boolean",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

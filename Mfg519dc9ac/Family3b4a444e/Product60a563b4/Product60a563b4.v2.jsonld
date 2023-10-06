@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product60a563b4",
+  "description": "Product60a563b4 by Mfg519dc9ac",
+  "properties": {
+    "faultIndicator": {
+      "type": "string",
+      "description": "The faultIndicator of the device"
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "meterReading": {
+          "type": "string",
+          "description": "The meterReading of the nested object"
+        },
+        "phase": {
+          "type": "string",
+          "description": "The phase of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

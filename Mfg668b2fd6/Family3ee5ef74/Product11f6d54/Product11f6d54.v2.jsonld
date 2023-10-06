@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11f6d54",
+  "description": "Product11f6d54 by Mfg668b2fd6",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "voltage": {
+      "type": "string",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

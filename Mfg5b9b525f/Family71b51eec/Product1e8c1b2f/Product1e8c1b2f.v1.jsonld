@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "protectionSetpoint": {
+      "type": "boolean",
+      "description": "The protectionSetpoint of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

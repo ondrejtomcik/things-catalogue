@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product306228f",
+  "description": "Product306228f by Mfgc8bf4ae",
+  "properties": {
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

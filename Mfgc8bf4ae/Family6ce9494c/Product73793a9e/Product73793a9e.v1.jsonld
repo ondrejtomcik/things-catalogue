@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "The capacitorHealth of the device"
+    },
+    "groundingStatus": {
+      "type": "string",
+      "description": "The groundingStatus of the device"
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

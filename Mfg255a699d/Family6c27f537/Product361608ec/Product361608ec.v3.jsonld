@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product361608ec",
+  "description": "Product361608ec by Mfg255a699d",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "vibrationSensor": {
+          "type": "boolean",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "inductorHealth": {
+      "type": "number",
+      "description": "The inductorHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

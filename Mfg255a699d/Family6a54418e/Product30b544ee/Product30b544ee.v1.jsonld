@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30b544ee",
+  "description": "Product30b544ee by Mfg255a699d",
+  "properties": {
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        },
+        "pressure": {
+          "type": "string",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "chargeLevel": {
+          "type": "number",
+          "description": "The chargeLevel of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

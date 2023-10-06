@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producte0187c9",
+  "description": "Producte0187c9 by Mfg34727a0e",
+  "properties": {
+    "environmentalImpact": {
+      "type": "number",
+      "description": "The environmentalImpact of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    },
+    "renewableSourceInput": {
+      "type": "number",
+      "description": "The renewableSourceInput of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb69190d",
+  "description": "Productb69190d by Mfg4111bfdb",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "capacitorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "capacitorHealth": {
+          "type": "object",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    },
+    "vibrationSensor": {
+      "type": "number",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

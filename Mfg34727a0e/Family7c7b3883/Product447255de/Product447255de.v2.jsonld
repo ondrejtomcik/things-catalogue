@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product447255de",
+  "description": "Product447255de by Mfg34727a0e",
+  "properties": {
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "dataRate": {
+          "type": "boolean",
+          "description": "The dataRate of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product738a2f1",
+  "description": "Product738a2f1 by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "string",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    },
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "carbonEmission": {
+          "type": "boolean",
+          "description": "The carbonEmission of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "gridTieStatus": {
+          "type": "number",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

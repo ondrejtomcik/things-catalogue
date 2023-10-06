@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product35affe2b",
+  "description": "Product35affe2b by Mfg519dc9ac",
+  "properties": {
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "The lastInspectionDate of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "apparentPower": {
+          "type": "string",
+          "description": "The apparentPower of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "boolean",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

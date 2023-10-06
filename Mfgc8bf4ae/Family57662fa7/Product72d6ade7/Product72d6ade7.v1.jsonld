@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product72d6ade7",
+  "description": "Product72d6ade7 by Mfgc8bf4ae",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "pressure": {
+          "type": "string",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "operationalLog": {
+          "type": "string",
+          "description": "The operationalLog of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product231a0500",
+  "description": "Product231a0500 by Mfg255a699d",
+  "properties": {
+    "communicationStatus": {
+      "type": "number",
+      "description": "The communicationStatus of the device"
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "number",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

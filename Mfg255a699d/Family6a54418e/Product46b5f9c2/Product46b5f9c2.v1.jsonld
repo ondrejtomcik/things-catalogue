@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46b5f9c2",
+  "description": "Product46b5f9c2 by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "boolean",
+      "description": "The assetID of the device"
+    },
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "gridTieStatus": {
+          "type": "string",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "string",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

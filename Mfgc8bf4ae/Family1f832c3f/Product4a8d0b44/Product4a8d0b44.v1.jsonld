@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a8d0b44",
+  "description": "Product4a8d0b44 by Mfgc8bf4ae",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

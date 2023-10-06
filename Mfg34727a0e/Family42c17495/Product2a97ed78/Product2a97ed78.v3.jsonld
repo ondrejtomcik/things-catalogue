@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2a97ed78",
+  "description": "Product2a97ed78 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "The capacity of the device",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "totalTrips": {
+          "type": "string",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        },
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        },
+        "operationalLog": {
+          "type": "string",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "The safetyRating of the device",
+      "properties": {
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

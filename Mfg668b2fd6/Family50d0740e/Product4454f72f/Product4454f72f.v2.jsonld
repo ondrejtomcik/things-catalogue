@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4454f72f",
+  "description": "Product4454f72f by Mfg668b2fd6",
+  "properties": {
+    "groundingStatus": {
+      "type": "string",
+      "description": "The groundingStatus of the device"
+    },
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "breakerStatus": {
+          "type": "object",
+          "description": "The breakerStatus of the nested object"
+        },
+        "circuitIntegrity": {
+          "type": "number",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "object",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

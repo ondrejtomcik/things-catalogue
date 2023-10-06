@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product258038d8",
+  "description": "Product258038d8 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

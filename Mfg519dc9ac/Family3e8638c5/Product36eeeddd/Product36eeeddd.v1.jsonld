@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

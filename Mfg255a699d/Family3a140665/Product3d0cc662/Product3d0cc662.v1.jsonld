@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3d0cc662",
+  "description": "Product3d0cc662 by Mfg255a699d",
+  "properties": {
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "faultCode": {
+      "type": "boolean",
+      "description": "The faultCode of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

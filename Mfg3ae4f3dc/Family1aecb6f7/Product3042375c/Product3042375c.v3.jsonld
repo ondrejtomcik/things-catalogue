@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3042375c",
+  "description": "Product3042375c by Mfg3ae4f3dc",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

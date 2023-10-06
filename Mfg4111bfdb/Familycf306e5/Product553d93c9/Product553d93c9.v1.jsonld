@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "number",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "capacitorHealth": {
+          "type": "string",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "The sf6Pressure of the device"
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

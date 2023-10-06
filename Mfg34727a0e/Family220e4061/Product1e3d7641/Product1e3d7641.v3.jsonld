@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e3d7641",
+  "description": "Product1e3d7641 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "The capacity of the device",
+      "properties": {
+        "assetID": {
+          "type": "string",
+          "description": "The assetID of the nested object"
+        },
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "string",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "The remoteControlCapability of the device",
+      "properties": {
+        "brightness": {
+          "type": "number",
+          "description": "The brightness of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

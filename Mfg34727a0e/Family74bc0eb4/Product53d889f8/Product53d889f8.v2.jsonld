@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53d889f8",
+  "description": "Product53d889f8 by Mfg34727a0e",
+  "properties": {
+    "groundingStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "altitude": {
+          "type": "boolean",
+          "description": "The altitude of the nested object"
+        },
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

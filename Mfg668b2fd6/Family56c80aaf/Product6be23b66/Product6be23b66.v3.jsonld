@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6be23b66",
+  "description": "Product6be23b66 by Mfg668b2fd6",
+  "properties": {
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "operationalHours": {
+      "type": "number",
+      "description": "The operationalHours of the device"
+    },
+    "phase": {
+      "type": "object",
+      "description": "The phase of the device",
+      "properties": {
+        "assetID": {
+          "type": "boolean",
+          "description": "The assetID of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

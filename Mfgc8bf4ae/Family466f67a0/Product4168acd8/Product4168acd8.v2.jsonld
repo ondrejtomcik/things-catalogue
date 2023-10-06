@@ -1,0 +1,102 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4168acd8",
+  "description": "Product4168acd8 by Mfgc8bf4ae",
+  "properties": {
+    "carbonEmission": {
+      "type": "object",
+      "description": "An object containing nested properties for carbonEmission",
+      "properties": {
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "boolean",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "battery": {
+          "type": "boolean",
+          "description": "The battery of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "connectorType": {
+          "type": "object",
+          "description": "The connectorType of the nested object"
+        },
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "harmonics": {
+          "type": "string",
+          "description": "The harmonics of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "totalYield": {
+          "type": "boolean",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "The windTurbineEfficiency of the device",
+      "properties": {
+        "activePower": {
+          "type": "string",
+          "description": "The activePower of the nested object"
+        },
+        "capacitorHealth": {
+          "type": "string",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

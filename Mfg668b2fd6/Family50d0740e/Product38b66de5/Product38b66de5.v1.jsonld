@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product38b66de5",
+  "description": "Product38b66de5 by Mfg668b2fd6",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "inductorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for inductorHealth",
+      "properties": {
+        "windTurbineEfficiency": {
+          "type": "object",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "object",
+      "description": "An object containing nested properties for speed",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

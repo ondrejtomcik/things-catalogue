@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "sf6Pressure": {
+          "type": "object",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "speed": {
+      "type": "object",
+      "description": "An object containing nested properties for speed",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "breakerStatus": {
+          "type": "object",
+          "description": "The breakerStatus of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "object",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "boolean",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

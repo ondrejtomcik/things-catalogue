@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product9d5173a",
+  "description": "Product9d5173a by Mfg255a699d",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "chargeStatus": {
+          "type": "object",
+          "description": "The chargeStatus of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "inductorHealth": {
+      "type": "string",
+      "description": "The inductorHealth of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        },
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

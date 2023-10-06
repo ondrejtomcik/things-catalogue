@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product384c576a",
+  "description": "Product384c576a by Mfg5b9b525f",
+  "properties": {
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "number",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "status": {
+          "type": "number",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67b2908f",
+  "description": "Product67b2908f by Mfg519dc9ac",
+  "properties": {
+    "chargeStatus": {
+      "type": "boolean",
+      "description": "The chargeStatus of the device"
+    },
+    "diagnosticMessage": {
+      "type": "object",
+      "description": "An object containing nested properties for diagnosticMessage",
+      "properties": {
+        "dataRate": {
+          "type": "object",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "waveformDistortion": {
+      "type": "number",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

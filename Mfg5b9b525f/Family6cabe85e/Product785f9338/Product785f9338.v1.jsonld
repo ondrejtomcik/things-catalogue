@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product785f9338",
+  "description": "Product785f9338 by Mfg5b9b525f",
+  "properties": {
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    },
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

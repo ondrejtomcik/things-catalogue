@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7cb4c1f4",
+  "description": "Product7cb4c1f4 by Mfg3ae4f3dc",
+  "properties": {
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "locationIdentifier": {
+          "type": "object",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "meterReading": {
+          "type": "string",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "protectionSetpoint": {
+      "type": "string",
+      "description": "The protectionSetpoint of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

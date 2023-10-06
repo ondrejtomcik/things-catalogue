@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product77c9c0bd",
+  "description": "Product77c9c0bd by Mfg668b2fd6",
+  "properties": {
+    "apparentPower": {
+      "type": "number",
+      "description": "The apparentPower of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "busbarLoad": {
+          "type": "boolean",
+          "description": "The busbarLoad of the nested object"
+        },
+        "carbonEmission": {
+          "type": "boolean",
+          "description": "The carbonEmission of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "diagnosticMessage": {
+          "type": "number",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

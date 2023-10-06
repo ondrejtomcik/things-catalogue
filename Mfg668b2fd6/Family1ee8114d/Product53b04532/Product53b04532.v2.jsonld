@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "energyConsumption": {
+      "type": "number",
+      "description": "The energyConsumption of the device"
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "operationalHours": {
+          "type": "string",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    },
+    "tripStatus": {
+      "type": "string",
+      "description": "The tripStatus of the device"
+    },
+    "varistorStatus": {
+      "type": "object",
+      "description": "The varistorStatus of the device",
+      "properties": {
+        "neutralLoad": {
+          "type": "string",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

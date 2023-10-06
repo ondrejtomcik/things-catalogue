@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product54bffcc0",
+  "description": "Product54bffcc0 by Mfg4111bfdb",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "string",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "number",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

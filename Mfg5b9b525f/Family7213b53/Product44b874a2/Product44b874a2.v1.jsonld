@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        },
+        "manualOverride": {
+          "type": "number",
+          "description": "The manualOverride of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "The circuitIdentifier of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "An object containing nested properties for frequency",
+      "properties": {
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "boolean",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "boolean",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

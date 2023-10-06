@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "boolean",
+      "description": "The gridStatus of the device"
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "The sf6Quality of the device",
+      "properties": {
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

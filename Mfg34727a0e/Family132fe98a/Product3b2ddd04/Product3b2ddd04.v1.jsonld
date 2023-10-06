@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b2ddd04",
+  "description": "Product3b2ddd04 by Mfg34727a0e",
+  "properties": {
+    "communicationStatus": {
+      "type": "string",
+      "description": "The communicationStatus of the device"
+    },
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

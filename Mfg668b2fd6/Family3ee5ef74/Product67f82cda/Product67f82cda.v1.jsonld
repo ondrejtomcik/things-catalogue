@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67f82cda",
+  "description": "Product67f82cda by Mfg668b2fd6",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        }
+      }
+    },
+    "communicationStatus": {
+      "type": "number",
+      "description": "The communicationStatus of the device"
+    },
+    "dataRate": {
+      "type": "number",
+      "description": "The dataRate of the device"
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "communicationStatus": {
+          "type": "string",
+          "description": "The communicationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

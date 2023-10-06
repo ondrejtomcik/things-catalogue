@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46b5f9c2",
+  "description": "Product46b5f9c2 by Mfg255a699d",
+  "properties": {
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "The feedDirection of the device",
+      "properties": {
+        "connectorType": {
+          "type": "number",
+          "description": "The connectorType of the nested object"
+        }
+      }
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "The operationalMode of the device",
+      "properties": {
+        "energyConsumption": {
+          "type": "boolean",
+          "description": "The energyConsumption of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "number",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

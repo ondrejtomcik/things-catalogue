@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "efficiencyRating": {
+      "type": "boolean",
+      "description": "The efficiencyRating of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "waveformDistortion": {
+          "type": "string",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

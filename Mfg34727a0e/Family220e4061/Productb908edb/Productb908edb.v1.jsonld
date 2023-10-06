@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb908edb",
+  "description": "Productb908edb by Mfg34727a0e",
+  "properties": {
+    "current": {
+      "type": "boolean",
+      "description": "The current of the device"
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "environmentalImpact": {
+          "type": "object",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "number",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "boolean",
+          "description": "The backupGeneratorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product61115c67",
+  "description": "Product61115c67 by Mfg255a699d",
+  "properties": {
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    },
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "locationIdentifier": {
+      "type": "string",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "apparentPower": {
+          "type": "boolean",
+          "description": "The apparentPower of the nested object"
+        },
+        "breakerStatus": {
+          "type": "object",
+          "description": "The breakerStatus of the nested object"
+        },
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

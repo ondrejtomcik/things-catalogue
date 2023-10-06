@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product488f28cc",
+  "description": "Product488f28cc by Mfg3ae4f3dc",
+  "properties": {
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "chargeLevel": {
+          "type": "string",
+          "description": "The chargeLevel of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "boolean",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "The manualOverride of the device",
+      "properties": {
+        "frequency": {
+          "type": "number",
+          "description": "The frequency of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "boolean",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "string",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "number",
+      "description": "The vibrationSensor of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "number",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

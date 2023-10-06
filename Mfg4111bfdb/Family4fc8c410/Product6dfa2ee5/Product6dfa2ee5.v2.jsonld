@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dfa2ee5",
+  "description": "Product6dfa2ee5 by Mfg4111bfdb",
+  "properties": {
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "The emergencyMode of the device",
+      "properties": {
+        "dataRate": {
+          "type": "boolean",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

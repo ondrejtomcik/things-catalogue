@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteeed8ba",
+  "description": "Producteeed8ba by Mfg34727a0e",
+  "properties": {
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "faultCode": {
+          "type": "object",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

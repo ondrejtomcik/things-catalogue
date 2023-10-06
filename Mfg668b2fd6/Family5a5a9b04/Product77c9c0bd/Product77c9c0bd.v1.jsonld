@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product77c9c0bd",
+  "description": "Product77c9c0bd by Mfg668b2fd6",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

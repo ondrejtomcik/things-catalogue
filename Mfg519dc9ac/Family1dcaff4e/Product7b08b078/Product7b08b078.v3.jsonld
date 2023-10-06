@@ -1,0 +1,90 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b08b078",
+  "description": "Product7b08b078 by Mfg519dc9ac",
+  "properties": {
+    "connectorType": {
+      "type": "object",
+      "description": "An object containing nested properties for connectorType",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "The demandResponse of the device",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "number",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "connectorType": {
+          "type": "object",
+          "description": "The connectorType of the nested object"
+        },
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "inductorHealth": {
+      "type": "string",
+      "description": "The inductorHealth of the device"
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "breakerStatus": {
+          "type": "boolean",
+          "description": "The breakerStatus of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

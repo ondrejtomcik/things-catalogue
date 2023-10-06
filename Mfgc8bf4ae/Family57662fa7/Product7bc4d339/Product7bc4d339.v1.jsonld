@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bc4d339",
+  "description": "Product7bc4d339 by Mfgc8bf4ae",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "environmentalImpact": {
+          "type": "object",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product488f28cc",
+  "description": "Product488f28cc by Mfg3ae4f3dc",
+  "properties": {
+    "environmentalImpact": {
+      "type": "object",
+      "description": "An object containing nested properties for environmentalImpact",
+      "properties": {
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "string",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

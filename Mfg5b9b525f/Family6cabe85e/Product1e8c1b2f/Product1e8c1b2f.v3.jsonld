@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "chargeStatus": {
+          "type": "boolean",
+          "description": "The chargeStatus of the nested object"
+        },
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        },
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "The busbarLoad of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "The emergencyMode of the device",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "totalYield": {
+          "type": "boolean",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5acd1270",
+  "description": "Product5acd1270 by Mfg255a699d",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "remoteControlCapability": {
+      "type": "number",
+      "description": "The remoteControlCapability of the device"
+    },
+    "renewableSourceInput": {
+      "type": "number",
+      "description": "The renewableSourceInput of the device"
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

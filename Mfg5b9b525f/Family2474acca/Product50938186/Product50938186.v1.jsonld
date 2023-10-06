@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product50938186",
+  "description": "Product50938186 by Mfg5b9b525f",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "chargeStatus": {
+          "type": "string",
+          "description": "The chargeStatus of the nested object"
+        },
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "boolean",
+      "description": "The groundingStatus of the device"
+    },
+    "sf6Quality": {
+      "type": "string",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

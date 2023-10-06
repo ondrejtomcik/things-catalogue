@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5758580b",
+  "description": "Product5758580b by Mfg5b9b525f",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "string",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "busbarLoad": {
+          "type": "boolean",
+          "description": "The busbarLoad of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "solarPanelHealth": {
+      "type": "string",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

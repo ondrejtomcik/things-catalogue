@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product17917151",
+  "description": "Product17917151 by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "current": {
+      "type": "number",
+      "description": "The current of the device"
+    },
+    "manualOverride": {
+      "type": "boolean",
+      "description": "The manualOverride of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

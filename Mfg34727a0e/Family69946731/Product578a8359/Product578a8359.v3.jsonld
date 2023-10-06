@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product578a8359",
+  "description": "Product578a8359 by Mfg34727a0e",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "meterReading": {
+          "type": "string",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "boolean",
+      "description": "The energyConsumption of the device"
+    },
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "The manualOverride of the device",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "boolean",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "The powerFactor of the device"
+    },
+    "totalTrips": {
+      "type": "boolean",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

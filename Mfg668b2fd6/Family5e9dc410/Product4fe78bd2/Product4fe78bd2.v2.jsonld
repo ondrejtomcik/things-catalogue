@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4fe78bd2",
+  "description": "Product4fe78bd2 by Mfg668b2fd6",
+  "properties": {
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "brightness": {
+          "type": "object",
+          "description": "The brightness of the nested object"
+        },
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        },
+        "totalYield": {
+          "type": "string",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

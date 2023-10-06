@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "diagnosticMessage": {
+      "type": "number",
+      "description": "The diagnosticMessage of the device"
+    },
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "emergencyMode": {
+          "type": "object",
+          "description": "The emergencyMode of the nested object"
+        },
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

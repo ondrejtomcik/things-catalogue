@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product76d376e1",
+  "description": "Product76d376e1 by Mfg255a699d",
+  "properties": {
+    "operationalLog": {
+      "type": "string",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "tariffRate": {
+      "type": "object",
+      "description": "The tariffRate of the device",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "string",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "object",
+          "description": "The efficiencyRating of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

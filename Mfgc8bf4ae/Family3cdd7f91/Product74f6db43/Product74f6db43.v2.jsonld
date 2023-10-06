@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product74f6db43",
+  "description": "Product74f6db43 by Mfgc8bf4ae",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "diagnosticMessage": {
+      "type": "boolean",
+      "description": "The diagnosticMessage of the device"
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        },
+        "temperature": {
+          "type": "boolean",
+          "description": "The temperature of the nested object"
+        },
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

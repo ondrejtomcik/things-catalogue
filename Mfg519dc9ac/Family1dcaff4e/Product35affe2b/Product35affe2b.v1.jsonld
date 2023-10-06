@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product35affe2b",
+  "description": "Product35affe2b by Mfg519dc9ac",
+  "properties": {
+    "demandResponse": {
+      "type": "string",
+      "description": "The demandResponse of the device"
+    },
+    "loadShedding": {
+      "type": "boolean",
+      "description": "The loadShedding of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

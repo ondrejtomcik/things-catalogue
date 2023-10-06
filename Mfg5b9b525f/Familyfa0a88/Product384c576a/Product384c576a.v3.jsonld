@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product384c576a",
+  "description": "Product384c576a by Mfg5b9b525f",
+  "properties": {
+    "environmentalImpact": {
+      "type": "object",
+      "description": "The environmentalImpact of the device",
+      "properties": {
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        },
+        "phase": {
+          "type": "string",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product258038d8",
+  "description": "Product258038d8 by Mfg34727a0e",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "number",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "The powerFactor of the device"
+    },
+    "solarPanelHealth": {
+      "type": "string",
+      "description": "The solarPanelHealth of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "battery": {
+          "type": "boolean",
+          "description": "The battery of the nested object"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "string",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

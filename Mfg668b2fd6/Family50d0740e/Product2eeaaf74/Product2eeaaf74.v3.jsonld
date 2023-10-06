@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2eeaaf74",
+  "description": "Product2eeaaf74 by Mfg668b2fd6",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "object",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "string",
+      "description": "The latency of the device"
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    },
+    "voltage": {
+      "type": "boolean",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

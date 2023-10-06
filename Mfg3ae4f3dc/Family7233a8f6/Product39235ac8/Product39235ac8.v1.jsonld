@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39235ac8",
+  "description": "Product39235ac8 by Mfg3ae4f3dc",
+  "properties": {
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "tariffRate": {
+      "type": "boolean",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

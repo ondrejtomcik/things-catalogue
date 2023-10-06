@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product384c576a",
+  "description": "Product384c576a by Mfg5b9b525f",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "The backupBatteryStatus of the device",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "boolean",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "reactivePower": {
+          "type": "string",
+          "description": "The reactivePower of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "oilQuality": {
+          "type": "boolean",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

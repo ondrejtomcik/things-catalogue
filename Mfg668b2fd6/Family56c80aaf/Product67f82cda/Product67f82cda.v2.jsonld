@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67f82cda",
+  "description": "Product67f82cda by Mfg668b2fd6",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "boolean",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

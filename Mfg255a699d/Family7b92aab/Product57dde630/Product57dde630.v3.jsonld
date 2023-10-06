@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57dde630",
+  "description": "Product57dde630 by Mfg255a699d",
+  "properties": {
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    },
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "The circuitIntegrity of the device"
+    },
+    "demandResponse": {
+      "type": "number",
+      "description": "The demandResponse of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "The vibrationSensor of the device"
+    },
+    "volume": {
+      "type": "string",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

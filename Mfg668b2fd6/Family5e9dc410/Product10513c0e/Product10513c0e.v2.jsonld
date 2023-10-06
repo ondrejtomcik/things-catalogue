@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product10513c0e",
+  "description": "Product10513c0e by Mfg668b2fd6",
+  "properties": {
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "oilQuality": {
+      "type": "number",
+      "description": "The oilQuality of the device"
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        },
+        "harmonics": {
+          "type": "string",
+          "description": "The harmonics of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "latency": {
+          "type": "string",
+          "description": "The latency of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "number",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

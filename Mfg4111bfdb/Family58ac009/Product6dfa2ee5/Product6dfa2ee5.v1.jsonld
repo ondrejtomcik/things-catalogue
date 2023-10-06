@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dfa2ee5",
+  "description": "Product6dfa2ee5 by Mfg4111bfdb",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "The powerFactor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

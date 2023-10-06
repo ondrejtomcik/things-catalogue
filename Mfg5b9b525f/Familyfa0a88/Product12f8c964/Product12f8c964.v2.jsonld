@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product12f8c964",
+  "description": "Product12f8c964 by Mfg5b9b525f",
+  "properties": {
+    "demandResponse": {
+      "type": "number",
+      "description": "The demandResponse of the device"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

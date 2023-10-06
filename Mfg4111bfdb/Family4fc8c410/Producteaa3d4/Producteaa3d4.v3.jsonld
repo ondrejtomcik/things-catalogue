@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteaa3d4",
+  "description": "Producteaa3d4 by Mfg4111bfdb",
+  "properties": {
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "speed": {
+      "type": "object",
+      "description": "The speed of the device",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        },
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "The thermalSensor of the device",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

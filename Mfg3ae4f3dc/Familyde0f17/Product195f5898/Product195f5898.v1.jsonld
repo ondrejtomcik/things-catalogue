@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product195f5898",
+  "description": "Product195f5898 by Mfg3ae4f3dc",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "boolean",
+      "description": "The operationalLog of the device"
+    },
+    "sf6Pressure": {
+      "type": "boolean",
+      "description": "The sf6Pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

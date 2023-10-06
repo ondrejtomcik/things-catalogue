@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5b7d95eb",
+  "description": "Product5b7d95eb by Mfg34727a0e",
+  "properties": {
+    "meterReading": {
+      "type": "boolean",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "connectorType": {
+          "type": "boolean",
+          "description": "The connectorType of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

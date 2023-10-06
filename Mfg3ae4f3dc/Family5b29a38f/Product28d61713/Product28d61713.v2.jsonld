@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product28d61713",
+  "description": "Product28d61713 by Mfg3ae4f3dc",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "number",
+      "description": "The diagnosticMessage of the device"
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "feedDirection": {
+      "type": "number",
+      "description": "The feedDirection of the device"
+    },
+    "groundingStatus": {
+      "type": "string",
+      "description": "The groundingStatus of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

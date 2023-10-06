@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product21786bfb",
+  "description": "Product21786bfb by Mfg5b9b525f",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

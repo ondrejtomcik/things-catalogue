@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product43199a3d",
+  "description": "Product43199a3d by Mfgc8bf4ae",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "boolean",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "The loadShedding of the device",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "temperature": {
+          "type": "boolean",
+          "description": "The temperature of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "string",
+      "description": "The locationIdentifier of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

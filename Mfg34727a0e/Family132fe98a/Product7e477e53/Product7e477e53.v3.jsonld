@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e477e53",
+  "description": "Product7e477e53 by Mfg34727a0e",
+  "properties": {
+    "groundingStatus": {
+      "type": "string",
+      "description": "The groundingStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "number",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "number",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "capacity": {
+          "type": "string",
+          "description": "The capacity of the nested object"
+        },
+        "earthResistance": {
+          "type": "object",
+          "description": "The earthResistance of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "feedDirection": {
+          "type": "boolean",
+          "description": "The feedDirection of the nested object"
+        },
+        "harmonics": {
+          "type": "object",
+          "description": "The harmonics of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "varistorStatus": {
+      "type": "string",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

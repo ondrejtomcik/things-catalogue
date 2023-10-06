@@ -1,0 +1,90 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30d05a9e",
+  "description": "Product30d05a9e by Mfg3ae4f3dc",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "The backupBatteryStatus of the device",
+      "properties": {
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    },
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "waveformDistortion": {
+          "type": "number",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "object",
+      "description": "An object containing nested properties for frequency",
+      "properties": {
+        "sf6Quality": {
+          "type": "boolean",
+          "description": "The sf6Quality of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "battery": {
+          "type": "string",
+          "description": "The battery of the nested object"
+        },
+        "inductorHealth": {
+          "type": "object",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "boolean",
+      "description": "The vibrationSensor of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "The waveformDistortion of the device",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

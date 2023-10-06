@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7669f19",
+  "description": "Product7669f19 by Mfg668b2fd6",
+  "properties": {
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "string",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    },
+    "synchronizationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for synchronizationStatus",
+      "properties": {
+        "chargeStatus": {
+          "type": "number",
+          "description": "The chargeStatus of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        },
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

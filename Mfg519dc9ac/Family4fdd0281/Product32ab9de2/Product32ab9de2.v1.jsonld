@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product32ab9de2",
+  "description": "Product32ab9de2 by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "boolean",
+      "description": "The assetID of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "gridStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridStatus",
+      "properties": {
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        },
+        "volume": {
+          "type": "boolean",
+          "description": "The volume of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

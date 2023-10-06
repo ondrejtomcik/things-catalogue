@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product169ac5ae",
+  "description": "Product169ac5ae by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "loadShedding": {
+      "type": "string",
+      "description": "The loadShedding of the device"
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for oilLevel",
+      "properties": {
+        "chargeLevel": {
+          "type": "number",
+          "description": "The chargeLevel of the nested object"
+        },
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        },
+        "status": {
+          "type": "string",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

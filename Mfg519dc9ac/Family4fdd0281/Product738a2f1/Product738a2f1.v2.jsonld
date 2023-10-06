@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product738a2f1",
+  "description": "Product738a2f1 by Mfg519dc9ac",
+  "properties": {
+    "locationIdentifier": {
+      "type": "number",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "phase": {
+          "type": "object",
+          "description": "The phase of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

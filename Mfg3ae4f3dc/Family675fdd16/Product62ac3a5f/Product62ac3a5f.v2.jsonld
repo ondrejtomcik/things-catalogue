@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ac3a5f",
+  "description": "Product62ac3a5f by Mfg3ae4f3dc",
+  "properties": {
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        },
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "boolean",
+      "description": "The frequency of the device"
+    },
+    "inverterEfficiency": {
+      "type": "number",
+      "description": "The inverterEfficiency of the device"
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

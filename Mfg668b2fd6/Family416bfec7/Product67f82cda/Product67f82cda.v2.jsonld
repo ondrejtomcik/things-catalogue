@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67f82cda",
+  "description": "Product67f82cda by Mfg668b2fd6",
+  "properties": {
+    "earthResistance": {
+      "type": "object",
+      "description": "The earthResistance of the device",
+      "properties": {
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "string",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

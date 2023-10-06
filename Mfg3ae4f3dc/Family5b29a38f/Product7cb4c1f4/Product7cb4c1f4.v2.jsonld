@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7cb4c1f4",
+  "description": "Product7cb4c1f4 by Mfg3ae4f3dc",
+  "properties": {
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "number",
+      "description": "The insulationResistance of the device"
+    },
+    "latency": {
+      "type": "object",
+      "description": "The latency of the device",
+      "properties": {
+        "gridTieStatus": {
+          "type": "boolean",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "oilQuality": {
+          "type": "object",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

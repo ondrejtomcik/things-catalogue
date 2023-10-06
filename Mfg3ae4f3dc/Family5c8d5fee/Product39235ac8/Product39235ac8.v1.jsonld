@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39235ac8",
+  "description": "Product39235ac8 by Mfg3ae4f3dc",
+  "properties": {
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "latency": {
+          "type": "object",
+          "description": "The latency of the nested object"
+        },
+        "tripStatus": {
+          "type": "number",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

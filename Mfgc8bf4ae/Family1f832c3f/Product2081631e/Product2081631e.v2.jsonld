@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2081631e",
+  "description": "Product2081631e by Mfgc8bf4ae",
+  "properties": {
+    "assetID": {
+      "type": "boolean",
+      "description": "The assetID of the device"
+    },
+    "firmwareVersion": {
+      "type": "boolean",
+      "description": "The firmwareVersion of the device"
+    },
+    "neutralLoad": {
+      "type": "string",
+      "description": "The neutralLoad of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

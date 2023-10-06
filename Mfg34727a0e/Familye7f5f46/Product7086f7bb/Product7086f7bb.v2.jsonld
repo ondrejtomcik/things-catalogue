@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7086f7bb",
+  "description": "Product7086f7bb by Mfg34727a0e",
+  "properties": {
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "The oilQuality of the device",
+      "properties": {
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

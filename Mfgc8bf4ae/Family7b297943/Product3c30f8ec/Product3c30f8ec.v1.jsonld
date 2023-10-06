@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3c30f8ec",
+  "description": "Product3c30f8ec by Mfgc8bf4ae",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

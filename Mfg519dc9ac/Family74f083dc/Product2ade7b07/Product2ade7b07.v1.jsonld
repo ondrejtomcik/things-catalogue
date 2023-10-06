@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2ade7b07",
+  "description": "Product2ade7b07 by Mfg519dc9ac",
+  "properties": {
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "The lastInspectionDate of the device"
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        },
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5d3699ee",
+  "description": "Product5d3699ee by Mfgc8bf4ae",
+  "properties": {
+    "pressure": {
+      "type": "boolean",
+      "description": "The pressure of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "apparentPower": {
+          "type": "string",
+          "description": "The apparentPower of the nested object"
+        },
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

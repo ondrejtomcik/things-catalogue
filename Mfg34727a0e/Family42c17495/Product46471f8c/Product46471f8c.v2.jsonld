@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46471f8c",
+  "description": "Product46471f8c by Mfg34727a0e",
+  "properties": {
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "faultCode": {
+      "type": "boolean",
+      "description": "The faultCode of the device"
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "voltage": {
+      "type": "number",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

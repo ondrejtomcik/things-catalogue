@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b08b078",
+  "description": "Product7b08b078 by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "number",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "reactivePower": {
+          "type": "boolean",
+          "description": "The reactivePower of the nested object"
+        },
+        "varistorStatus": {
+          "type": "number",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "overloadIndicator": {
+          "type": "object",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "object",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

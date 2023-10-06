@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b08b078",
+  "description": "Product7b08b078 by Mfg519dc9ac",
+  "properties": {
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

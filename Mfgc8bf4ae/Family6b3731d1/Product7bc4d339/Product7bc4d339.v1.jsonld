@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bc4d339",
+  "description": "Product7bc4d339 by Mfgc8bf4ae",
+  "properties": {
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "assetID": {
+          "type": "boolean",
+          "description": "The assetID of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "object",
+          "description": "The synchronizationStatus of the nested object"
+        },
+        "volume": {
+          "type": "string",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "solarPanelHealth": {
+      "type": "number",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

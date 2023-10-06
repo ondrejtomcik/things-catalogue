@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product10513c0e",
+  "description": "Product10513c0e by Mfg668b2fd6",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "The circuitIdentifier of the device"
+    },
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

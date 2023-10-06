@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3c30f8ec",
+  "description": "Product3c30f8ec by Mfgc8bf4ae",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        }
+      }
+    },
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "diagnosticMessage": {
+      "type": "boolean",
+      "description": "The diagnosticMessage of the device"
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "The emergencyMode of the device",
+      "properties": {
+        "demandResponse": {
+          "type": "object",
+          "description": "The demandResponse of the nested object"
+        },
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productbff1fd8",
+  "description": "Productbff1fd8 by Mfg5b9b525f",
+  "properties": {
+    "altitude": {
+      "type": "object",
+      "description": "An object containing nested properties for altitude",
+      "properties": {
+        "remoteControlCapability": {
+          "type": "string",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "protectionSetpoint": {
+      "type": "string",
+      "description": "The protectionSetpoint of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "locationIdentifier": {
+          "type": "string",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "boolean",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

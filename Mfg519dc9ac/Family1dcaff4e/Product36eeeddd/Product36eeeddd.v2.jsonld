@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "The busbarLoad of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "The neutralLoad of the device",
+      "properties": {
+        "environmentalImpact": {
+          "type": "number",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "sf6Quality": {
+      "type": "string",
+      "description": "The sf6Quality of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "capacity": {
+          "type": "string",
+          "description": "The capacity of the nested object"
+        },
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

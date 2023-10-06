@@ -1,0 +1,88 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5d3699ee",
+  "description": "Product5d3699ee by Mfgc8bf4ae",
+  "properties": {
+    "altitude": {
+      "type": "number",
+      "description": "The altitude of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "The demandResponse of the device",
+      "properties": {
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "reactivePower": {
+          "type": "string",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "altitude": {
+          "type": "boolean",
+          "description": "The altitude of the nested object"
+        },
+        "speed": {
+          "type": "number",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for safetyRating",
+      "properties": {
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        },
+        "meterReading": {
+          "type": "number",
+          "description": "The meterReading of the nested object"
+        },
+        "tripStatus": {
+          "type": "string",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

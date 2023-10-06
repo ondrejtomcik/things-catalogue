@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product76d376e1",
+  "description": "Product76d376e1 by Mfg255a699d",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "The arcFlashRisk of the device",
+      "properties": {
+        "latency": {
+          "type": "number",
+          "description": "The latency of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "number",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "string",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

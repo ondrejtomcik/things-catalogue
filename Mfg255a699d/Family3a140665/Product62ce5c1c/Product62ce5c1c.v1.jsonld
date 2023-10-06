@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ce5c1c",
+  "description": "Product62ce5c1c by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "oilLevel": {
+          "type": "number",
+          "description": "The oilLevel of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "temperature": {
+          "type": "number",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "boolean",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

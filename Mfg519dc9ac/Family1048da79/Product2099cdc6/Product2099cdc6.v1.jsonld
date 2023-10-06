@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2099cdc6",
+  "description": "Product2099cdc6 by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "apparentPower": {
+      "type": "number",
+      "description": "The apparentPower of the device"
+    },
+    "current": {
+      "type": "number",
+      "description": "The current of the device"
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "The phase of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

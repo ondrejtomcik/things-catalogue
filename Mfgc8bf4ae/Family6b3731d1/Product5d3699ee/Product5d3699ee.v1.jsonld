@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5d3699ee",
+  "description": "Product5d3699ee by Mfgc8bf4ae",
+  "properties": {
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "chargeLevel": {
+      "type": "string",
+      "description": "The chargeLevel of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

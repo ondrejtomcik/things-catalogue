@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57d26319",
+  "description": "Product57d26319 by Mfg255a699d",
+  "properties": {
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "inductorHealth": {
+      "type": "boolean",
+      "description": "The inductorHealth of the device"
+    },
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product68c3699a",
+  "description": "Product68c3699a by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "breakerStatus": {
+      "type": "string",
+      "description": "The breakerStatus of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

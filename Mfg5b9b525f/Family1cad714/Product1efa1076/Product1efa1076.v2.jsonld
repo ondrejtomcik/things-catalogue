@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "activePower": {
+      "type": "string",
+      "description": "The activePower of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "protectionSetpoint": {
+      "type": "boolean",
+      "description": "The protectionSetpoint of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57d26319",
+  "description": "Product57d26319 by Mfg255a699d",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "busbarLoad": {
+          "type": "number",
+          "description": "The busbarLoad of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "string",
+      "description": "The phase of the device"
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        },
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

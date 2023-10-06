@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b52cc3f",
+  "description": "Product4b52cc3f by Mfg255a699d",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "gridStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridStatus",
+      "properties": {
+        "carbonEmission": {
+          "type": "object",
+          "description": "The carbonEmission of the nested object"
+        },
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        },
+        "relayStatus": {
+          "type": "number",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "boolean",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "number",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

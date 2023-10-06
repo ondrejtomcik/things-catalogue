@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product169ac5ae",
+  "description": "Product169ac5ae by Mfg519dc9ac",
+  "properties": {
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "string",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        },
+        "status": {
+          "type": "object",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "The totalTrips of the device",
+      "properties": {
+        "emergencyMode": {
+          "type": "boolean",
+          "description": "The emergencyMode of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        },
+        "speed": {
+          "type": "boolean",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

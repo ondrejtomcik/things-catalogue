@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7eaaa58a",
+  "description": "Product7eaaa58a by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "capacity": {
+          "type": "boolean",
+          "description": "The capacity of the nested object"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "inductorHealth": {
+          "type": "object",
+          "description": "The inductorHealth of the nested object"
+        },
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        },
+        "status": {
+          "type": "string",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "status": {
+      "type": "number",
+      "description": "The status of the device"
+    },
+    "waveformDistortion": {
+      "type": "string",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

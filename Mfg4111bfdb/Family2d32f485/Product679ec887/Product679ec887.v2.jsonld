@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product679ec887",
+  "description": "Product679ec887 by Mfg4111bfdb",
+  "properties": {
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "An object containing nested properties for tariffRate",
+      "properties": {
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        },
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        },
+        "operationalLog": {
+          "type": "object",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "frequency": {
+          "type": "boolean",
+          "description": "The frequency of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

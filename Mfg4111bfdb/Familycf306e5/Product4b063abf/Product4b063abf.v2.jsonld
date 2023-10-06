@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b063abf",
+  "description": "Product4b063abf by Mfg4111bfdb",
+  "properties": {
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "The capacitorHealth of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "oilQuality": {
+          "type": "string",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

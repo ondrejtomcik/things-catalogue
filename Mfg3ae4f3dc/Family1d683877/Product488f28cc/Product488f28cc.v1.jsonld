@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product488f28cc",
+  "description": "Product488f28cc by Mfg3ae4f3dc",
+  "properties": {
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product37ea357c",
+  "description": "Product37ea357c by Mfg4111bfdb",
+  "properties": {
+    "operationalMode": {
+      "type": "object",
+      "description": "The operationalMode of the device",
+      "properties": {
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    },
+    "solarPanelHealth": {
+      "type": "string",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

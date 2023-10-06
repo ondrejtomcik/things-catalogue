@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "boolean",
+      "description": "The circuitIdentifier of the device"
+    },
+    "humidity": {
+      "type": "number",
+      "description": "The humidity of the device"
+    },
+    "sf6Pressure": {
+      "type": "boolean",
+      "description": "The sf6Pressure of the device"
+    },
+    "volume": {
+      "type": "number",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

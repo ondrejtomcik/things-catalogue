@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75b14718",
+  "description": "Product75b14718 by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "current": {
+          "type": "string",
+          "description": "The current of the nested object"
+        },
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "object",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

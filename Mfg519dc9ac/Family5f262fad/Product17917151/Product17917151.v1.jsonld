@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product17917151",
+  "description": "Product17917151 by Mfg519dc9ac",
+  "properties": {
+    "feedDirection": {
+      "type": "boolean",
+      "description": "The feedDirection of the device"
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

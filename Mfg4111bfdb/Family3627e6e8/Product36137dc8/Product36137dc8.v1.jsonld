@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36137dc8",
+  "description": "Product36137dc8 by Mfg4111bfdb",
+  "properties": {
+    "faultIndicator": {
+      "type": "number",
+      "description": "The faultIndicator of the device"
+    },
+    "insulationResistance": {
+      "type": "number",
+      "description": "The insulationResistance of the device"
+    },
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "brightness": {
+          "type": "string",
+          "description": "The brightness of the nested object"
+        },
+        "demandResponse": {
+          "type": "number",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11c0d65e",
+  "description": "Product11c0d65e by Mfg4111bfdb",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "number",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "busbarLoad": {
+      "type": "number",
+      "description": "The busbarLoad of the device"
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

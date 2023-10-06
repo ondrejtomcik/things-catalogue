@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2ade7b07",
+  "description": "Product2ade7b07 by Mfg519dc9ac",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "number",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "remainingChargeTime": {
+      "type": "string",
+      "description": "The remainingChargeTime of the device"
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "The sf6Pressure of the device"
+    },
+    "temperature": {
+      "type": "boolean",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

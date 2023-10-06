@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73ccb03c",
+  "description": "Product73ccb03c by Mfg668b2fd6",
+  "properties": {
+    "locationIdentifier": {
+      "type": "string",
+      "description": "The locationIdentifier of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

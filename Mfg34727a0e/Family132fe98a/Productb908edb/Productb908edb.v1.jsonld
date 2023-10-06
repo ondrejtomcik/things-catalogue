@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb908edb",
+  "description": "Productb908edb by Mfg34727a0e",
+  "properties": {
+    "gridStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridStatus",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "boolean",
+      "description": "The protectionSetpoint of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "string",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "oilQuality": {
+          "type": "object",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5acd1270",
+  "description": "Product5acd1270 by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "boolean",
+      "description": "The assetID of the device"
+    },
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "emergencyMode": {
+      "type": "boolean",
+      "description": "The emergencyMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

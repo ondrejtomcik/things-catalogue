@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1e8c1b2f",
+  "description": "Product1e8c1b2f by Mfg5b9b525f",
+  "properties": {
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "number",
+          "description": "The diagnosticMessage of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

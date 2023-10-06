@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product74f6db43",
+  "description": "Product74f6db43 by Mfgc8bf4ae",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "number",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "boolean",
+      "description": "The gridStatus of the device"
+    },
+    "pressure": {
+      "type": "string",
+      "description": "The pressure of the device"
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "carbonEmission": {
+          "type": "object",
+          "description": "The carbonEmission of the nested object"
+        },
+        "uptime": {
+          "type": "number",
+          "description": "The uptime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

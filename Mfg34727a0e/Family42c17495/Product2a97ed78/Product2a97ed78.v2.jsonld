@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2a97ed78",
+  "description": "Product2a97ed78 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "number",
+      "description": "The capacity of the device"
+    },
+    "overloadIndicator": {
+      "type": "boolean",
+      "description": "The overloadIndicator of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "The safetyRating of the device",
+      "properties": {
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

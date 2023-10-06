@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product254b042e",
+  "description": "Product254b042e by Mfgc8bf4ae",
+  "properties": {
+    "carbonEmission": {
+      "type": "object",
+      "description": "An object containing nested properties for carbonEmission",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "phase": {
+      "type": "number",
+      "description": "The phase of the device"
+    },
+    "vibrationSensor": {
+      "type": "number",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

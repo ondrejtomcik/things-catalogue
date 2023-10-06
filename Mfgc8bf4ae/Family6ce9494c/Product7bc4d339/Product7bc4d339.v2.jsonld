@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bc4d339",
+  "description": "Product7bc4d339 by Mfgc8bf4ae",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "emergencyMode": {
+          "type": "boolean",
+          "description": "The emergencyMode of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "number",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "faultCode": {
+      "type": "object",
+      "description": "An object containing nested properties for faultCode",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "boolean",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "The waveformDistortion of the device",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "breakerStatus": {
+          "type": "string",
+          "description": "The breakerStatus of the nested object"
+        },
+        "phase": {
+          "type": "object",
+          "description": "The phase of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

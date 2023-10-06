@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2ade7b07",
+  "description": "Product2ade7b07 by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "boolean",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "assetID": {
+          "type": "object",
+          "description": "The assetID of the nested object"
+        },
+        "faultCode": {
+          "type": "boolean",
+          "description": "The faultCode of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "boolean",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

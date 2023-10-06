@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b08b078",
+  "description": "Product7b08b078 by Mfg519dc9ac",
+  "properties": {
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "The demandResponse of the device",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "number",
+      "description": "The remoteControlCapability of the device"
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

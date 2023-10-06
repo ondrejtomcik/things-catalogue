@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4318f0d0",
+  "description": "Product4318f0d0 by Mfgc8bf4ae",
+  "properties": {
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "battery": {
+          "type": "string",
+          "description": "The battery of the nested object"
+        },
+        "energyConsumption": {
+          "type": "object",
+          "description": "The energyConsumption of the nested object"
+        },
+        "powerFactor": {
+          "type": "boolean",
+          "description": "The powerFactor of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "number",
+      "description": "The demandResponse of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

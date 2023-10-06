@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75ac5ede",
+  "description": "Product75ac5ede by Mfg3ae4f3dc",
+  "properties": {
+    "communicationStatus": {
+      "type": "number",
+      "description": "The communicationStatus of the device"
+    },
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "string",
+      "description": "The oilLevel of the device"
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

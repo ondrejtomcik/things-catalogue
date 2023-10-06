@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7f0648de",
+  "description": "Product7f0648de by Mfg3ae4f3dc",
+  "properties": {
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "operationalHours": {
+          "type": "number",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Pressure",
+      "properties": {
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "meterReading": {
+          "type": "string",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

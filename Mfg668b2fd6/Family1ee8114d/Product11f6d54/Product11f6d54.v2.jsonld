@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11f6d54",
+  "description": "Product11f6d54 by Mfg668b2fd6",
+  "properties": {
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "operationalLog": {
+      "type": "number",
+      "description": "The operationalLog of the device"
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "The tariffRate of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

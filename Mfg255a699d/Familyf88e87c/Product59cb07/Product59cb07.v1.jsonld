@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product59cb07",
+  "description": "Product59cb07 by Mfg255a699d",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "string",
+      "description": "The arcFlashRisk of the device"
+    },
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "faultIndicator": {
+          "type": "number",
+          "description": "The faultIndicator of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "string",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

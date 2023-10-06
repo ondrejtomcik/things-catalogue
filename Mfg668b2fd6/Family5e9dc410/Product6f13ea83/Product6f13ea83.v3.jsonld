@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6f13ea83",
+  "description": "Product6f13ea83 by Mfg668b2fd6",
+  "properties": {
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device",
+      "properties": {
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "overloadIndicator": {
+          "type": "string",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

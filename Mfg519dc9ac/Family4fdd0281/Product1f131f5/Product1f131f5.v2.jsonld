@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1f131f5",
+  "description": "Product1f131f5 by Mfg519dc9ac",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "operationalMode": {
+          "type": "boolean",
+          "description": "The operationalMode of the nested object"
+        },
+        "varistorStatus": {
+          "type": "number",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        },
+        "relayStatus": {
+          "type": "string",
+          "description": "The relayStatus of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "string",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "boolean",
+      "description": "The operationalMode of the device"
+    },
+    "volume": {
+      "type": "string",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

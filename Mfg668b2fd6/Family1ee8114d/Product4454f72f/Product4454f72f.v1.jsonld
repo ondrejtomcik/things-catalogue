@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4454f72f",
+  "description": "Product4454f72f by Mfg668b2fd6",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "oilLevel": {
+          "type": "object",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    },
+    "diagnosticMessage": {
+      "type": "number",
+      "description": "The diagnosticMessage of the device"
+    },
+    "feedDirection": {
+      "type": "boolean",
+      "description": "The feedDirection of the device"
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "string",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        },
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

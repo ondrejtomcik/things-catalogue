@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product8f5e704",
+  "description": "Product8f5e704 by Mfg5b9b525f",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "number",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        },
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

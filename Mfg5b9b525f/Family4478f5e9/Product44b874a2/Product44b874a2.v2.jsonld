@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "activePower": {
+          "type": "object",
+          "description": "The activePower of the nested object"
+        },
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        },
+        "uptime": {
+          "type": "boolean",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

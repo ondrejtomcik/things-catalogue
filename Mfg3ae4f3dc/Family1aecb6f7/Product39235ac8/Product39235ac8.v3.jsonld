@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39235ac8",
+  "description": "Product39235ac8 by Mfg3ae4f3dc",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "fuelLevel": {
+      "type": "string",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "environmentalImpact": {
+          "type": "number",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "sf6Pressure": {
+          "type": "string",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "boolean",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

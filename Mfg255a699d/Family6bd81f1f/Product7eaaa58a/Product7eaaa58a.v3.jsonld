@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7eaaa58a",
+  "description": "Product7eaaa58a by Mfg255a699d",
+  "properties": {
+    "emergencyMode": {
+      "type": "number",
+      "description": "The emergencyMode of the device"
+    },
+    "energyConsumption": {
+      "type": "boolean",
+      "description": "The energyConsumption of the device"
+    },
+    "inductorHealth": {
+      "type": "boolean",
+      "description": "The inductorHealth of the device"
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "insulationResistance": {
+          "type": "boolean",
+          "description": "The insulationResistance of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        },
+        "temperature": {
+          "type": "object",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "boolean",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

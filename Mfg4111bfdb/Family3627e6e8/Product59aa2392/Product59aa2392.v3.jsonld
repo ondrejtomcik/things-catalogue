@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product59aa2392",
+  "description": "Product59aa2392 by Mfg4111bfdb",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "transformerLoad": {
+          "type": "object",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "inverterEfficiency": {
+      "type": "number",
+      "description": "The inverterEfficiency of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "The lastInspectionDate of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for oilLevel",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "operationalLog": {
+          "type": "object",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75ac5ede",
+  "description": "Product75ac5ede by Mfg3ae4f3dc",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

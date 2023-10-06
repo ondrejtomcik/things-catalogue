@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5444e95e",
+  "description": "Product5444e95e by Mfg34727a0e",
+  "properties": {
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "carbonEmission": {
+      "type": "object",
+      "description": "An object containing nested properties for carbonEmission",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "faultCode": {
+          "type": "number",
+          "description": "The faultCode of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

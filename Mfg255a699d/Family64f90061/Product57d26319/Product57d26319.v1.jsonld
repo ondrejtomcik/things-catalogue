@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57d26319",
+  "description": "Product57d26319 by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "number",
+      "description": "The assetID of the device"
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "operationalHours": {
+          "type": "object",
+          "description": "The operationalHours of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

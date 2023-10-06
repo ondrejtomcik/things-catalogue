@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "altitude": {
+      "type": "number",
+      "description": "The altitude of the device"
+    },
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "environmentalImpact": {
+          "type": "boolean",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "boolean",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "tariffRate": {
+          "type": "number",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "energyConsumption": {
+      "type": "boolean",
+      "description": "The energyConsumption of the device"
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        },
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

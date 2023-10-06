@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product249e3035",
+  "description": "Product249e3035 by Mfg668b2fd6",
+  "properties": {
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2b07bc70",
+  "description": "Product2b07bc70 by Mfgc8bf4ae",
+  "properties": {
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "vibrationSensor": {
+      "type": "boolean",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1b14c209",
+  "description": "Product1b14c209 by Mfg519dc9ac",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "breakerStatus": {
+      "type": "string",
+      "description": "The breakerStatus of the device"
+    },
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "locationIdentifier": {
+          "type": "string",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "string",
+      "description": "The oilQuality of the device"
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "capacitorHealth": {
+          "type": "object",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "number",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "boolean",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

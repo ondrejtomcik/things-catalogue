@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b8a0944",
+  "description": "Product7b8a0944 by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "boolean",
+      "description": "The assetID of the device"
+    },
+    "feedDirection": {
+      "type": "number",
+      "description": "The feedDirection of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

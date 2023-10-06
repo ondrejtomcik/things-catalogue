@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25e99e70",
+  "description": "Product25e99e70 by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "The assetID of the device"
+    },
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

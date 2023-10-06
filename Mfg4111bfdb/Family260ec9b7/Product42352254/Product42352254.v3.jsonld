@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product42352254",
+  "description": "Product42352254 by Mfg4111bfdb",
+  "properties": {
+    "chargeLevel": {
+      "type": "string",
+      "description": "The chargeLevel of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "object",
+          "description": "The solarPanelHealth of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "string",
+      "description": "The phase of the device"
+    },
+    "remoteControlCapability": {
+      "type": "boolean",
+      "description": "The remoteControlCapability of the device"
+    },
+    "temperature": {
+      "type": "boolean",
+      "description": "The temperature of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product9d5173a",
+  "description": "Product9d5173a by Mfg255a699d",
+  "properties": {
+    "chargeStatus": {
+      "type": "object",
+      "description": "The chargeStatus of the device",
+      "properties": {
+        "demandResponse": {
+          "type": "object",
+          "description": "The demandResponse of the nested object"
+        },
+        "diagnosticMessage": {
+          "type": "boolean",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "string",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

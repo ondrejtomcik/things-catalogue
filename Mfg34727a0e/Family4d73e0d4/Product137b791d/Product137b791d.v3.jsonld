@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product137b791d",
+  "description": "Product137b791d by Mfg34727a0e",
+  "properties": {
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "locationIdentifier": {
+          "type": "number",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "oilLevel": {
+      "type": "string",
+      "description": "The oilLevel of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "The operationalLog of the device",
+      "properties": {
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "string",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "string",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

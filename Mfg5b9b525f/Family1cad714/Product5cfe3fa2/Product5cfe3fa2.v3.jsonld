@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5cfe3fa2",
+  "description": "Product5cfe3fa2 by Mfg5b9b525f",
+  "properties": {
+    "fuelLevel": {
+      "type": "number",
+      "description": "The fuelLevel of the device"
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "faultIndicator": {
+          "type": "string",
+          "description": "The faultIndicator of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

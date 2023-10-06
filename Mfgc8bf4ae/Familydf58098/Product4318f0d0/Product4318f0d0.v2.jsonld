@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4318f0d0",
+  "description": "Product4318f0d0 by Mfgc8bf4ae",
+  "properties": {
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "circuitIdentifier": {
+          "type": "number",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "communicationStatus": {
+          "type": "number",
+          "description": "The communicationStatus of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "number",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

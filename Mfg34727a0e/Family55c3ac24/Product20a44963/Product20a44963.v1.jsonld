@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product20a44963",
+  "description": "Product20a44963 by Mfg34727a0e",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "energyConsumption": {
+          "type": "number",
+          "description": "The energyConsumption of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "boolean",
+      "description": "The energyConsumption of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "An object containing nested properties for frequency",
+      "properties": {
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        },
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "inductorHealth": {
+          "type": "boolean",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

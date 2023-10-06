@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productbff1fd8",
+  "description": "Productbff1fd8 by Mfg5b9b525f",
+  "properties": {
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

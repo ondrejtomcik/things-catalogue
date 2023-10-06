@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7f0648de",
+  "description": "Product7f0648de by Mfg3ae4f3dc",
+  "properties": {
+    "chargeLevel": {
+      "type": "string",
+      "description": "The chargeLevel of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "voltage": {
+          "type": "object",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

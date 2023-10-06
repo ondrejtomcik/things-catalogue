@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46471f8c",
+  "description": "Product46471f8c by Mfg34727a0e",
+  "properties": {
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "breakerStatus": {
+          "type": "number",
+          "description": "The breakerStatus of the nested object"
+        },
+        "relayStatus": {
+          "type": "object",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "transformerLoad": {
+          "type": "number",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product306228f",
+  "description": "Product306228f by Mfgc8bf4ae",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "string",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "The nextMaintenanceDate of the device",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        },
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        },
+        "oilQuality": {
+          "type": "boolean",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

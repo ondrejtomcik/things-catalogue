@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bd4b13c",
+  "description": "Product7bd4b13c by Mfg3ae4f3dc",
+  "properties": {
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "circuitIdentifier": {
+      "type": "string",
+      "description": "The circuitIdentifier of the device"
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

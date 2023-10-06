@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11c0d65e",
+  "description": "Product11c0d65e by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "faultCode": {
+          "type": "object",
+          "description": "The faultCode of the nested object"
+        },
+        "totalYield": {
+          "type": "number",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

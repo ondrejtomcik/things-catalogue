@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1f44f8d7",
+  "description": "Product1f44f8d7 by Mfgc8bf4ae",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "boolean",
+      "description": "The diagnosticMessage of the device"
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "An object containing nested properties for sf6Pressure",
+      "properties": {
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "number",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2099cdc6",
+  "description": "Product2099cdc6 by Mfg519dc9ac",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "The capacity of the device",
+      "properties": {
+        "connectorType": {
+          "type": "string",
+          "description": "The connectorType of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "insulationResistance": {
+      "type": "boolean",
+      "description": "The insulationResistance of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        },
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product38b66de5",
+  "description": "Product38b66de5 by Mfg668b2fd6",
+  "properties": {
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "connectorType": {
+          "type": "object",
+          "description": "The connectorType of the nested object"
+        },
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        },
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "varistorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for varistorStatus",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product38b66de5",
+  "description": "Product38b66de5 by Mfg668b2fd6",
+  "properties": {
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "An object containing nested properties for energyConsumption",
+      "properties": {
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "number",
+      "description": "The humidity of the device"
+    },
+    "protectionSetpoint": {
+      "type": "string",
+      "description": "The protectionSetpoint of the device"
+    },
+    "tariffRate": {
+      "type": "boolean",
+      "description": "The tariffRate of the device"
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

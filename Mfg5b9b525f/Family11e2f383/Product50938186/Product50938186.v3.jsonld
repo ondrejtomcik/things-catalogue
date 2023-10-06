@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product50938186",
+  "description": "Product50938186 by Mfg5b9b525f",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "harmonics": {
+      "type": "string",
+      "description": "The harmonics of the device"
+    },
+    "relayStatus": {
+      "type": "string",
+      "description": "The relayStatus of the device"
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Pressure",
+      "properties": {
+        "reactivePower": {
+          "type": "boolean",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

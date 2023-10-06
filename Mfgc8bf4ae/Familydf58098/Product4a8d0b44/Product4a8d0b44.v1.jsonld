@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a8d0b44",
+  "description": "Product4a8d0b44 by Mfgc8bf4ae",
+  "properties": {
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

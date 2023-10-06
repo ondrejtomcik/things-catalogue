@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b063abf",
+  "description": "Product4b063abf by Mfg4111bfdb",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "dataRate": {
+          "type": "boolean",
+          "description": "The dataRate of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "boolean",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    },
+    "latency": {
+      "type": "string",
+      "description": "The latency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

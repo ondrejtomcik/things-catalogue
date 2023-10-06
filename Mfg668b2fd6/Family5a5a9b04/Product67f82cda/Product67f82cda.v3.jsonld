@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67f82cda",
+  "description": "Product67f82cda by Mfg668b2fd6",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "assetID": {
+      "type": "number",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "efficiencyRating": {
+          "type": "boolean",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "pressure": {
+          "type": "object",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "object",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "speed": {
+          "type": "number",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "operationalHours": {
+      "type": "string",
+      "description": "The operationalHours of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        },
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "boolean",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

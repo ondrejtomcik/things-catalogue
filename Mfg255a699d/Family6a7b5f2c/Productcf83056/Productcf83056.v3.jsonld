@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productcf83056",
+  "description": "Productcf83056 by Mfg255a699d",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "The circuitIntegrity of the device"
+    },
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

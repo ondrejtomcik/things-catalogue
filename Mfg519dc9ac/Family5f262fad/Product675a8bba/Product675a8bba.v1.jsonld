@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product675a8bba",
+  "description": "Product675a8bba by Mfg519dc9ac",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "energyConsumption": {
+      "type": "number",
+      "description": "The energyConsumption of the device"
+    },
+    "tripStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for tripStatus",
+      "properties": {
+        "battery": {
+          "type": "boolean",
+          "description": "The battery of the nested object"
+        },
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

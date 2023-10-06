@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product8f5e704",
+  "description": "Product8f5e704 by Mfg5b9b525f",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "The breakerStatus of the device"
+    },
+    "carbonEmission": {
+      "type": "number",
+      "description": "The carbonEmission of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Pressure",
+      "properties": {
+        "demandResponse": {
+          "type": "string",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "boolean",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

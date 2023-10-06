@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11c0d65e",
+  "description": "Product11c0d65e by Mfg4111bfdb",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "lastInspectionDate": {
+      "type": "object",
+      "description": "An object containing nested properties for lastInspectionDate",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "speed": {
+          "type": "number",
+          "description": "The speed of the nested object"
+        },
+        "status": {
+          "type": "string",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "number",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

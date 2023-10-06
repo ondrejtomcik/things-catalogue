@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3042375c",
+  "description": "Product3042375c by Mfg3ae4f3dc",
+  "properties": {
+    "efficiencyRating": {
+      "type": "boolean",
+      "description": "The efficiencyRating of the device"
+    },
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "transformerLoad": {
+          "type": "object",
+          "description": "The transformerLoad of the nested object"
+        },
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "The reactivePower of the device",
+      "properties": {
+        "locationIdentifier": {
+          "type": "number",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "number",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "totalTrips": {
+          "type": "string",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "string",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

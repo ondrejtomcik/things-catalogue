@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product15d8c2e1",
+  "description": "Product15d8c2e1 by Mfg668b2fd6",
+  "properties": {
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "number",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "boolean",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "string",
+      "description": "The faultIndicator of the device"
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "string",
+      "description": "The phase of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

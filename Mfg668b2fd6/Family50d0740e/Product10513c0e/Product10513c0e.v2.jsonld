@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product10513c0e",
+  "description": "Product10513c0e by Mfg668b2fd6",
+  "properties": {
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "frequency": {
+          "type": "object",
+          "description": "The frequency of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "string",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "string",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

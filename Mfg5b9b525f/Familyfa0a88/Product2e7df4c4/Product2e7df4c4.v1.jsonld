@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e7df4c4",
+  "description": "Product2e7df4c4 by Mfg5b9b525f",
+  "properties": {
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "breakerStatus": {
+          "type": "object",
+          "description": "The breakerStatus of the nested object"
+        },
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "boolean",
+      "description": "The uptime of the device"
+    },
+    "voltage": {
+      "type": "string",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

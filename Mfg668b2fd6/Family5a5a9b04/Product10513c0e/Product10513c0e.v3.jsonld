@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product10513c0e",
+  "description": "Product10513c0e by Mfg668b2fd6",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "busbarLoad": {
+      "type": "number",
+      "description": "The busbarLoad of the device"
+    },
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "communicationStatus": {
+      "type": "number",
+      "description": "The communicationStatus of the device"
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

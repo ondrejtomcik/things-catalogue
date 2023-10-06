@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1b14c209",
+  "description": "Product1b14c209 by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "The brightness of the device",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "The busbarLoad of the device"
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "The energyConsumption of the device",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "tariffRate": {
+          "type": "number",
+          "description": "The tariffRate of the nested object"
+        },
+        "totalTrips": {
+          "type": "number",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "string",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

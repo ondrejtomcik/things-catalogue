@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5acd1270",
+  "description": "Product5acd1270 by Mfg255a699d",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    },
+    "waveformDistortion": {
+      "type": "number",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

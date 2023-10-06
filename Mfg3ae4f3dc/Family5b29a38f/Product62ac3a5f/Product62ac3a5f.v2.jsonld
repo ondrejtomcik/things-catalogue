@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ac3a5f",
+  "description": "Product62ac3a5f by Mfg3ae4f3dc",
+  "properties": {
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "insulationResistance": {
+      "type": "boolean",
+      "description": "The insulationResistance of the device"
+    },
+    "loadShedding": {
+      "type": "boolean",
+      "description": "The loadShedding of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

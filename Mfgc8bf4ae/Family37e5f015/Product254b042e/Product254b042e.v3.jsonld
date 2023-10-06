@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product254b042e",
+  "description": "Product254b042e by Mfgc8bf4ae",
+  "properties": {
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "chargeLevel": {
+      "type": "number",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "boolean",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "object",
+      "description": "The synchronizationStatus of the device",
+      "properties": {
+        "harmonics": {
+          "type": "string",
+          "description": "The harmonics of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

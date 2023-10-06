@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3042375c",
+  "description": "Product3042375c by Mfg3ae4f3dc",
+  "properties": {
+    "chargeLevel": {
+      "type": "string",
+      "description": "The chargeLevel of the device"
+    },
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "string",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "number",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "object",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "number",
+      "description": "The oilQuality of the device"
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

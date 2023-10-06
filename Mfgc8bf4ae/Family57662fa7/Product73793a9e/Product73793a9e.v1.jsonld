@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "energyConsumption": {
+      "type": "object",
+      "description": "An object containing nested properties for energyConsumption",
+      "properties": {
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "insulationResistance": {
+          "type": "boolean",
+          "description": "The insulationResistance of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "object",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    },
+    "volume": {
+      "type": "string",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

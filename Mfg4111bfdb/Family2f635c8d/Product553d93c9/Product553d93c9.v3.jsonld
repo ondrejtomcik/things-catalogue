@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product553d93c9",
+  "description": "Product553d93c9 by Mfg4111bfdb",
+  "properties": {
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

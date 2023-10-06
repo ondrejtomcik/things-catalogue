@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product59cb07",
+  "description": "Product59cb07 by Mfg255a699d",
+  "properties": {
+    "gridTieStatus": {
+      "type": "number",
+      "description": "The gridTieStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "The insulationResistance of the device",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "string",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "string",
+      "description": "The neutralLoad of the device"
+    },
+    "totalTrips": {
+      "type": "number",
+      "description": "The totalTrips of the device"
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

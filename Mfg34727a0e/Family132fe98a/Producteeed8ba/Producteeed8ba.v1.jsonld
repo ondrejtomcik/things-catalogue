@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteeed8ba",
+  "description": "Producteeed8ba by Mfg34727a0e",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupBatteryStatus",
+      "properties": {
+        "assetID": {
+          "type": "object",
+          "description": "The assetID of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "number",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "tripStatus": {
+          "type": "string",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "operationalMode": {
+          "type": "number",
+          "description": "The operationalMode of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "boolean",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

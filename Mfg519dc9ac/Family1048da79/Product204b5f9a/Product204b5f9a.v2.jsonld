@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product204b5f9a",
+  "description": "Product204b5f9a by Mfg519dc9ac",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "object",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalMode",
+      "properties": {
+        "altitude": {
+          "type": "number",
+          "description": "The altitude of the nested object"
+        },
+        "faultCode": {
+          "type": "object",
+          "description": "The faultCode of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "number",
+      "description": "The powerFactor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

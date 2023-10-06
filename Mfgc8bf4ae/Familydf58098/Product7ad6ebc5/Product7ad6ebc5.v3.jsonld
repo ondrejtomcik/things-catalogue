@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7ad6ebc5",
+  "description": "Product7ad6ebc5 by Mfgc8bf4ae",
+  "properties": {
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "feedDirection": {
+      "type": "object",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        },
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "object",
+      "description": "The synchronizationStatus of the device",
+      "properties": {
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "string",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        }
+      }
+    },
+    "volume": {
+      "type": "string",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67b2908f",
+  "description": "Product67b2908f by Mfg519dc9ac",
+  "properties": {
+    "emergencyMode": {
+      "type": "number",
+      "description": "The emergencyMode of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "string",
+      "description": "The powerFactor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

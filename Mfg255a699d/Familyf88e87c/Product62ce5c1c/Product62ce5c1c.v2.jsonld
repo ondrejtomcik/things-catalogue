@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ce5c1c",
+  "description": "Product62ce5c1c by Mfg255a699d",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "solarPanelHealth": {
+          "type": "number",
+          "description": "The solarPanelHealth of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "object",
+      "description": "The faultIndicator of the device",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "string",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

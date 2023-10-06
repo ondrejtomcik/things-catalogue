@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product43199a3d",
+  "description": "Product43199a3d by Mfgc8bf4ae",
+  "properties": {
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "current": {
+      "type": "boolean",
+      "description": "The current of the device"
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "string",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

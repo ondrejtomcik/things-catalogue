@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product532c15e0",
+  "description": "Product532c15e0 by Mfg4111bfdb",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "The status of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

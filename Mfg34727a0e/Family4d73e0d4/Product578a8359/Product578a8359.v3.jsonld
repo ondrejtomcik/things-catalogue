@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product578a8359",
+  "description": "Product578a8359 by Mfg34727a0e",
+  "properties": {
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "renewableSourceInput": {
+      "type": "boolean",
+      "description": "The renewableSourceInput of the device"
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

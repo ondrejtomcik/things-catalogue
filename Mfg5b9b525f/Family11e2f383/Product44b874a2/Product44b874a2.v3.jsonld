@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "loadShedding": {
+      "type": "number",
+      "description": "The loadShedding of the device"
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    },
+    "voltage": {
+      "type": "boolean",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

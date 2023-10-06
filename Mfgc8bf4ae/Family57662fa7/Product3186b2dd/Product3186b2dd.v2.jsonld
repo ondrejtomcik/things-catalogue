@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3186b2dd",
+  "description": "Product3186b2dd by Mfgc8bf4ae",
+  "properties": {
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

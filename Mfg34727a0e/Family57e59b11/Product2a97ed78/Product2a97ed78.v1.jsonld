@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2a97ed78",
+  "description": "Product2a97ed78 by Mfg34727a0e",
+  "properties": {
+    "breakerStatus": {
+      "type": "string",
+      "description": "The breakerStatus of the device"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "number",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "object",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "The phase of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

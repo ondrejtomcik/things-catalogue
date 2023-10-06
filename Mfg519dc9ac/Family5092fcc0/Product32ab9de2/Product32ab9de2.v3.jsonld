@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product32ab9de2",
+  "description": "Product32ab9de2 by Mfg519dc9ac",
+  "properties": {
+    "dataRate": {
+      "type": "boolean",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "object",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "faultCode": {
+      "type": "number",
+      "description": "An object containing nested properties for faultCode",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "boolean",
+          "description": "The environmentalImpact of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "boolean",
+      "description": "The locationIdentifier of the device"
+    },
+    "oilQuality": {
+      "type": "string",
+      "description": "The oilQuality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

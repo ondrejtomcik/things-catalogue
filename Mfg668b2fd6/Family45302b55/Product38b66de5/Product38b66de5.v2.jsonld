@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product38b66de5",
+  "description": "Product38b66de5 by Mfg668b2fd6",
+  "properties": {
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "object",
+          "description": "The backupGeneratorStatus of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "boolean",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

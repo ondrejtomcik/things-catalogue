@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57d26319",
+  "description": "Product57d26319 by Mfg255a699d",
+  "properties": {
+    "inductorHealth": {
+      "type": "string",
+      "description": "The inductorHealth of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "The oilLevel of the device",
+      "properties": {
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        },
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

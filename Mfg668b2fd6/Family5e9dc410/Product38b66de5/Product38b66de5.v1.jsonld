@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product38b66de5",
+  "description": "Product38b66de5 by Mfg668b2fd6",
+  "properties": {
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "carbonEmission": {
+          "type": "string",
+          "description": "The carbonEmission of the nested object"
+        },
+        "tariffRate": {
+          "type": "object",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

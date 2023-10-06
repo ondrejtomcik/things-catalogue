@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product77c9c0bd",
+  "description": "Product77c9c0bd by Mfg668b2fd6",
+  "properties": {
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "string",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "volume": {
+          "type": "string",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "feedDirection": {
+          "type": "number",
+          "description": "The feedDirection of the nested object"
+        },
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "The protectionSetpoint of the device",
+      "properties": {
+        "tripStatus": {
+          "type": "boolean",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

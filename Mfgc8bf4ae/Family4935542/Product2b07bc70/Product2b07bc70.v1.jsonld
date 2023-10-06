@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2b07bc70",
+  "description": "Product2b07bc70 by Mfgc8bf4ae",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "battery": {
+      "type": "boolean",
+      "description": "The battery of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "The lastInspectionDate of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "oilQuality": {
+          "type": "string",
+          "description": "The oilQuality of the nested object"
+        },
+        "relayStatus": {
+          "type": "object",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

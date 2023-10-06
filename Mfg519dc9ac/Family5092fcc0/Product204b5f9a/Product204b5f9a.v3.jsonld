@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product204b5f9a",
+  "description": "Product204b5f9a by Mfg519dc9ac",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "number",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        },
+        "totalTrips": {
+          "type": "string",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "gridTieStatus": {
+          "type": "string",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "number",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "string",
+      "description": "The powerFactor of the device"
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "boolean",
+      "description": "The safetyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

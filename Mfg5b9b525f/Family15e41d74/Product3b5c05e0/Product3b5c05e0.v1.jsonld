@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b5c05e0",
+  "description": "Product3b5c05e0 by Mfg5b9b525f",
+  "properties": {
+    "apparentPower": {
+      "type": "string",
+      "description": "The apparentPower of the device"
+    },
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        },
+        "reactivePower": {
+          "type": "boolean",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

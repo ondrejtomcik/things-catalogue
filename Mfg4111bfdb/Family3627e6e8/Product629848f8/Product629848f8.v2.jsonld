@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product629848f8",
+  "description": "Product629848f8 by Mfg4111bfdb",
+  "properties": {
+    "energyConsumption": {
+      "type": "string",
+      "description": "The energyConsumption of the device"
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

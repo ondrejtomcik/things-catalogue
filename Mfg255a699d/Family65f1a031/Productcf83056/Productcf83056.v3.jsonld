@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productcf83056",
+  "description": "Productcf83056 by Mfg255a699d",
+  "properties": {
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "chargeLevel": {
+      "type": "string",
+      "description": "The chargeLevel of the device"
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "frequency": {
+      "type": "boolean",
+      "description": "The frequency of the device"
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "string",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product79d2ee68",
+  "description": "Product79d2ee68 by Mfg3ae4f3dc",
+  "properties": {
+    "capacitorHealth": {
+      "type": "string",
+      "description": "The capacitorHealth of the device"
+    },
+    "diagnosticMessage": {
+      "type": "object",
+      "description": "The diagnosticMessage of the device",
+      "properties": {
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "assetID": {
+          "type": "boolean",
+          "description": "The assetID of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "string",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "number",
+      "description": "The inverterEfficiency of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    },
+    "protectionSetpoint": {
+      "type": "object",
+      "description": "An object containing nested properties for protectionSetpoint",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        },
+        "harmonics": {
+          "type": "string",
+          "description": "The harmonics of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "object",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

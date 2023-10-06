@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2aeac5ad",
+  "description": "Product2aeac5ad by Mfg519dc9ac",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "dataRate": {
+      "type": "number",
+      "description": "The dataRate of the device"
+    },
+    "feedDirection": {
+      "type": "boolean",
+      "description": "The feedDirection of the device"
+    },
+    "renewableSourceInput": {
+      "type": "boolean",
+      "description": "The renewableSourceInput of the device"
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product20a44963",
+  "description": "Product20a44963 by Mfg34727a0e",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "object",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "current": {
+          "type": "number",
+          "description": "The current of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "string",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "string",
+      "description": "The fuelLevel of the device"
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "The gridTieStatus of the device",
+      "properties": {
+        "capacity": {
+          "type": "boolean",
+          "description": "The capacity of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "object",
+      "description": "An object containing nested properties for manualOverride",
+      "properties": {
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        },
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

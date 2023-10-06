@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product249e3035",
+  "description": "Product249e3035 by Mfg668b2fd6",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "busbarLoad": {
+          "type": "number",
+          "description": "The busbarLoad of the nested object"
+        },
+        "dataRate": {
+          "type": "string",
+          "description": "The dataRate of the nested object"
+        }
+      }
+    },
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "insulationResistance": {
+      "type": "boolean",
+      "description": "The insulationResistance of the device"
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "operationalLog": {
+      "type": "boolean",
+      "description": "The operationalLog of the device"
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

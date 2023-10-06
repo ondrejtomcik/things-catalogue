@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4b52cc3f",
+  "description": "Product4b52cc3f by Mfg255a699d",
+  "properties": {
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "The capacitorHealth of the device"
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        },
+        "thermalSensor": {
+          "type": "number",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "demandResponse": {
+          "type": "object",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

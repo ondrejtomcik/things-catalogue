@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product31d7bf06",
+  "description": "Product31d7bf06 by Mfg3ae4f3dc",
+  "properties": {
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "number",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "inductorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for inductorHealth",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "object",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "object",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "environmentalImpact": {
+          "type": "object",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "tripStatus": {
+          "type": "boolean",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "number",
+      "description": "The protectionSetpoint of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

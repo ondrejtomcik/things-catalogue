@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product74f6db43",
+  "description": "Product74f6db43 by Mfgc8bf4ae",
+  "properties": {
+    "demandResponse": {
+      "type": "string",
+      "description": "The demandResponse of the device"
+    },
+    "feedDirection": {
+      "type": "number",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        },
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "string",
+      "description": "The harmonics of the device"
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "operationalHours": {
+          "type": "string",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

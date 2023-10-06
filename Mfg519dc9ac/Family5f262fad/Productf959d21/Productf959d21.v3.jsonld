@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "firmwareVersion": {
+      "type": "boolean",
+      "description": "The firmwareVersion of the device"
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        },
+        "faultIndicator": {
+          "type": "number",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

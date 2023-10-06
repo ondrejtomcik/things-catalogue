@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7c482cc6",
+  "description": "Product7c482cc6 by Mfg519dc9ac",
+  "properties": {
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

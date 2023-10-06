@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dbad594",
+  "description": "Product6dbad594 by Mfg34727a0e",
+  "properties": {
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "groundingStatus": {
+          "type": "boolean",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "object",
+      "description": "An object containing nested properties for oilQuality",
+      "properties": {
+        "demandResponse": {
+          "type": "object",
+          "description": "The demandResponse of the nested object"
+        },
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "The reactivePower of the device"
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "latency": {
+          "type": "number",
+          "description": "The latency of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "totalYield": {
+      "type": "object",
+      "description": "An object containing nested properties for totalYield",
+      "properties": {
+        "oilLevel": {
+          "type": "object",
+          "description": "The oilLevel of the nested object"
+        },
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

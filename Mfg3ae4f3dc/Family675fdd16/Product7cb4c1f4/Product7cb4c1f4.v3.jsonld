@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7cb4c1f4",
+  "description": "Product7cb4c1f4 by Mfg3ae4f3dc",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "humidity": {
+      "type": "number",
+      "description": "The humidity of the device"
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "tariffRate": {
+      "type": "object",
+      "description": "An object containing nested properties for tariffRate",
+      "properties": {
+        "altitude": {
+          "type": "boolean",
+          "description": "The altitude of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

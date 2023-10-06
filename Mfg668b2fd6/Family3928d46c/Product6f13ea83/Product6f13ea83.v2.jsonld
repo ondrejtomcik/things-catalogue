@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6f13ea83",
+  "description": "Product6f13ea83 by Mfg668b2fd6",
+  "properties": {
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "battery": {
+          "type": "number",
+          "description": "The battery of the nested object"
+        }
+      }
+    },
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "The circuitIntegrity of the device"
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "voltage": {
+      "type": "boolean",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

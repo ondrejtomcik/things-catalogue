@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e5f7bc6",
+  "description": "Product2e5f7bc6 by Mfg255a699d",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "current": {
+          "type": "string",
+          "description": "The current of the nested object"
+        },
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        },
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "backupGeneratorStatus": {
+      "type": "boolean",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "boolean",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

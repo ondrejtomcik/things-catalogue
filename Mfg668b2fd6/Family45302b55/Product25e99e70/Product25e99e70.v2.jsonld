@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25e99e70",
+  "description": "Product25e99e70 by Mfg668b2fd6",
+  "properties": {
+    "demandResponse": {
+      "type": "number",
+      "description": "The demandResponse of the device"
+    },
+    "renewableSourceInput": {
+      "type": "number",
+      "description": "The renewableSourceInput of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "string",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "varistorStatus": {
+          "type": "number",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

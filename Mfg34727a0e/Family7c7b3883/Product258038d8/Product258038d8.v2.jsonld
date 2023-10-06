@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product258038d8",
+  "description": "Product258038d8 by Mfg34727a0e",
+  "properties": {
+    "carbonEmission": {
+      "type": "string",
+      "description": "The carbonEmission of the device"
+    },
+    "current": {
+      "type": "object",
+      "description": "The current of the device",
+      "properties": {
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "breakerStatus": {
+          "type": "number",
+          "description": "The breakerStatus of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "string",
+      "description": "The maintenanceStatus of the device"
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

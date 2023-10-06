@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a058efa",
+  "description": "Product4a058efa by Mfg3ae4f3dc",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "firmwareVersion": {
+          "type": "object",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

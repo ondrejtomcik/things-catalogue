@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product32ab9de2",
+  "description": "Product32ab9de2 by Mfg519dc9ac",
+  "properties": {
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "The transformerLoad of the device",
+      "properties": {
+        "altitude": {
+          "type": "object",
+          "description": "The altitude of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "object",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "neutralLoad": {
+          "type": "string",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

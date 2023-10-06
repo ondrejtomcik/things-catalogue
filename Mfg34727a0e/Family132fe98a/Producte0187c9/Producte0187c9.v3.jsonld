@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producte0187c9",
+  "description": "Producte0187c9 by Mfg34727a0e",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "activePower": {
+          "type": "string",
+          "description": "The activePower of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "inverterEfficiency": {
+      "type": "number",
+      "description": "The inverterEfficiency of the device"
+    },
+    "pressure": {
+      "type": "object",
+      "description": "The pressure of the device",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "number",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4197b221",
+  "description": "Product4197b221 by Mfg3ae4f3dc",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "altitude": {
+          "type": "number",
+          "description": "The altitude of the nested object"
+        }
+      }
+    },
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

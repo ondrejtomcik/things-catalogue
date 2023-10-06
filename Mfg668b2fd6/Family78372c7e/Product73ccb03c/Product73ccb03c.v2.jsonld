@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73ccb03c",
+  "description": "Product73ccb03c by Mfg668b2fd6",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "number",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "meterReading": {
+          "type": "number",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "The faultIndicator of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "current": {
+          "type": "boolean",
+          "description": "The current of the nested object"
+        },
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "inductorHealth": {
+          "type": "boolean",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "string",
+      "description": "The remoteControlCapability of the device"
+    },
+    "solarPanelHealth": {
+      "type": "string",
+      "description": "The solarPanelHealth of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

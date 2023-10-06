@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product54bffcc0",
+  "description": "Product54bffcc0 by Mfg4111bfdb",
+  "properties": {
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "operationalMode": {
+      "type": "object",
+      "description": "The operationalMode of the device",
+      "properties": {
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "emergencyMode": {
+          "type": "object",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

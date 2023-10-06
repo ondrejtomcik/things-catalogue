@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4197b221",
+  "description": "Product4197b221 by Mfg3ae4f3dc",
+  "properties": {
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "manualOverride": {
+      "type": "string",
+      "description": "The manualOverride of the device"
+    },
+    "totalYield": {
+      "type": "string",
+      "description": "The totalYield of the device"
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

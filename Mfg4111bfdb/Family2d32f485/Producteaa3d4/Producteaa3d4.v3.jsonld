@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteaa3d4",
+  "description": "Producteaa3d4 by Mfg4111bfdb",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "An object containing nested properties for energyConsumption",
+      "properties": {
+        "operationalLog": {
+          "type": "string",
+          "description": "The operationalLog of the nested object"
+        },
+        "tripStatus": {
+          "type": "string",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "feedDirection": {
+      "type": "string",
+      "description": "The feedDirection of the device"
+    },
+    "manualOverride": {
+      "type": "boolean",
+      "description": "The manualOverride of the device"
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    },
+    "vibrationSensor": {
+      "type": "number",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product485e0f2c",
+  "description": "Product485e0f2c by Mfg4111bfdb",
+  "properties": {
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "dataRate": {
+      "type": "string",
+      "description": "The dataRate of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "meterReading": {
+          "type": "number",
+          "description": "The meterReading of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "number",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "operationalLog": {
+          "type": "object",
+          "description": "The operationalLog of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "object",
+          "description": "The overloadIndicator of the nested object"
+        }
+      }
+    },
+    "varistorStatus": {
+      "type": "number",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dfa2ee5",
+  "description": "Product6dfa2ee5 by Mfg4111bfdb",
+  "properties": {
+    "emergencyMode": {
+      "type": "number",
+      "description": "The emergencyMode of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

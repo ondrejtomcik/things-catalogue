@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73ccb03c",
+  "description": "Product73ccb03c by Mfg668b2fd6",
+  "properties": {
+    "feedDirection": {
+      "type": "string",
+      "description": "An object containing nested properties for feedDirection",
+      "properties": {
+        "brightness": {
+          "type": "object",
+          "description": "The brightness of the nested object"
+        },
+        "feedDirection": {
+          "type": "string",
+          "description": "The feedDirection of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "string",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2aeac5ad",
+  "description": "Product2aeac5ad by Mfg519dc9ac",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "object",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "The inverterEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

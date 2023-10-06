@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product44b874a2",
+  "description": "Product44b874a2 by Mfg5b9b525f",
+  "properties": {
+    "fuelLevel": {
+      "type": "string",
+      "description": "The fuelLevel of the device"
+    },
+    "neutralLoad": {
+      "type": "string",
+      "description": "The neutralLoad of the device"
+    },
+    "remoteControlCapability": {
+      "type": "string",
+      "description": "The remoteControlCapability of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "breakerStatus": {
+          "type": "object",
+          "description": "The breakerStatus of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    },
+    "varistorStatus": {
+      "type": "string",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

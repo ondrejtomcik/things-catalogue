@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product61115c67",
+  "description": "Product61115c67 by Mfg255a699d",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "frequency": {
+          "type": "object",
+          "description": "The frequency of the nested object"
+        },
+        "operationalLog": {
+          "type": "boolean",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "boolean",
+      "description": "The totalTrips of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

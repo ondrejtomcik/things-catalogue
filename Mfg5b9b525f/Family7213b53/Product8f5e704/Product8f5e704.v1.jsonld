@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product8f5e704",
+  "description": "Product8f5e704 by Mfg5b9b525f",
+  "properties": {
+    "dataRate": {
+      "type": "number",
+      "description": "The dataRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

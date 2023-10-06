@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product747a201c",
+  "description": "Product747a201c by Mfg34727a0e",
+  "properties": {
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "The waveformDistortion of the device",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "boolean",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

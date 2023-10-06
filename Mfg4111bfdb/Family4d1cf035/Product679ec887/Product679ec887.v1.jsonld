@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product679ec887",
+  "description": "Product679ec887 by Mfg4111bfdb",
+  "properties": {
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "reactivePower": {
+      "type": "object",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "apparentPower": {
+          "type": "boolean",
+          "description": "The apparentPower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

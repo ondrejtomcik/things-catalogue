@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product8f5e704",
+  "description": "Product8f5e704 by Mfg5b9b525f",
+  "properties": {
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        },
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "The faultIndicator of the device"
+    },
+    "reactivePower": {
+      "type": "boolean",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "number",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "status": {
+          "type": "number",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

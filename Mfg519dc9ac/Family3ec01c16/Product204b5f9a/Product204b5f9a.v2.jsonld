@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product204b5f9a",
+  "description": "Product204b5f9a by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "earthResistance": {
+          "type": "object",
+          "description": "The earthResistance of the nested object"
+        },
+        "efficiencyRating": {
+          "type": "string",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

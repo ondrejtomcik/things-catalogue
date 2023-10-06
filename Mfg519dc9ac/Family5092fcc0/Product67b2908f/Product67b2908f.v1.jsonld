@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67b2908f",
+  "description": "Product67b2908f by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "earthResistance": {
+      "type": "string",
+      "description": "The earthResistance of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

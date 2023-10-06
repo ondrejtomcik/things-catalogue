@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57eae573",
+  "description": "Product57eae573 by Mfg5b9b525f",
+  "properties": {
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    },
+    "volume": {
+      "type": "string",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

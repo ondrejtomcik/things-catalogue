@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e61c7ea",
+  "description": "Product7e61c7ea by Mfg668b2fd6",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "circuitIdentifier": {
+      "type": "number",
+      "description": "The circuitIdentifier of the device"
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    },
+    "oilLevel": {
+      "type": "number",
+      "description": "The oilLevel of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "The transformerLoad of the device",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        },
+        "demandResponse": {
+          "type": "number",
+          "description": "The demandResponse of the nested object"
+        },
+        "gridStatus": {
+          "type": "object",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

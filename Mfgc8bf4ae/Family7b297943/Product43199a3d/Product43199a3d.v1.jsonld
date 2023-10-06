@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product43199a3d",
+  "description": "Product43199a3d by Mfgc8bf4ae",
+  "properties": {
+    "faultIndicator": {
+      "type": "boolean",
+      "description": "The faultIndicator of the device"
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "altitude": {
+          "type": "string",
+          "description": "The altitude of the nested object"
+        },
+        "oilLevel": {
+          "type": "number",
+          "description": "The oilLevel of the nested object"
+        },
+        "status": {
+          "type": "number",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "capacity": {
+          "type": "string",
+          "description": "The capacity of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "string",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

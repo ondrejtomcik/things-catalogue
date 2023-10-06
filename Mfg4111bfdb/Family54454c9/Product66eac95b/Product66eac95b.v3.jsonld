@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product66eac95b",
+  "description": "Product66eac95b by Mfg4111bfdb",
+  "properties": {
+    "carbonEmission": {
+      "type": "object",
+      "description": "An object containing nested properties for carbonEmission",
+      "properties": {
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        },
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        },
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "activePower": {
+          "type": "object",
+          "description": "The activePower of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        },
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

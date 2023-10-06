@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4454f72f",
+  "description": "Product4454f72f by Mfg668b2fd6",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "battery": {
+          "type": "object",
+          "description": "The battery of the nested object"
+        },
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        }
+      }
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

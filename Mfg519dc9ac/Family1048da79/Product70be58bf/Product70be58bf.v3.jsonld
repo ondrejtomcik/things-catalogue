@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product70be58bf",
+  "description": "Product70be58bf by Mfg519dc9ac",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "pressure": {
+          "type": "object",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "number",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "frequency": {
+          "type": "boolean",
+          "description": "The frequency of the nested object"
+        },
+        "temperature": {
+          "type": "boolean",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

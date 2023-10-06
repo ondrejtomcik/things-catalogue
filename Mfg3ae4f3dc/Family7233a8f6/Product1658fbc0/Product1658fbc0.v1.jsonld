@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1658fbc0",
+  "description": "Product1658fbc0 by Mfg3ae4f3dc",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupBatteryStatus",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "object",
+          "description": "The backupBatteryStatus of the nested object"
+        }
+      }
+    },
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "gridTieStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for gridTieStatus",
+      "properties": {
+        "frequency": {
+          "type": "object",
+          "description": "The frequency of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

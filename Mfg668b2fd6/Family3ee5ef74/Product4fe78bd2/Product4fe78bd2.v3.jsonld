@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4fe78bd2",
+  "description": "Product4fe78bd2 by Mfg668b2fd6",
+  "properties": {
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "The frequency of the device",
+      "properties": {
+        "communicationStatus": {
+          "type": "number",
+          "description": "The communicationStatus of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        },
+        "tariffRate": {
+          "type": "number",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

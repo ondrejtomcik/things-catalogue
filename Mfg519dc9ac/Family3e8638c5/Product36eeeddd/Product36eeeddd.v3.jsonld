@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "dataRate": {
+      "type": "boolean",
+      "description": "The dataRate of the device"
+    },
+    "environmentalImpact": {
+      "type": "number",
+      "description": "The environmentalImpact of the device"
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "object",
+      "description": "The surgeProtectorStatus of the device",
+      "properties": {
+        "assetID": {
+          "type": "boolean",
+          "description": "The assetID of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

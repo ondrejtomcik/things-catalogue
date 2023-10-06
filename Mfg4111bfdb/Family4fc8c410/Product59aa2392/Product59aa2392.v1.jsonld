@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product59aa2392",
+  "description": "Product59aa2392 by Mfg4111bfdb",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "boolean",
+      "description": "The arcFlashRisk of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "sf6Pressure": {
+          "type": "object",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "transformerLoad": {
+          "type": "number",
+          "description": "The transformerLoad of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "object",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

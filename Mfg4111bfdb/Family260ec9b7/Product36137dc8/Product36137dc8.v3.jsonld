@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36137dc8",
+  "description": "Product36137dc8 by Mfg4111bfdb",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "humidity": {
+          "type": "string",
+          "description": "The humidity of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "string",
+          "description": "The remoteControlCapability of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "boolean",
+      "description": "The safetyRating of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "The thermalSensor of the device",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "temperature": {
+          "type": "boolean",
+          "description": "The temperature of the nested object"
+        },
+        "totalYield": {
+          "type": "string",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

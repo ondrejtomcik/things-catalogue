@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3353154d",
+  "description": "Product3353154d by Mfg3ae4f3dc",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "feedDirection": {
+          "type": "boolean",
+          "description": "The feedDirection of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "object",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "tariffRate": {
+          "type": "string",
+          "description": "The tariffRate of the nested object"
+        },
+        "voltage": {
+          "type": "string",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "The lastInspectionDate of the device"
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "string",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

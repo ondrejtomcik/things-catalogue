@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product306228f",
+  "description": "Product306228f by Mfgc8bf4ae",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "An object containing nested properties for capacity",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    },
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "neutralLoad": {
+      "type": "string",
+      "description": "The neutralLoad of the device"
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    },
+    "remoteControlCapability": {
+      "type": "string",
+      "description": "The remoteControlCapability of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "thermalSensor": {
+          "type": "number",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

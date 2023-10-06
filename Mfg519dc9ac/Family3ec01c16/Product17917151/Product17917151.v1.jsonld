@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product17917151",
+  "description": "Product17917151 by Mfg519dc9ac",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "environmentalImpact": {
+          "type": "number",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "frequency": {
+          "type": "boolean",
+          "description": "The frequency of the nested object"
+        },
+        "safetyRating": {
+          "type": "number",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "operationalMode": {
+          "type": "number",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

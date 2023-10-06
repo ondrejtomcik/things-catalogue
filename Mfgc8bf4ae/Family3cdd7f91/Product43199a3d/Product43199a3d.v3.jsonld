@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product43199a3d",
+  "description": "Product43199a3d by Mfgc8bf4ae",
+  "properties": {
+    "chargeLevel": {
+      "type": "boolean",
+      "description": "The chargeLevel of the device"
+    },
+    "circuitIntegrity": {
+      "type": "string",
+      "description": "The circuitIntegrity of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "diagnosticMessage": {
+          "type": "number",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "The solarPanelHealth of the device",
+      "properties": {
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        },
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "boolean",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

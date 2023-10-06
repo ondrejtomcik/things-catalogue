@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e7df4c4",
+  "description": "Product2e7df4c4 by Mfg5b9b525f",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "frequency": {
+          "type": "number",
+          "description": "The frequency of the nested object"
+        },
+        "overloadIndicator": {
+          "type": "string",
+          "description": "The overloadIndicator of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "boolean",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "locationIdentifier": {
+          "type": "object",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "boolean",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "energyConsumption": {
+          "type": "object",
+          "description": "The energyConsumption of the nested object"
+        },
+        "inductorHealth": {
+          "type": "string",
+          "description": "The inductorHealth of the nested object"
+        },
+        "safetyRating": {
+          "type": "string",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "string",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

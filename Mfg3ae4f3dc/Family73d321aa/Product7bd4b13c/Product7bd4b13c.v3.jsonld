@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bd4b13c",
+  "description": "Product7bd4b13c by Mfg3ae4f3dc",
+  "properties": {
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "inductorHealth": {
+      "type": "boolean",
+      "description": "The inductorHealth of the device"
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "An object containing nested properties for remoteControlCapability",
+      "properties": {
+        "faultCode": {
+          "type": "object",
+          "description": "The faultCode of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product5d3699ee",
+  "description": "Product5d3699ee by Mfgc8bf4ae",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "totalTrips": {
+          "type": "string",
+          "description": "The totalTrips of the nested object"
+        },
+        "uptime": {
+          "type": "string",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "backupBatteryStatus": {
+      "type": "boolean",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "capacitorHealth": {
+      "type": "number",
+      "description": "The capacitorHealth of the device"
+    },
+    "gridTieStatus": {
+      "type": "boolean",
+      "description": "The gridTieStatus of the device"
+    },
+    "tripStatus": {
+      "type": "string",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3c30f8ec",
+  "description": "Product3c30f8ec by Mfgc8bf4ae",
+  "properties": {
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

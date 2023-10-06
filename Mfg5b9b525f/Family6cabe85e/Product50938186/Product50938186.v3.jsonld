@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product50938186",
+  "description": "Product50938186 by Mfg5b9b525f",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "environmentalImpact": {
+      "type": "object",
+      "description": "An object containing nested properties for environmentalImpact",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "boolean",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "transformerLoad": {
+      "type": "number",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

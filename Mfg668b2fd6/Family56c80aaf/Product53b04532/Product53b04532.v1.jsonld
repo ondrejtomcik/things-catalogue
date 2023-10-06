@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53b04532",
+  "description": "Product53b04532 by Mfg668b2fd6",
+  "properties": {
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "inductorHealth": {
+          "type": "number",
+          "description": "The inductorHealth of the nested object"
+        },
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "boolean",
+      "description": "The speed of the device"
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "The thermalSensor of the device"
+    },
+    "waveformDistortion": {
+      "type": "number",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

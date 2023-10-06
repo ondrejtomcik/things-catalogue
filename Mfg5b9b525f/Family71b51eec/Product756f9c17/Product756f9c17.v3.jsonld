@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product756f9c17",
+  "description": "Product756f9c17 by Mfg5b9b525f",
+  "properties": {
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "communicationStatus": {
+          "type": "object",
+          "description": "The communicationStatus of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        },
+        "meterReading": {
+          "type": "number",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "efficiencyRating": {
+      "type": "string",
+      "description": "The efficiencyRating of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "insulationResistance": {
+          "type": "number",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "uptime": {
+      "type": "boolean",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

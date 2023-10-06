@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product682d723c",
+  "description": "Product682d723c by Mfg668b2fd6",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "brightness": {
+          "type": "string",
+          "description": "The brightness of the nested object"
+        },
+        "harmonics": {
+          "type": "string",
+          "description": "The harmonics of the nested object"
+        },
+        "totalTrips": {
+          "type": "boolean",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "boolean",
+      "description": "The loadShedding of the device"
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "breakerStatus": {
+          "type": "boolean",
+          "description": "The breakerStatus of the nested object"
+        },
+        "varistorStatus": {
+          "type": "number",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

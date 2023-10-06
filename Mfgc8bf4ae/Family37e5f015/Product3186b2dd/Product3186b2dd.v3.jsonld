@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3186b2dd",
+  "description": "Product3186b2dd by Mfgc8bf4ae",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "energyConsumption": {
+          "type": "boolean",
+          "description": "The energyConsumption of the nested object"
+        },
+        "humidity": {
+          "type": "string",
+          "description": "The humidity of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "string",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "boolean",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "latency": {
+          "type": "string",
+          "description": "The latency of the nested object"
+        },
+        "safetyRating": {
+          "type": "boolean",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "The thermalSensor of the device",
+      "properties": {
+        "reactivePower": {
+          "type": "boolean",
+          "description": "The reactivePower of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

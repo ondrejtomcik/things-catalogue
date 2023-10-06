@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product756f9c17",
+  "description": "Product756f9c17 by Mfg5b9b525f",
+  "properties": {
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "boolean",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "loadShedding": {
+          "type": "number",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "string",
+      "description": "The overloadIndicator of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

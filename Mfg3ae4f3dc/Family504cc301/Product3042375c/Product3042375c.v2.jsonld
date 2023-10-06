@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3042375c",
+  "description": "Product3042375c by Mfg3ae4f3dc",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "operationalMode": {
+          "type": "number",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "boolean",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

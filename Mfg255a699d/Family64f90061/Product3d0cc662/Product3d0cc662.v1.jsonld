@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3d0cc662",
+  "description": "Product3d0cc662 by Mfg255a699d",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "An object containing nested properties for current",
+      "properties": {
+        "dataRate": {
+          "type": "number",
+          "description": "The dataRate of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "boolean",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "number",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "number",
+      "description": "The loadShedding of the device"
+    },
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "The surgeProtectorStatus of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "demandResponse": {
+          "type": "boolean",
+          "description": "The demandResponse of the nested object"
+        },
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11c0d65e",
+  "description": "Product11c0d65e by Mfg4111bfdb",
+  "properties": {
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "capacitorHealth": {
+      "type": "number",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        },
+        "thermalSensor": {
+          "type": "object",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "number",
+      "description": "The gridStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1658fbc0",
+  "description": "Product1658fbc0 by Mfg3ae4f3dc",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "The busbarLoad of the device",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        }
+      }
+    },
+    "faultIndicator": {
+      "type": "number",
+      "description": "The faultIndicator of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "An object containing nested properties for frequency",
+      "properties": {
+        "connectorType": {
+          "type": "string",
+          "description": "The connectorType of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "boolean",
+          "description": "The sf6Pressure of the nested object"
+        },
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

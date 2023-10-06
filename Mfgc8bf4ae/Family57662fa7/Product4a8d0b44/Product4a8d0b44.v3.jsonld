@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4a8d0b44",
+  "description": "Product4a8d0b44 by Mfgc8bf4ae",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "demandResponse": {
+          "type": "boolean",
+          "description": "The demandResponse of the nested object"
+        }
+      }
+    },
+    "insulationResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for insulationResistance",
+      "properties": {
+        "battery": {
+          "type": "number",
+          "description": "The battery of the nested object"
+        },
+        "faultIndicator": {
+          "type": "number",
+          "description": "The faultIndicator of the nested object"
+        },
+        "operationalMode": {
+          "type": "boolean",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    },
+    "voltage": {
+      "type": "string",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

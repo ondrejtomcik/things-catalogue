@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product67b2908f",
+  "description": "Product67b2908f by Mfg519dc9ac",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "emergencyMode": {
+          "type": "number",
+          "description": "The emergencyMode of the nested object"
+        },
+        "operationalMode": {
+          "type": "boolean",
+          "description": "The operationalMode of the nested object"
+        },
+        "temperature": {
+          "type": "object",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

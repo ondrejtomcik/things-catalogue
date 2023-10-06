@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product679ec887",
+  "description": "Product679ec887 by Mfg4111bfdb",
+  "properties": {
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "totalYield": {
+      "type": "boolean",
+      "description": "The totalYield of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "faultIndicator": {
+          "type": "string",
+          "description": "The faultIndicator of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "operationalHours": {
+          "type": "boolean",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

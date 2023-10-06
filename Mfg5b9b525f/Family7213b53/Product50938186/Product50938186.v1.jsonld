@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product50938186",
+  "description": "Product50938186 by Mfg5b9b525f",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "An object containing nested properties for energyConsumption",
+      "properties": {
+        "busbarLoad": {
+          "type": "number",
+          "description": "The busbarLoad of the nested object"
+        },
+        "operationalMode": {
+          "type": "boolean",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "overloadIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for overloadIndicator",
+      "properties": {
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        },
+        "totalTrips": {
+          "type": "object",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "carbonEmission": {
+          "type": "number",
+          "description": "The carbonEmission of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

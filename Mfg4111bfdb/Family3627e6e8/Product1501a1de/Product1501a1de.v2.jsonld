@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1501a1de",
+  "description": "Product1501a1de by Mfg4111bfdb",
+  "properties": {
+    "inductorHealth": {
+      "type": "object",
+      "description": "The inductorHealth of the device",
+      "properties": {
+        "busbarLoad": {
+          "type": "boolean",
+          "description": "The busbarLoad of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "string",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

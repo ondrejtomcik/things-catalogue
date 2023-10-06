@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product70be58bf",
+  "description": "Product70be58bf by Mfg519dc9ac",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "The assetID of the device",
+      "properties": {
+        "sf6Quality": {
+          "type": "boolean",
+          "description": "The sf6Quality of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "number",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "diagnosticMessage": {
+          "type": "object",
+          "description": "The diagnosticMessage of the nested object"
+        },
+        "transformerLoad": {
+          "type": "number",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "string",
+      "description": "The renewableSourceInput of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11f6d54",
+  "description": "Product11f6d54 by Mfg668b2fd6",
+  "properties": {
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "string",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

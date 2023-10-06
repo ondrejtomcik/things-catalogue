@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product578a8359",
+  "description": "Product578a8359 by Mfg34727a0e",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "oilQuality": {
+      "type": "string",
+      "description": "The oilQuality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

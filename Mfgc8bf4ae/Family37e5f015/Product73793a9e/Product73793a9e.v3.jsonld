@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "inverterEfficiency": {
+      "type": "string",
+      "description": "The inverterEfficiency of the device"
+    },
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        }
+      }
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "tariffRate": {
+      "type": "object",
+      "description": "An object containing nested properties for tariffRate",
+      "properties": {
+        "meterReading": {
+          "type": "object",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

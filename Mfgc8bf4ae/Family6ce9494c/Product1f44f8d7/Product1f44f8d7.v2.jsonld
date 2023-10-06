@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1f44f8d7",
+  "description": "Product1f44f8d7 by Mfgc8bf4ae",
+  "properties": {
+    "gridTieStatus": {
+      "type": "object",
+      "description": "The gridTieStatus of the device",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "number",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "assetID": {
+          "type": "string",
+          "description": "The assetID of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "number",
+      "description": "The operationalLog of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "phase": {
+      "type": "number",
+      "description": "The phase of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "The remainingChargeTime of the device",
+      "properties": {
+        "altitude": {
+          "type": "number",
+          "description": "The altitude of the nested object"
+        },
+        "oilQuality": {
+          "type": "object",
+          "description": "The oilQuality of the nested object"
+        },
+        "temperature": {
+          "type": "object",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "number",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "number",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

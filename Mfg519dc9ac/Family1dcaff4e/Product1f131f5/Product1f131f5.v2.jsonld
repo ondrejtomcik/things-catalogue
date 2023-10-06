@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1f131f5",
+  "description": "Product1f131f5 by Mfg519dc9ac",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "current": {
+          "type": "number",
+          "description": "The current of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "The status of the device",
+      "properties": {
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

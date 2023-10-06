@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b2ddd04",
+  "description": "Product3b2ddd04 by Mfg34727a0e",
+  "properties": {
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "oilQuality": {
+          "type": "boolean",
+          "description": "The oilQuality of the nested object"
+        },
+        "varistorStatus": {
+          "type": "object",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

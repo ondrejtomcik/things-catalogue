@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product384c576a",
+  "description": "Product384c576a by Mfg5b9b525f",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "assetID": {
+          "type": "object",
+          "description": "The assetID of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "object",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "speed": {
+          "type": "boolean",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

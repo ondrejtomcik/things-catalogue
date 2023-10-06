@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb908edb",
+  "description": "Productb908edb by Mfg34727a0e",
+  "properties": {
+    "earthResistance": {
+      "type": "object",
+      "description": "The earthResistance of the device",
+      "properties": {
+        "oilLevel": {
+          "type": "object",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "object",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

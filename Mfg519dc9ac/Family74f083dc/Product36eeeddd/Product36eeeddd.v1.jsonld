@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "circuitIntegrity": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIntegrity",
+      "properties": {
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        },
+        "frequency": {
+          "type": "boolean",
+          "description": "The frequency of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "number",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "energyConsumption": {
+          "type": "object",
+          "description": "The energyConsumption of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    },
+    "transformerLoad": {
+      "type": "string",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3b2ddd04",
+  "description": "Product3b2ddd04 by Mfg34727a0e",
+  "properties": {
+    "breakerStatus": {
+      "type": "string",
+      "description": "The breakerStatus of the device"
+    },
+    "communicationStatus": {
+      "type": "number",
+      "description": "The communicationStatus of the device"
+    },
+    "frequency": {
+      "type": "number",
+      "description": "The frequency of the device"
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        },
+        "operationalHours": {
+          "type": "string",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "string",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

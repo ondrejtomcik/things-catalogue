@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2aeac5ad",
+  "description": "Product2aeac5ad by Mfg519dc9ac",
+  "properties": {
+    "brightness": {
+      "type": "number",
+      "description": "The brightness of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "object",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "number",
+      "description": "The harmonics of the device"
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "reactivePower": {
+      "type": "string",
+      "description": "The reactivePower of the device"
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

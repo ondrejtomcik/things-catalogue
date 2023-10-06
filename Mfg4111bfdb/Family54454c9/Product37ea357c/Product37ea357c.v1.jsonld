@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product37ea357c",
+  "description": "Product37ea357c by Mfg4111bfdb",
+  "properties": {
+    "busbarLoad": {
+      "type": "string",
+      "description": "The busbarLoad of the device"
+    },
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "surgeProtectorStatus": {
+          "type": "number",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "totalYield": {
+          "type": "string",
+          "description": "The totalYield of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "boolean",
+      "description": "The transformerLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

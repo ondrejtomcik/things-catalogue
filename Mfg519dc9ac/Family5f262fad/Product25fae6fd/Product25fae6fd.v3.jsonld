@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25fae6fd",
+  "description": "Product25fae6fd by Mfg519dc9ac",
+  "properties": {
+    "inverterEfficiency": {
+      "type": "boolean",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "emergencyMode": {
+          "type": "object",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "pressure": {
+      "type": "number",
+      "description": "The pressure of the device"
+    },
+    "uptime": {
+      "type": "object",
+      "description": "An object containing nested properties for uptime",
+      "properties": {
+        "environmentalImpact": {
+          "type": "number",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "sf6Quality": {
+          "type": "number",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

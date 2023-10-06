@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product73793a9e",
+  "description": "Product73793a9e by Mfgc8bf4ae",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "demandResponse": {
+      "type": "string",
+      "description": "The demandResponse of the device"
+    },
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    },
+    "maintenanceStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for maintenanceStatus",
+      "properties": {
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "current": {
+          "type": "string",
+          "description": "The current of the nested object"
+        },
+        "meterReading": {
+          "type": "string",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product60a563b4",
+  "description": "Product60a563b4 by Mfg519dc9ac",
+  "properties": {
+    "firmwareVersion": {
+      "type": "string",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "sf6Quality": {
+          "type": "number",
+          "description": "The sf6Quality of the nested object"
+        },
+        "solarPanelHealth": {
+          "type": "boolean",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "gridStatus": {
+      "type": "string",
+      "description": "The gridStatus of the device"
+    },
+    "meterReading": {
+      "type": "object",
+      "description": "An object containing nested properties for meterReading",
+      "properties": {
+        "current": {
+          "type": "object",
+          "description": "The current of the nested object"
+        },
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

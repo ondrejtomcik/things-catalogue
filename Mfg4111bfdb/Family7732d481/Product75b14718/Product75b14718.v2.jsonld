@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75b14718",
+  "description": "Product75b14718 by Mfg4111bfdb",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "The breakerStatus of the device"
+    },
+    "capacitorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "connectorType": {
+          "type": "string",
+          "description": "The connectorType of the nested object"
+        },
+        "insulationResistance": {
+          "type": "object",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "feedDirection": {
+      "type": "boolean",
+      "description": "The feedDirection of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

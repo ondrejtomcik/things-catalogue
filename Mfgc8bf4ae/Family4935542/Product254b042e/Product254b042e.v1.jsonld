@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product254b042e",
+  "description": "Product254b042e by Mfgc8bf4ae",
+  "properties": {
+    "latency": {
+      "type": "object",
+      "description": "An object containing nested properties for latency",
+      "properties": {
+        "connectorType": {
+          "type": "number",
+          "description": "The connectorType of the nested object"
+        },
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

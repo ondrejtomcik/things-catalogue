@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "number",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "activePower": {
+          "type": "number",
+          "description": "The activePower of the nested object"
+        },
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    },
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "The operationalLog of the device",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "boolean",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "number",
+      "description": "The relayStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

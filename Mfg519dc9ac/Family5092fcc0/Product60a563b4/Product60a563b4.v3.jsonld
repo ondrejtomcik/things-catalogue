@@ -1,0 +1,68 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product60a563b4",
+  "description": "Product60a563b4 by Mfg519dc9ac",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        },
+        "latency": {
+          "type": "boolean",
+          "description": "The latency of the nested object"
+        },
+        "tripStatus": {
+          "type": "object",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "circuitIdentifier": {
+      "type": "string",
+      "description": "The circuitIdentifier of the device"
+    },
+    "inductorHealth": {
+      "type": "object",
+      "description": "The inductorHealth of the device",
+      "properties": {
+        "oilQuality": {
+          "type": "number",
+          "description": "The oilQuality of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    },
+    "tariffRate": {
+      "type": "string",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

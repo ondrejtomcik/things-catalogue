@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product306228f",
+  "description": "Product306228f by Mfgc8bf4ae",
+  "properties": {
+    "current": {
+      "type": "boolean",
+      "description": "The current of the device"
+    },
+    "locationIdentifier": {
+      "type": "string",
+      "description": "The locationIdentifier of the device"
+    },
+    "oilLevel": {
+      "type": "object",
+      "description": "The oilLevel of the device",
+      "properties": {
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "powerFactor": {
+          "type": "object",
+          "description": "The powerFactor of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "boolean",
+      "description": "The relayStatus of the device"
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

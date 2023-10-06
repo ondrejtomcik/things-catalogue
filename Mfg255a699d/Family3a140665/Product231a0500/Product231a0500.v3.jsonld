@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product231a0500",
+  "description": "Product231a0500 by Mfg255a699d",
+  "properties": {
+    "chargeStatus": {
+      "type": "boolean",
+      "description": "The chargeStatus of the device"
+    },
+    "demandResponse": {
+      "type": "string",
+      "description": "The demandResponse of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "The inverterEfficiency of the device",
+      "properties": {
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        },
+        "status": {
+          "type": "object",
+          "description": "The status of the nested object"
+        },
+        "voltage": {
+          "type": "boolean",
+          "description": "The voltage of the nested object"
+        }
+      }
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

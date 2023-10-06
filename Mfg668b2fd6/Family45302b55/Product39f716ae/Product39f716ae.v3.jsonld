@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39f716ae",
+  "description": "Product39f716ae by Mfg668b2fd6",
+  "properties": {
+    "demandResponse": {
+      "type": "object",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "string",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "earthResistance": {
+          "type": "number",
+          "description": "The earthResistance of the nested object"
+        }
+      }
+    },
+    "diagnosticMessage": {
+      "type": "object",
+      "description": "An object containing nested properties for diagnosticMessage",
+      "properties": {
+        "powerFactor": {
+          "type": "boolean",
+          "description": "The powerFactor of the nested object"
+        },
+        "reactivePower": {
+          "type": "object",
+          "description": "The reactivePower of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "object",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    },
+    "earthResistance": {
+      "type": "object",
+      "description": "An object containing nested properties for earthResistance",
+      "properties": {
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "humidity": {
+          "type": "string",
+          "description": "The humidity of the nested object"
+        },
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "energyConsumption": {
+      "type": "number",
+      "description": "The energyConsumption of the device"
+    },
+    "locationIdentifier": {
+      "type": "number",
+      "description": "The locationIdentifier of the device"
+    },
+    "operationalHours": {
+      "type": "boolean",
+      "description": "The operationalHours of the device"
+    },
+    "synchronizationStatus": {
+      "type": "number",
+      "description": "The synchronizationStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

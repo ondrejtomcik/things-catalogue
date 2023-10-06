@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6f13ea83",
+  "description": "Product6f13ea83 by Mfg668b2fd6",
+  "properties": {
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "faultCode": {
+      "type": "object",
+      "description": "An object containing nested properties for faultCode",
+      "properties": {
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "maintenanceStatus": {
+      "type": "boolean",
+      "description": "The maintenanceStatus of the device"
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "number",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

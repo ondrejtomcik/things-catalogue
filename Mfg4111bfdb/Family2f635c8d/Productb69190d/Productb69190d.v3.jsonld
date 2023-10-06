@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productb69190d",
+  "description": "Productb69190d by Mfg4111bfdb",
+  "properties": {
+    "battery": {
+      "type": "number",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "loadShedding": {
+          "type": "object",
+          "description": "The loadShedding of the nested object"
+        },
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    },
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "breakerStatus": {
+          "type": "boolean",
+          "description": "The breakerStatus of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "object",
+      "description": "The lastInspectionDate of the device",
+      "properties": {
+        "apparentPower": {
+          "type": "string",
+          "description": "The apparentPower of the nested object"
+        },
+        "capacity": {
+          "type": "string",
+          "description": "The capacity of the nested object"
+        },
+        "faultCode": {
+          "type": "number",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "number",
+      "description": "The manualOverride of the device"
+    },
+    "tripStatus": {
+      "type": "boolean",
+      "description": "The tripStatus of the device"
+    },
+    "volume": {
+      "type": "number",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2099cdc6",
+  "description": "Product2099cdc6 by Mfg519dc9ac",
+  "properties": {
+    "backupGeneratorStatus": {
+      "type": "string",
+      "description": "The backupGeneratorStatus of the device"
+    },
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "faultIndicator": {
+      "type": "number",
+      "description": "The faultIndicator of the device"
+    },
+    "powerFactor": {
+      "type": "object",
+      "description": "An object containing nested properties for powerFactor",
+      "properties": {
+        "totalTrips": {
+          "type": "number",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

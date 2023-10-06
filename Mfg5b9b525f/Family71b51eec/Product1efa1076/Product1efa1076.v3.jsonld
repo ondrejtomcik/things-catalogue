@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1efa1076",
+  "description": "Product1efa1076 by Mfg5b9b525f",
+  "properties": {
+    "harmonics": {
+      "type": "object",
+      "description": "An object containing nested properties for harmonics",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "object",
+          "description": "The backupGeneratorStatus of the nested object"
+        }
+      }
+    },
+    "protectionSetpoint": {
+      "type": "string",
+      "description": "The protectionSetpoint of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "The volume of the device",
+      "properties": {
+        "latency": {
+          "type": "number",
+          "description": "The latency of the nested object"
+        },
+        "oilQuality": {
+          "type": "boolean",
+          "description": "The oilQuality of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "boolean",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

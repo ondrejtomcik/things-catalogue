@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "environmentalImpact": {
+      "type": "number",
+      "description": "The environmentalImpact of the device"
+    },
+    "neutralLoad": {
+      "type": "boolean",
+      "description": "The neutralLoad of the device"
+    },
+    "operationalHours": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalHours",
+      "properties": {
+        "solarPanelHealth": {
+          "type": "string",
+          "description": "The solarPanelHealth of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "boolean",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

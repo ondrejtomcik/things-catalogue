@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product42352254",
+  "description": "Product42352254 by Mfg4111bfdb",
+  "properties": {
+    "breakerStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "transformerLoad": {
+          "type": "boolean",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "object",
+      "description": "The latency of the device",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "frequency": {
+          "type": "number",
+          "description": "The frequency of the nested object"
+        }
+      }
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "surgeProtectorStatus": {
+      "type": "string",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "current": {
+          "type": "number",
+          "description": "The current of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "object",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

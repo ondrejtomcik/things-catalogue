@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7b8a0944",
+  "description": "Product7b8a0944 by Mfg255a699d",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "The capacitorHealth of the device",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "boolean",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "faultIndicator": {
+          "type": "object",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "chargeLevel": {
+          "type": "boolean",
+          "description": "The chargeLevel of the nested object"
+        },
+        "sf6Pressure": {
+          "type": "number",
+          "description": "The sf6Pressure of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "speed": {
+      "type": "object",
+      "description": "An object containing nested properties for speed",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "oilLevel": {
+          "type": "number",
+          "description": "The oilLevel of the nested object"
+        },
+        "pressure": {
+          "type": "object",
+          "description": "The pressure of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

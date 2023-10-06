@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product195f5898",
+  "description": "Product195f5898 by Mfg3ae4f3dc",
+  "properties": {
+    "insulationResistance": {
+      "type": "string",
+      "description": "The insulationResistance of the device"
+    },
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "boolean",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "feedDirection": {
+          "type": "boolean",
+          "description": "The feedDirection of the nested object"
+        },
+        "fuelLevel": {
+          "type": "number",
+          "description": "The fuelLevel of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1f44f8d7",
+  "description": "Product1f44f8d7 by Mfgc8bf4ae",
+  "properties": {
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    },
+    "overloadIndicator": {
+      "type": "number",
+      "description": "The overloadIndicator of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

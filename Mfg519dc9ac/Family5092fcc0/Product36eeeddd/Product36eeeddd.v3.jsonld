@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product36eeeddd",
+  "description": "Product36eeeddd by Mfg519dc9ac",
+  "properties": {
+    "chargeLevel": {
+      "type": "number",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "phase": {
+          "type": "number",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "string",
+      "description": "The manualOverride of the device"
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    },
+    "temperature": {
+      "type": "string",
+      "description": "The temperature of the device"
+    },
+    "varistorStatus": {
+      "type": "boolean",
+      "description": "The varistorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

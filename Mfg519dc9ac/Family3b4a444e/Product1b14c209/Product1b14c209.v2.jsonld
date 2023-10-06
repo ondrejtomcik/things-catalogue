@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1b14c209",
+  "description": "Product1b14c209 by Mfg519dc9ac",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "The chargeLevel of the device",
+      "properties": {
+        "altitude": {
+          "type": "object",
+          "description": "The altitude of the nested object"
+        },
+        "connectorType": {
+          "type": "boolean",
+          "description": "The connectorType of the nested object"
+        },
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "operationalMode": {
+      "type": "number",
+      "description": "The operationalMode of the device"
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "The sf6Pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

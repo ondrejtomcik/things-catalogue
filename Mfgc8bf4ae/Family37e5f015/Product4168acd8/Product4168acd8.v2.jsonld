@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4168acd8",
+  "description": "Product4168acd8 by Mfgc8bf4ae",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "The breakerStatus of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        },
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "string",
+      "description": "The reactivePower of the device"
+    },
+    "uptime": {
+      "type": "string",
+      "description": "The uptime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

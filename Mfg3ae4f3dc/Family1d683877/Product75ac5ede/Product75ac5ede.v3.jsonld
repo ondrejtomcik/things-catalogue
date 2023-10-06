@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product75ac5ede",
+  "description": "Product75ac5ede by Mfg3ae4f3dc",
+  "properties": {
+    "activePower": {
+      "type": "string",
+      "description": "The activePower of the device"
+    },
+    "altitude": {
+      "type": "string",
+      "description": "The altitude of the device"
+    },
+    "battery": {
+      "type": "object",
+      "description": "An object containing nested properties for battery",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "inductorHealth": {
+          "type": "number",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "meterReading": {
+      "type": "boolean",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

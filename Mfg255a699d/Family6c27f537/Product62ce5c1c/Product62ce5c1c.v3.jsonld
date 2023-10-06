@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ce5c1c",
+  "description": "Product62ce5c1c by Mfg255a699d",
+  "properties": {
+    "assetID": {
+      "type": "string",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "safetyRating": {
+          "type": "object",
+          "description": "The safetyRating of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "object",
+      "description": "An object containing nested properties for humidity",
+      "properties": {
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "object",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "phase": {
+          "type": "boolean",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "number",
+      "description": "The thermalSensor of the device"
+    },
+    "windTurbineEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for windTurbineEfficiency",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "operationalHours": {
+          "type": "number",
+          "description": "The operationalHours of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

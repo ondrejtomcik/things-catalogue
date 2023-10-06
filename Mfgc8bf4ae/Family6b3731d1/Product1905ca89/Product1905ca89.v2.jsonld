@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1905ca89",
+  "description": "Product1905ca89 by Mfgc8bf4ae",
+  "properties": {
+    "overloadIndicator": {
+      "type": "number",
+      "description": "The overloadIndicator of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "brightness": {
+          "type": "string",
+          "description": "The brightness of the nested object"
+        },
+        "sf6Quality": {
+          "type": "boolean",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product11f6d54",
+  "description": "Product11f6d54 by Mfg668b2fd6",
+  "properties": {
+    "environmentalImpact": {
+      "type": "object",
+      "description": "An object containing nested properties for environmentalImpact",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "number",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "faultCode": {
+          "type": "boolean",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "object",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

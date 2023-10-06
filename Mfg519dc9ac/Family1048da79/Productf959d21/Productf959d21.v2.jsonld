@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "chargeStatus": {
+      "type": "string",
+      "description": "The chargeStatus of the device"
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "groundingStatus": {
+      "type": "number",
+      "description": "The groundingStatus of the device"
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "thermalSensor": {
+          "type": "number",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "boolean",
+      "description": "The phase of the device"
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

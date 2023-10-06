@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46b5f9c2",
+  "description": "Product46b5f9c2 by Mfg255a699d",
+  "properties": {
+    "battery": {
+      "type": "object",
+      "description": "The battery of the device",
+      "properties": {
+        "transformerLoad": {
+          "type": "object",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    },
+    "vibrationSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for vibrationSensor",
+      "properties": {
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        },
+        "varistorStatus": {
+          "type": "number",
+          "description": "The varistorStatus of the nested object"
+        },
+        "volume": {
+          "type": "number",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

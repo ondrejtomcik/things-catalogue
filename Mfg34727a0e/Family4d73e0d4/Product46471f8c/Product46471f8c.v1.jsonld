@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46471f8c",
+  "description": "Product46471f8c by Mfg34727a0e",
+  "properties": {
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "number",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "faultCode": {
+          "type": "string",
+          "description": "The faultCode of the nested object"
+        },
+        "phase": {
+          "type": "string",
+          "description": "The phase of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "string",
+      "description": "The tripStatus of the device"
+    },
+    "vibrationSensor": {
+      "type": "boolean",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

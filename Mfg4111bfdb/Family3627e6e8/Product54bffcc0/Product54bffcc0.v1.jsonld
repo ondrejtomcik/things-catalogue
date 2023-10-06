@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product54bffcc0",
+  "description": "Product54bffcc0 by Mfg4111bfdb",
+  "properties": {
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "altitude": {
+          "type": "object",
+          "description": "The altitude of the nested object"
+        },
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        },
+        "volume": {
+          "type": "object",
+          "description": "The volume of the nested object"
+        }
+      }
+    },
+    "phase": {
+      "type": "object",
+      "description": "An object containing nested properties for phase",
+      "properties": {
+        "brightness": {
+          "type": "boolean",
+          "description": "The brightness of the nested object"
+        },
+        "temperature": {
+          "type": "boolean",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6dbad594",
+  "description": "Product6dbad594 by Mfg34727a0e",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "harmonics": {
+          "type": "object",
+          "description": "The harmonics of the nested object"
+        },
+        "meterReading": {
+          "type": "boolean",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "boolean",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "operationalMode": {
+      "type": "string",
+      "description": "The operationalMode of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for safetyRating",
+      "properties": {
+        "apparentPower": {
+          "type": "boolean",
+          "description": "The apparentPower of the nested object"
+        },
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "object",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "fuelLevel": {
+          "type": "object",
+          "description": "The fuelLevel of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

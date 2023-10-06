@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product71b8eaab",
+  "description": "Product71b8eaab by Mfg3ae4f3dc",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "object",
+      "description": "An object containing nested properties for arcFlashRisk",
+      "properties": {
+        "humidity": {
+          "type": "number",
+          "description": "The humidity of the nested object"
+        },
+        "sf6Quality": {
+          "type": "object",
+          "description": "The sf6Quality of the nested object"
+        },
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "battery": {
+      "type": "string",
+      "description": "The battery of the device"
+    },
+    "brightness": {
+      "type": "string",
+      "description": "The brightness of the device"
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "description": "The environmentalImpact of the device"
+    },
+    "oilQuality": {
+      "type": "string",
+      "description": "The oilQuality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

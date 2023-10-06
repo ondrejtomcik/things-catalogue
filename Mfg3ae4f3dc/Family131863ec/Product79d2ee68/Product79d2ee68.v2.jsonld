@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product79d2ee68",
+  "description": "Product79d2ee68 by Mfg3ae4f3dc",
+  "properties": {
+    "chargeStatus": {
+      "type": "number",
+      "description": "The chargeStatus of the device"
+    },
+    "frequency": {
+      "type": "object",
+      "description": "The frequency of the device",
+      "properties": {
+        "apparentPower": {
+          "type": "boolean",
+          "description": "The apparentPower of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "sf6Quality": {
+          "type": "number",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

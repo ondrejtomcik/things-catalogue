@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product258038d8",
+  "description": "Product258038d8 by Mfg34727a0e",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeLevel",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "object",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "status": {
+          "type": "boolean",
+          "description": "The status of the nested object"
+        },
+        "tripStatus": {
+          "type": "boolean",
+          "description": "The tripStatus of the nested object"
+        }
+      }
+    },
+    "emergencyMode": {
+      "type": "string",
+      "description": "The emergencyMode of the device"
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "An object containing nested properties for energyConsumption",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "string",
+          "description": "The circuitIdentifier of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "The relayStatus of the device",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "string",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    },
+    "speed": {
+      "type": "string",
+      "description": "The speed of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

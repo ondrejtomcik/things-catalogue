@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7bd4b13c",
+  "description": "Product7bd4b13c by Mfg3ae4f3dc",
+  "properties": {
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "fuelLevel": {
+      "type": "boolean",
+      "description": "The fuelLevel of the device"
+    },
+    "inductorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for inductorHealth",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "remainingChargeTime": {
+          "type": "boolean",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "transformerLoad": {
+          "type": "number",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "oilQuality": {
+      "type": "string",
+      "description": "The oilQuality of the device"
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

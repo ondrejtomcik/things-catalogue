@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4197b221",
+  "description": "Product4197b221 by Mfg3ae4f3dc",
+  "properties": {
+    "earthResistance": {
+      "type": "boolean",
+      "description": "The earthResistance of the device"
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "firmwareVersion": {
+      "type": "object",
+      "description": "An object containing nested properties for firmwareVersion",
+      "properties": {
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "chargeStatus": {
+          "type": "string",
+          "description": "The chargeStatus of the nested object"
+        },
+        "gridStatus": {
+          "type": "boolean",
+          "description": "The gridStatus of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "string",
+      "description": "The fuelLevel of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

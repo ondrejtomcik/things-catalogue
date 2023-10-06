@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4197b221",
+  "description": "Product4197b221 by Mfg3ae4f3dc",
+  "properties": {
+    "faultIndicator": {
+      "type": "object",
+      "description": "An object containing nested properties for faultIndicator",
+      "properties": {
+        "operationalLog": {
+          "type": "string",
+          "description": "The operationalLog of the nested object"
+        },
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        },
+        "totalYield": {
+          "type": "object",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "description": "The firmwareVersion of the device"
+    },
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    },
+    "loadShedding": {
+      "type": "object",
+      "description": "An object containing nested properties for loadShedding",
+      "properties": {
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        }
+      }
+    },
+    "remoteControlCapability": {
+      "type": "number",
+      "description": "The remoteControlCapability of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

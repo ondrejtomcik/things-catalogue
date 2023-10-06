@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product17917151",
+  "description": "Product17917151 by Mfg519dc9ac",
+  "properties": {
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "earthResistance": {
+      "type": "number",
+      "description": "The earthResistance of the device"
+    },
+    "nextMaintenanceDate": {
+      "type": "string",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "capacity": {
+          "type": "object",
+          "description": "The capacity of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

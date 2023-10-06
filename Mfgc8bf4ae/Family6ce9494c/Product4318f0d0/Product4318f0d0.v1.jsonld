@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4318f0d0",
+  "description": "Product4318f0d0 by Mfgc8bf4ae",
+  "properties": {
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "locationIdentifier": {
+          "type": "string",
+          "description": "The locationIdentifier of the nested object"
+        }
+      }
+    },
+    "emergencyMode": {
+      "type": "object",
+      "description": "An object containing nested properties for emergencyMode",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        },
+        "transformerLoad": {
+          "type": "object",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "number",
+          "description": "The remainingChargeTime of the nested object"
+        },
+        "volume": {
+          "type": "string",
+          "description": "The volume of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "number",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    },
+    "waveformDistortion": {
+      "type": "boolean",
+      "description": "The waveformDistortion of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

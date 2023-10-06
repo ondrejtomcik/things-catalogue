@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product46471f8c",
+  "description": "Product46471f8c by Mfg34727a0e",
+  "properties": {
+    "sf6Quality": {
+      "type": "number",
+      "description": "The sf6Quality of the device"
+    },
+    "totalYield": {
+      "type": "number",
+      "description": "The totalYield of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "The waveformDistortion of the device",
+      "properties": {
+        "surgeProtectorStatus": {
+          "type": "boolean",
+          "description": "The surgeProtectorStatus of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "boolean",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

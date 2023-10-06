@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productf959d21",
+  "description": "Productf959d21 by Mfg519dc9ac",
+  "properties": {
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "efficiencyRating": {
+      "type": "number",
+      "description": "The efficiencyRating of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "connectorType": {
+          "type": "boolean",
+          "description": "The connectorType of the nested object"
+        },
+        "inverterEfficiency": {
+          "type": "number",
+          "description": "The inverterEfficiency of the nested object"
+        }
+      }
+    },
+    "meterReading": {
+      "type": "number",
+      "description": "The meterReading of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

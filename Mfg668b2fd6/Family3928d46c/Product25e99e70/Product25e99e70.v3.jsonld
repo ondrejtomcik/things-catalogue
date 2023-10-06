@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25e99e70",
+  "description": "Product25e99e70 by Mfg668b2fd6",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "battery": {
+      "type": "number",
+      "description": "The battery of the device"
+    },
+    "locationIdentifier": {
+      "type": "boolean",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the nested object"
+        },
+        "demandResponse": {
+          "type": "boolean",
+          "description": "The demandResponse of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "string",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

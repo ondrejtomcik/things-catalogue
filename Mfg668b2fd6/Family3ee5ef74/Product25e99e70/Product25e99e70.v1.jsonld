@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product25e99e70",
+  "description": "Product25e99e70 by Mfg668b2fd6",
+  "properties": {
+    "brightness": {
+      "type": "boolean",
+      "description": "The brightness of the device"
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "powerFactor": {
+          "type": "object",
+          "description": "The powerFactor of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "boolean",
+      "description": "The totalTrips of the device"
+    },
+    "varistorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for varistorStatus",
+      "properties": {
+        "faultCode": {
+          "type": "number",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7cb4c1f4",
+  "description": "Product7cb4c1f4 by Mfg3ae4f3dc",
+  "properties": {
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "connectorType": {
+          "type": "boolean",
+          "description": "The connectorType of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "boolean",
+      "description": "The demandResponse of the device"
+    },
+    "feedDirection": {
+      "type": "number",
+      "description": "The feedDirection of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

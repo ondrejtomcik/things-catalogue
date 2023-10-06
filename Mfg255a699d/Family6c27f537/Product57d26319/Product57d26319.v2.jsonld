@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product57d26319",
+  "description": "Product57d26319 by Mfg255a699d",
+  "properties": {
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "chargeLevel": {
+          "type": "string",
+          "description": "The chargeLevel of the nested object"
+        },
+        "earthResistance": {
+          "type": "object",
+          "description": "The earthResistance of the nested object"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "The temperature of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "string",
+      "description": "The safetyRating of the device"
+    },
+    "sf6Pressure": {
+      "type": "number",
+      "description": "The sf6Pressure of the device"
+    },
+    "synchronizationStatus": {
+      "type": "boolean",
+      "description": "The synchronizationStatus of the device"
+    },
+    "temperature": {
+      "type": "number",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "object",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

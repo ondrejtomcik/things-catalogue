@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product28d61713",
+  "description": "Product28d61713 by Mfg3ae4f3dc",
+  "properties": {
+    "chargeStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for chargeStatus",
+      "properties": {
+        "busbarLoad": {
+          "type": "object",
+          "description": "The busbarLoad of the nested object"
+        },
+        "loadShedding": {
+          "type": "boolean",
+          "description": "The loadShedding of the nested object"
+        },
+        "status": {
+          "type": "object",
+          "description": "The status of the nested object"
+        }
+      }
+    },
+    "manualOverride": {
+      "type": "string",
+      "description": "The manualOverride of the device"
+    },
+    "tripStatus": {
+      "type": "string",
+      "description": "The tripStatus of the device"
+    },
+    "voltage": {
+      "type": "object",
+      "description": "An object containing nested properties for voltage",
+      "properties": {
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "boolean",
+          "description": "The maintenanceStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

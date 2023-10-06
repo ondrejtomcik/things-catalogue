@@ -1,1 +1,1 @@
-# thing-catalogue
+# Public Things Catalogue

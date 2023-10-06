@@ -1,0 +1,76 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product10513c0e",
+  "description": "Product10513c0e by Mfg668b2fd6",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "energyConsumption": {
+          "type": "string",
+          "description": "The energyConsumption of the nested object"
+        },
+        "maintenanceStatus": {
+          "type": "string",
+          "description": "The maintenanceStatus of the nested object"
+        },
+        "nextMaintenanceDate": {
+          "type": "string",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "The fuelLevel of the device",
+      "properties": {
+        "remainingChargeTime": {
+          "type": "object",
+          "description": "The remainingChargeTime of the nested object"
+        }
+      }
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "An object containing nested properties for inverterEfficiency",
+      "properties": {
+        "lastInspectionDate": {
+          "type": "string",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "totalTrips": {
+      "type": "object",
+      "description": "An object containing nested properties for totalTrips",
+      "properties": {
+        "assetID": {
+          "type": "string",
+          "description": "The assetID of the nested object"
+        },
+        "connectorType": {
+          "type": "object",
+          "description": "The connectorType of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

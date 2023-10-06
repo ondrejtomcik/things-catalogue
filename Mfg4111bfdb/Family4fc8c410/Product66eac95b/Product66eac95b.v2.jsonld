@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product66eac95b",
+  "description": "Product66eac95b by Mfg4111bfdb",
+  "properties": {
+    "chargeLevel": {
+      "type": "number",
+      "description": "The chargeLevel of the device"
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "assetID": {
+          "type": "number",
+          "description": "The assetID of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "number",
+          "description": "The gridTieStatus of the nested object"
+        }
+      }
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "safetyRating": {
+          "type": "object",
+          "description": "The safetyRating of the nested object"
+        },
+        "transformerLoad": {
+          "type": "number",
+          "description": "The transformerLoad of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "string",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product70be58bf",
+  "description": "Product70be58bf by Mfg519dc9ac",
+  "properties": {
+    "diagnosticMessage": {
+      "type": "string",
+      "description": "The diagnosticMessage of the device"
+    },
+    "groundingStatus": {
+      "type": "boolean",
+      "description": "The groundingStatus of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "The reactivePower of the device"
+    },
+    "solarPanelHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for solarPanelHealth",
+      "properties": {
+        "oilLevel": {
+          "type": "number",
+          "description": "The oilLevel of the nested object"
+        },
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        },
+        "synchronizationStatus": {
+          "type": "string",
+          "description": "The synchronizationStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2e5f7bc6",
+  "description": "Product2e5f7bc6 by Mfg255a699d",
+  "properties": {
+    "altitude": {
+      "type": "boolean",
+      "description": "The altitude of the device"
+    },
+    "connectorType": {
+      "type": "string",
+      "description": "The connectorType of the device"
+    },
+    "faultCode": {
+      "type": "object",
+      "description": "An object containing nested properties for faultCode",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "object",
+          "description": "The nextMaintenanceDate of the nested object"
+        },
+        "speed": {
+          "type": "number",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "gridTieStatus": {
+      "type": "string",
+      "description": "The gridTieStatus of the device"
+    },
+    "meterReading": {
+      "type": "string",
+      "description": "The meterReading of the device"
+    },
+    "status": {
+      "type": "boolean",
+      "description": "The status of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

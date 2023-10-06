@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product1799ba2d",
+  "description": "Product1799ba2d by Mfg34727a0e",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "number",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "string",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "operationalHours": {
+          "type": "string",
+          "description": "The operationalHours of the nested object"
+        },
+        "thermalSensor": {
+          "type": "string",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "loadShedding": {
+      "type": "number",
+      "description": "The loadShedding of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

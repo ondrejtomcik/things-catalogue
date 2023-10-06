@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product17917151",
+  "description": "Product17917151 by Mfg519dc9ac",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "An object containing nested properties for activePower",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "boolean",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        }
+      }
+    },
+    "altitude": {
+      "type": "number",
+      "description": "The altitude of the device"
+    },
+    "inductorHealth": {
+      "type": "object",
+      "description": "An object containing nested properties for inductorHealth",
+      "properties": {
+        "circuitIntegrity": {
+          "type": "number",
+          "description": "The circuitIntegrity of the nested object"
+        },
+        "gridTieStatus": {
+          "type": "object",
+          "description": "The gridTieStatus of the nested object"
+        },
+        "speed": {
+          "type": "boolean",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "renewableSourceInput": {
+      "type": "object",
+      "description": "An object containing nested properties for renewableSourceInput",
+      "properties": {
+        "gridStatus": {
+          "type": "string",
+          "description": "The gridStatus of the nested object"
+        },
+        "neutralLoad": {
+          "type": "boolean",
+          "description": "The neutralLoad of the nested object"
+        },
+        "waveformDistortion": {
+          "type": "string",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "number",
+      "description": "The surgeProtectorStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

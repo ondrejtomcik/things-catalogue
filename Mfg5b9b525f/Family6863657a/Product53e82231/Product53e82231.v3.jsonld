@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53e82231",
+  "description": "Product53e82231 by Mfg5b9b525f",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "The capacitorHealth of the device",
+      "properties": {
+        "arcFlashRisk": {
+          "type": "string",
+          "description": "The arcFlashRisk of the nested object"
+        },
+        "backupBatteryStatus": {
+          "type": "object",
+          "description": "The backupBatteryStatus of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "string",
+      "description": "The neutralLoad of the device"
+    },
+    "uptime": {
+      "type": "number",
+      "description": "The uptime of the device"
+    },
+    "voltage": {
+      "type": "number",
+      "description": "The voltage of the device"
+    },
+    "volume": {
+      "type": "boolean",
+      "description": "The volume of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

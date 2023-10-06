@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2a97ed78",
+  "description": "Product2a97ed78 by Mfg34727a0e",
+  "properties": {
+    "varistorStatus": {
+      "type": "string",
+      "description": "The varistorStatus of the device"
+    },
+    "volume": {
+      "type": "object",
+      "description": "An object containing nested properties for volume",
+      "properties": {
+        "chargeLevel": {
+          "type": "string",
+          "description": "The chargeLevel of the nested object"
+        },
+        "faultCode": {
+          "type": "boolean",
+          "description": "The faultCode of the nested object"
+        },
+        "meterReading": {
+          "type": "boolean",
+          "description": "The meterReading of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

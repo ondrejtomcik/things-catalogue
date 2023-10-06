@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6f13ea83",
+  "description": "Product6f13ea83 by Mfg668b2fd6",
+  "properties": {
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupBatteryStatus",
+      "properties": {
+        "activePower": {
+          "type": "boolean",
+          "description": "The activePower of the nested object"
+        },
+        "speed": {
+          "type": "string",
+          "description": "The speed of the nested object"
+        }
+      }
+    },
+    "circuitIntegrity": {
+      "type": "boolean",
+      "description": "The circuitIntegrity of the device"
+    },
+    "reactivePower": {
+      "type": "number",
+      "description": "An object containing nested properties for reactivePower",
+      "properties": {
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        },
+        "relayStatus": {
+          "type": "string",
+          "description": "The relayStatus of the nested object"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "The temperature of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product6be23b66",
+  "description": "Product6be23b66 by Mfg668b2fd6",
+  "properties": {
+    "current": {
+      "type": "object",
+      "description": "The current of the device",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "string",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "humidity": {
+      "type": "boolean",
+      "description": "The humidity of the device"
+    },
+    "pressure": {
+      "type": "string",
+      "description": "The pressure of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "An object containing nested properties for status",
+      "properties": {
+        "totalYield": {
+          "type": "number",
+          "description": "The totalYield of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

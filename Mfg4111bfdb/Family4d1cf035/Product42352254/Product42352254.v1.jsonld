@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product42352254",
+  "description": "Product42352254 by Mfg4111bfdb",
+  "properties": {
+    "latency": {
+      "type": "boolean",
+      "description": "The latency of the device"
+    },
+    "sf6Quality": {
+      "type": "object",
+      "description": "An object containing nested properties for sf6Quality",
+      "properties": {
+        "synchronizationStatus": {
+          "type": "number",
+          "description": "The synchronizationStatus of the nested object"
+        },
+        "windTurbineEfficiency": {
+          "type": "number",
+          "description": "The windTurbineEfficiency of the nested object"
+        }
+      }
+    },
+    "surgeProtectorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for surgeProtectorStatus",
+      "properties": {
+        "current": {
+          "type": "number",
+          "description": "The current of the nested object"
+        },
+        "locationIdentifier": {
+          "type": "object",
+          "description": "The locationIdentifier of the nested object"
+        },
+        "voltage": {
+          "type": "number",
+          "description": "The voltage of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producteeed8ba",
+  "description": "Producteeed8ba by Mfg34727a0e",
+  "properties": {
+    "activePower": {
+      "type": "number",
+      "description": "The activePower of the device"
+    },
+    "communicationStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for communicationStatus",
+      "properties": {
+        "uptime": {
+          "type": "number",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "demandResponse": {
+      "type": "object",
+      "description": "The demandResponse of the device",
+      "properties": {
+        "apparentPower": {
+          "type": "number",
+          "description": "The apparentPower of the nested object"
+        },
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "number",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "neutralLoad": {
+      "type": "number",
+      "description": "The neutralLoad of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

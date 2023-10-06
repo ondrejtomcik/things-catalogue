@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product666cabe2",
+  "description": "Product666cabe2 by Mfg5b9b525f",
+  "properties": {
+    "harmonics": {
+      "type": "boolean",
+      "description": "The harmonics of the device"
+    },
+    "phase": {
+      "type": "number",
+      "description": "The phase of the device"
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "The sf6Pressure of the device",
+      "properties": {
+        "circuitIdentifier": {
+          "type": "object",
+          "description": "The circuitIdentifier of the nested object"
+        },
+        "thermalSensor": {
+          "type": "number",
+          "description": "The thermalSensor of the nested object"
+        },
+        "totalTrips": {
+          "type": "number",
+          "description": "The totalTrips of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

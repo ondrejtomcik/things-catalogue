@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product21786bfb",
+  "description": "Product21786bfb by Mfg5b9b525f",
+  "properties": {
+    "circuitIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for circuitIdentifier",
+      "properties": {
+        "brightness": {
+          "type": "object",
+          "description": "The brightness of the nested object"
+        },
+        "dataRate": {
+          "type": "object",
+          "description": "The dataRate of the nested object"
+        },
+        "groundingStatus": {
+          "type": "number",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "maintenanceStatus": {
+      "type": "number",
+      "description": "The maintenanceStatus of the device"
+    },
+    "safetyRating": {
+      "type": "number",
+      "description": "The safetyRating of the device"
+    },
+    "sf6Pressure": {
+      "type": "object",
+      "description": "The sf6Pressure of the device",
+      "properties": {
+        "emergencyMode": {
+          "type": "boolean",
+          "description": "The emergencyMode of the nested object"
+        }
+      }
+    },
+    "windTurbineEfficiency": {
+      "type": "boolean",
+      "description": "The windTurbineEfficiency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

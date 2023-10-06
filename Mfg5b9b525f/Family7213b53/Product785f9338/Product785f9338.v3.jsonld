@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product785f9338",
+  "description": "Product785f9338 by Mfg5b9b525f",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "The apparentPower of the device",
+      "properties": {
+        "neutralLoad": {
+          "type": "object",
+          "description": "The neutralLoad of the nested object"
+        },
+        "vibrationSensor": {
+          "type": "string",
+          "description": "The vibrationSensor of the nested object"
+        }
+      }
+    },
+    "firmwareVersion": {
+      "type": "number",
+      "description": "The firmwareVersion of the device"
+    },
+    "remainingChargeTime": {
+      "type": "object",
+      "description": "An object containing nested properties for remainingChargeTime",
+      "properties": {
+        "pressure": {
+          "type": "number",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

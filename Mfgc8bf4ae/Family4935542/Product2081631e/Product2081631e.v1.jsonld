@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2081631e",
+  "description": "Product2081631e by Mfgc8bf4ae",
+  "properties": {
+    "capacity": {
+      "type": "object",
+      "description": "An object containing nested properties for capacity",
+      "properties": {
+        "carbonEmission": {
+          "type": "object",
+          "description": "The carbonEmission of the nested object"
+        },
+        "manualOverride": {
+          "type": "string",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "manualOverride": {
+          "type": "object",
+          "description": "The manualOverride of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

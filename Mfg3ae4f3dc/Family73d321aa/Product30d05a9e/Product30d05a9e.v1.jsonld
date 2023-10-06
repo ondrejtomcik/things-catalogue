@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product30d05a9e",
+  "description": "Product30d05a9e by Mfg3ae4f3dc",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "backupBatteryStatus": {
+      "type": "number",
+      "description": "The backupBatteryStatus of the device"
+    },
+    "backupGeneratorStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupGeneratorStatus",
+      "properties": {
+        "waveformDistortion": {
+          "type": "number",
+          "description": "The waveformDistortion of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "object",
+      "description": "An object containing nested properties for thermalSensor",
+      "properties": {
+        "battery": {
+          "type": "string",
+          "description": "The battery of the nested object"
+        },
+        "inductorHealth": {
+          "type": "object",
+          "description": "The inductorHealth of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "boolean",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

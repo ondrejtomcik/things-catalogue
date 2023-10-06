@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Productcf83056",
+  "description": "Productcf83056 by Mfg255a699d",
+  "properties": {
+    "apparentPower": {
+      "type": "object",
+      "description": "An object containing nested properties for apparentPower",
+      "properties": {
+        "connectorType": {
+          "type": "string",
+          "description": "The connectorType of the nested object"
+        },
+        "tariffRate": {
+          "type": "boolean",
+          "description": "The tariffRate of the nested object"
+        }
+      }
+    },
+    "dataRate": {
+      "type": "number",
+      "description": "The dataRate of the device"
+    },
+    "fuelLevel": {
+      "type": "string",
+      "description": "The fuelLevel of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "The neutralLoad of the device",
+      "properties": {
+        "altitude": {
+          "type": "object",
+          "description": "The altitude of the nested object"
+        },
+        "fuelLevel": {
+          "type": "string",
+          "description": "The fuelLevel of the nested object"
+        },
+        "loadShedding": {
+          "type": "number",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "The speed of the device"
+    },
+    "totalTrips": {
+      "type": "string",
+      "description": "The totalTrips of the device"
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "object",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

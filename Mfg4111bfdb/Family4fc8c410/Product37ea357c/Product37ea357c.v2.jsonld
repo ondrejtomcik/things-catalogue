@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product37ea357c",
+  "description": "Product37ea357c by Mfg4111bfdb",
+  "properties": {
+    "activePower": {
+      "type": "object",
+      "description": "The activePower of the device",
+      "properties": {
+        "emergencyMode": {
+          "type": "string",
+          "description": "The emergencyMode of the nested object"
+        },
+        "frequency": {
+          "type": "string",
+          "description": "The frequency of the nested object"
+        },
+        "harmonics": {
+          "type": "object",
+          "description": "The harmonics of the nested object"
+        }
+      }
+    },
+    "reactivePower": {
+      "type": "string",
+      "description": "The reactivePower of the device"
+    },
+    "sf6Quality": {
+      "type": "boolean",
+      "description": "The sf6Quality of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

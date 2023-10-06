@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product7e477e53",
+  "description": "Product7e477e53 by Mfg34727a0e",
+  "properties": {
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "inverterEfficiency": {
+      "type": "object",
+      "description": "The inverterEfficiency of the device",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "string",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "carbonEmission": {
+          "type": "object",
+          "description": "The carbonEmission of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

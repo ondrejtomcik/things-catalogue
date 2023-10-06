@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product3fe364ac",
+  "description": "Product3fe364ac by Mfg3ae4f3dc",
+  "properties": {
+    "apparentPower": {
+      "type": "boolean",
+      "description": "The apparentPower of the device"
+    },
+    "lastInspectionDate": {
+      "type": "number",
+      "description": "The lastInspectionDate of the device"
+    },
+    "locationIdentifier": {
+      "type": "object",
+      "description": "An object containing nested properties for locationIdentifier",
+      "properties": {
+        "backupBatteryStatus": {
+          "type": "string",
+          "description": "The backupBatteryStatus of the nested object"
+        },
+        "chargeStatus": {
+          "type": "string",
+          "description": "The chargeStatus of the nested object"
+        },
+        "thermalSensor": {
+          "type": "boolean",
+          "description": "The thermalSensor of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "object",
+      "description": "An object containing nested properties for nextMaintenanceDate",
+      "properties": {
+        "earthResistance": {
+          "type": "number",
+          "description": "The earthResistance of the nested object"
+        },
+        "neutralLoad": {
+          "type": "string",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "tripStatus": {
+      "type": "number",
+      "description": "The tripStatus of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

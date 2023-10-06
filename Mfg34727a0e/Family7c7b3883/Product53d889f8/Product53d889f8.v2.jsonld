@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product53d889f8",
+  "description": "Product53d889f8 by Mfg34727a0e",
+  "properties": {
+    "breakerStatus": {
+      "type": "boolean",
+      "description": "An object containing nested properties for breakerStatus",
+      "properties": {
+        "nextMaintenanceDate": {
+          "type": "number",
+          "description": "The nextMaintenanceDate of the nested object"
+        }
+      }
+    },
+    "capacity": {
+      "type": "number",
+      "description": "The capacity of the device"
+    },
+    "dataRate": {
+      "type": "object",
+      "description": "An object containing nested properties for dataRate",
+      "properties": {
+        "neutralLoad": {
+          "type": "number",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "boolean",
+      "description": "The locationIdentifier of the device"
+    },
+    "remainingChargeTime": {
+      "type": "boolean",
+      "description": "The remainingChargeTime of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

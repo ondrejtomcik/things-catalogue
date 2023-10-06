@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4fe78bd2",
+  "description": "Product4fe78bd2 by Mfg668b2fd6",
+  "properties": {
+    "capacity": {
+      "type": "string",
+      "description": "The capacity of the device"
+    },
+    "solarPanelHealth": {
+      "type": "boolean",
+      "description": "The solarPanelHealth of the device"
+    },
+    "transformerLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for transformerLoad",
+      "properties": {
+        "oilLevel": {
+          "type": "string",
+          "description": "The oilLevel of the nested object"
+        },
+        "sf6Quality": {
+          "type": "string",
+          "description": "The sf6Quality of the nested object"
+        },
+        "surgeProtectorStatus": {
+          "type": "string",
+          "description": "The surgeProtectorStatus of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

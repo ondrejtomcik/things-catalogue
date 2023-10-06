@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product4fe78bd2",
+  "description": "Product4fe78bd2 by Mfg668b2fd6",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "connectorType": {
+      "type": "boolean",
+      "description": "The connectorType of the device"
+    },
+    "current": {
+      "type": "boolean",
+      "description": "The current of the device"
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for safetyRating",
+      "properties": {
+        "harmonics": {
+          "type": "number",
+          "description": "The harmonics of the nested object"
+        },
+        "insulationResistance": {
+          "type": "boolean",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "vibrationSensor": {
+      "type": "boolean",
+      "description": "The vibrationSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

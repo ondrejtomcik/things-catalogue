@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Producta449ca8",
+  "description": "Producta449ca8 by Mfg5b9b525f",
+  "properties": {
+    "faultCode": {
+      "type": "string",
+      "description": "The faultCode of the device"
+    },
+    "fuelLevel": {
+      "type": "number",
+      "description": "The fuelLevel of the device"
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for groundingStatus",
+      "properties": {
+        "relayStatus": {
+          "type": "number",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "The operationalLog of the device",
+      "properties": {
+        "speed": {
+          "type": "object",
+          "description": "The speed of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

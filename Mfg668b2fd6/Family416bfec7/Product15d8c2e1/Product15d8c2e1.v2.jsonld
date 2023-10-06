@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product15d8c2e1",
+  "description": "Product15d8c2e1 by Mfg668b2fd6",
+  "properties": {
+    "breakerStatus": {
+      "type": "number",
+      "description": "The breakerStatus of the device"
+    },
+    "brightness": {
+      "type": "object",
+      "description": "An object containing nested properties for brightness",
+      "properties": {
+        "faultIndicator": {
+          "type": "string",
+          "description": "The faultIndicator of the nested object"
+        }
+      }
+    },
+    "capacity": {
+      "type": "boolean",
+      "description": "The capacity of the device"
+    },
+    "connectorType": {
+      "type": "number",
+      "description": "The connectorType of the device"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "The frequency of the device"
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

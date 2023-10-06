@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product59aa2392",
+  "description": "Product59aa2392 by Mfg4111bfdb",
+  "properties": {
+    "environmentalImpact": {
+      "type": "object",
+      "description": "An object containing nested properties for environmentalImpact",
+      "properties": {
+        "groundingStatus": {
+          "type": "object",
+          "description": "The groundingStatus of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "thermalSensor": {
+      "type": "boolean",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

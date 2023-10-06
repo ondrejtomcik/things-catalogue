@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product21786bfb",
+  "description": "Product21786bfb by Mfg5b9b525f",
+  "properties": {
+    "demandResponse": {
+      "type": "string",
+      "description": "An object containing nested properties for demandResponse",
+      "properties": {
+        "gridStatus": {
+          "type": "number",
+          "description": "The gridStatus of the nested object"
+        },
+        "humidity": {
+          "type": "object",
+          "description": "The humidity of the nested object"
+        },
+        "safetyRating": {
+          "type": "string",
+          "description": "The safetyRating of the nested object"
+        }
+      }
+    },
+    "remainingChargeTime": {
+      "type": "string",
+      "description": "The remainingChargeTime of the device"
+    },
+    "status": {
+      "type": "object",
+      "description": "The status of the device",
+      "properties": {
+        "feedDirection": {
+          "type": "boolean",
+          "description": "The feedDirection of the nested object"
+        },
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        },
+        "operationalLog": {
+          "type": "number",
+          "description": "The operationalLog of the nested object"
+        }
+      }
+    },
+    "temperature": {
+      "type": "object",
+      "description": "An object containing nested properties for temperature",
+      "properties": {
+        "humidity": {
+          "type": "boolean",
+          "description": "The humidity of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "object",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

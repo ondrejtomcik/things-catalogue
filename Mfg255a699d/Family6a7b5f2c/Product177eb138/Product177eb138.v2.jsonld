@@ -1,0 +1,52 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product177eb138",
+  "description": "Product177eb138 by Mfg255a699d",
+  "properties": {
+    "chargeLevel": {
+      "type": "object",
+      "description": "The chargeLevel of the device",
+      "properties": {
+        "assetID": {
+          "type": "boolean",
+          "description": "The assetID of the nested object"
+        },
+        "latency": {
+          "type": "string",
+          "description": "The latency of the nested object"
+        }
+      }
+    },
+    "communicationStatus": {
+      "type": "string",
+      "description": "The communicationStatus of the device"
+    },
+    "operationalLog": {
+      "type": "object",
+      "description": "An object containing nested properties for operationalLog",
+      "properties": {
+        "firmwareVersion": {
+          "type": "boolean",
+          "description": "The firmwareVersion of the nested object"
+        },
+        "oilQuality": {
+          "type": "string",
+          "description": "The oilQuality of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

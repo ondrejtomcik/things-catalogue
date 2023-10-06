@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product532c15e0",
+  "description": "Product532c15e0 by Mfg4111bfdb",
+  "properties": {
+    "busbarLoad": {
+      "type": "boolean",
+      "description": "The busbarLoad of the device"
+    },
+    "current": {
+      "type": "string",
+      "description": "The current of the device"
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the device"
+    },
+    "waveformDistortion": {
+      "type": "object",
+      "description": "An object containing nested properties for waveformDistortion",
+      "properties": {
+        "apparentPower": {
+          "type": "boolean",
+          "description": "The apparentPower of the nested object"
+        },
+        "environmentalImpact": {
+          "type": "string",
+          "description": "The environmentalImpact of the nested object"
+        },
+        "faultCode": {
+          "type": "string",
+          "description": "The faultCode of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product2eeaaf74",
+  "description": "Product2eeaaf74 by Mfg668b2fd6",
+  "properties": {
+    "feedDirection": {
+      "type": "number",
+      "description": "The feedDirection of the device"
+    },
+    "fuelLevel": {
+      "type": "object",
+      "description": "An object containing nested properties for fuelLevel",
+      "properties": {
+        "earthResistance": {
+          "type": "boolean",
+          "description": "The earthResistance of the nested object"
+        },
+        "pressure": {
+          "type": "boolean",
+          "description": "The pressure of the nested object"
+        }
+      }
+    },
+    "groundingStatus": {
+      "type": "object",
+      "description": "The groundingStatus of the device",
+      "properties": {
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        },
+        "relayStatus": {
+          "type": "number",
+          "description": "The relayStatus of the nested object"
+        },
+        "varistorStatus": {
+          "type": "string",
+          "description": "The varistorStatus of the nested object"
+        }
+      }
+    },
+    "latency": {
+      "type": "number",
+      "description": "The latency of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

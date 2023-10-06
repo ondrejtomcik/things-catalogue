@@ -1,0 +1,66 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product195f5898",
+  "description": "Product195f5898 by Mfg3ae4f3dc",
+  "properties": {
+    "activePower": {
+      "type": "boolean",
+      "description": "The activePower of the device"
+    },
+    "capacitorHealth": {
+      "type": "boolean",
+      "description": "An object containing nested properties for capacitorHealth",
+      "properties": {
+        "connectorType": {
+          "type": "number",
+          "description": "The connectorType of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "relayStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for relayStatus",
+      "properties": {
+        "capacitorHealth": {
+          "type": "number",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "earthResistance": {
+          "type": "string",
+          "description": "The earthResistance of the nested object"
+        },
+        "oilLevel": {
+          "type": "boolean",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "object",
+      "description": "The safetyRating of the device",
+      "properties": {
+        "renewableSourceInput": {
+          "type": "object",
+          "description": "The renewableSourceInput of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

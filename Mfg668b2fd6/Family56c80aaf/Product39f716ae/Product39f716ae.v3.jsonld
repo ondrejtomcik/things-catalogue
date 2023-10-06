@@ -1,0 +1,82 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39f716ae",
+  "description": "Product39f716ae by Mfg668b2fd6",
+  "properties": {
+    "capacitorHealth": {
+      "type": "object",
+      "description": "The capacitorHealth of the device",
+      "properties": {
+        "busbarLoad": {
+          "type": "string",
+          "description": "The busbarLoad of the nested object"
+        },
+        "manualOverride": {
+          "type": "boolean",
+          "description": "The manualOverride of the nested object"
+        },
+        "relayStatus": {
+          "type": "boolean",
+          "description": "The relayStatus of the nested object"
+        }
+      }
+    },
+    "chargeStatus": {
+      "type": "boolean",
+      "description": "The chargeStatus of the device"
+    },
+    "circuitIdentifier": {
+      "type": "string",
+      "description": "The circuitIdentifier of the device"
+    },
+    "energyConsumption": {
+      "type": "object",
+      "description": "The energyConsumption of the device",
+      "properties": {
+        "protectionSetpoint": {
+          "type": "boolean",
+          "description": "The protectionSetpoint of the nested object"
+        }
+      }
+    },
+    "nextMaintenanceDate": {
+      "type": "number",
+      "description": "The nextMaintenanceDate of the device"
+    },
+    "powerFactor": {
+      "type": "boolean",
+      "description": "The powerFactor of the device"
+    },
+    "speed": {
+      "type": "object",
+      "description": "An object containing nested properties for speed",
+      "properties": {
+        "brightness": {
+          "type": "string",
+          "description": "The brightness of the nested object"
+        },
+        "capacitorHealth": {
+          "type": "boolean",
+          "description": "The capacitorHealth of the nested object"
+        },
+        "insulationResistance": {
+          "type": "boolean",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

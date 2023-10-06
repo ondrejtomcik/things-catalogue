@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product488f28cc",
+  "description": "Product488f28cc by Mfg3ae4f3dc",
+  "properties": {
+    "communicationStatus": {
+      "type": "boolean",
+      "description": "The communicationStatus of the device"
+    },
+    "harmonics": {
+      "type": "string",
+      "description": "The harmonics of the device"
+    },
+    "humidity": {
+      "type": "string",
+      "description": "The humidity of the device"
+    },
+    "pressure": {
+      "type": "object",
+      "description": "An object containing nested properties for pressure",
+      "properties": {
+        "backupGeneratorStatus": {
+          "type": "number",
+          "description": "The backupGeneratorStatus of the nested object"
+        },
+        "inductorHealth": {
+          "type": "number",
+          "description": "The inductorHealth of the nested object"
+        },
+        "loadShedding": {
+          "type": "string",
+          "description": "The loadShedding of the nested object"
+        }
+      }
+    },
+    "safetyRating": {
+      "type": "boolean",
+      "description": "The safetyRating of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

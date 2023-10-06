@@ -1,0 +1,82 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product39f716ae",
+  "description": "Product39f716ae by Mfg668b2fd6",
+  "properties": {
+    "assetID": {
+      "type": "object",
+      "description": "An object containing nested properties for assetID",
+      "properties": {
+        "inductorHealth": {
+          "type": "boolean",
+          "description": "The inductorHealth of the nested object"
+        },
+        "oilLevel": {
+          "type": "string",
+          "description": "The oilLevel of the nested object"
+        }
+      }
+    },
+    "backupBatteryStatus": {
+      "type": "object",
+      "description": "An object containing nested properties for backupBatteryStatus",
+      "properties": {
+        "current": {
+          "type": "boolean",
+          "description": "The current of the nested object"
+        },
+        "firmwareVersion": {
+          "type": "object",
+          "description": "The firmwareVersion of the nested object"
+        }
+      }
+    },
+    "environmentalImpact": {
+      "type": "boolean",
+      "description": "The environmentalImpact of the device"
+    },
+    "harmonics": {
+      "type": "string",
+      "description": "The harmonics of the device"
+    },
+    "neutralLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for neutralLoad",
+      "properties": {
+        "efficiencyRating": {
+          "type": "object",
+          "description": "The efficiencyRating of the nested object"
+        },
+        "lastInspectionDate": {
+          "type": "boolean",
+          "description": "The lastInspectionDate of the nested object"
+        },
+        "neutralLoad": {
+          "type": "string",
+          "description": "The neutralLoad of the nested object"
+        }
+      }
+    },
+    "status": {
+      "type": "boolean",
+      "description": "The status of the device"
+    },
+    "thermalSensor": {
+      "type": "string",
+      "description": "The thermalSensor of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

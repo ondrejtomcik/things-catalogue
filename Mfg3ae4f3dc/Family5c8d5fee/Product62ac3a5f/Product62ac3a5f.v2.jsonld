@@ -1,0 +1,50 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product62ac3a5f",
+  "description": "Product62ac3a5f by Mfg3ae4f3dc",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "string",
+      "description": "The arcFlashRisk of the device"
+    },
+    "oilLevel": {
+      "type": "boolean",
+      "description": "The oilLevel of the device"
+    },
+    "remoteControlCapability": {
+      "type": "object",
+      "description": "The remoteControlCapability of the device",
+      "properties": {
+        "emergencyMode": {
+          "type": "boolean",
+          "description": "The emergencyMode of the nested object"
+        },
+        "faultIndicator": {
+          "type": "boolean",
+          "description": "The faultIndicator of the nested object"
+        },
+        "remoteControlCapability": {
+          "type": "number",
+          "description": "The remoteControlCapability of the nested object"
+        }
+      }
+    },
+    "sf6Pressure": {
+      "type": "string",
+      "description": "The sf6Pressure of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

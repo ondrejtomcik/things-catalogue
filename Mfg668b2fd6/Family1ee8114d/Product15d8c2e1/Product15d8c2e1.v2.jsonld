@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product15d8c2e1",
+  "description": "Product15d8c2e1 by Mfg668b2fd6",
+  "properties": {
+    "busbarLoad": {
+      "type": "object",
+      "description": "An object containing nested properties for busbarLoad",
+      "properties": {
+        "chargeLevel": {
+          "type": "object",
+          "description": "The chargeLevel of the nested object"
+        }
+      }
+    },
+    "carbonEmission": {
+      "type": "boolean",
+      "description": "The carbonEmission of the device"
+    },
+    "chargeStatus": {
+      "type": "object",
+      "description": "The chargeStatus of the device",
+      "properties": {
+        "communicationStatus": {
+          "type": "boolean",
+          "description": "The communicationStatus of the nested object"
+        },
+        "groundingStatus": {
+          "type": "string",
+          "description": "The groundingStatus of the nested object"
+        },
+        "operationalMode": {
+          "type": "object",
+          "description": "The operationalMode of the nested object"
+        }
+      }
+    },
+    "efficiencyRating": {
+      "type": "object",
+      "description": "An object containing nested properties for efficiencyRating",
+      "properties": {
+        "brightness": {
+          "type": "number",
+          "description": "The brightness of the nested object"
+        },
+        "feedDirection": {
+          "type": "object",
+          "description": "The feedDirection of the nested object"
+        },
+        "insulationResistance": {
+          "type": "string",
+          "description": "The insulationResistance of the nested object"
+        }
+      }
+    },
+    "locationIdentifier": {
+      "type": "string",
+      "description": "The locationIdentifier of the device"
+    },
+    "operationalMode": {
+      "type": "boolean",
+      "description": "The operationalMode of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}

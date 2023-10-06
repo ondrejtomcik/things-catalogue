@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2019/wot/tm"
+  ],
+  "title": "Product485e0f2c",
+  "description": "Product485e0f2c by Mfg4111bfdb",
+  "properties": {
+    "arcFlashRisk": {
+      "type": "number",
+      "description": "The arcFlashRisk of the device"
+    },
+    "efficiencyRating": {
+      "type": "boolean",
+      "description": "The efficiencyRating of the device"
+    },
+    "lastInspectionDate": {
+      "type": "boolean",
+      "description": "An object containing nested properties for lastInspectionDate",
+      "properties": {
+        "reactivePower": {
+          "type": "number",
+          "description": "The reactivePower of the nested object"
+        },
+        "uptime": {
+          "type": "object",
+          "description": "The uptime of the nested object"
+        }
+      }
+    },
+    "tariffRate": {
+      "type": "number",
+      "description": "The tariffRate of the device"
+    }
+  },
+  "actions": {
+    "toggle": {
+      "description": "Toggle the device state"
+    }
+  },
+  "events": {
+    "alert": {
+      "description": "An alert event"
+    }
+  }
+}
