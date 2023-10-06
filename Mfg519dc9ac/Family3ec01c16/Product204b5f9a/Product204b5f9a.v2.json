@@ -18,7 +18,7 @@
       "type": "object",
       "description": "An object containing nested properties for windTurbineEfficiency",
       "properties": {
-        "earthResistance": {
+        "appleResistance": {
           "type": "object",
           "description": "The earthResistance of the nested object"
         },
