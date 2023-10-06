@@ -233,7 +233,7 @@ func main() {
 				model.Properties = randomProperties() // Initial set of properties for version 1
 				versions := rand.Intn(3) + 1
 				for v := 1; v <= versions; v++ {
-					filename := fmt.Sprintf("%s/%s.v%d.jsonld", dir, product, v)
+					filename := fmt.Sprintf("%s/%s.v%d.json", dir, product, v)
 					data, _ := json.MarshalIndent(model, "", "  ")
 					ioutil.WriteFile(filename, data, os.ModePerm)
 					if v < versions {
