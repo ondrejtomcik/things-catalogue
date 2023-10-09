@@ -12,7 +12,7 @@ Evaluating GitHub Code Search API feasibility for the Thing Catalogue hosted on 
     - Property
 
 2. Query to verify if there is a new TD version comparing to what I have loaded locally
-3. Possibility to search 1..n private repositories with corresponding token/s next to public one within one search request
+3. Possibility to search 1..n private repositories with scoped token next to public one within one search request
 4. Contribution of TDs to public repository with well defined review process
 5. Automated pipelines for TD validation
 6. Pipelines releasing package (e.g. npm) with all public TDs
