@@ -1,6 +1,25 @@
 # Public Things Catalogue
 
-Evaluating GitHub Code Search API feasibility for the Thing Catalogue hosted on the GitHub.
+Evaluating GitHub Code Search API feasibility for the Thing Catalogue hosted on the GitHub
+
+## Requirements
+
+1. Find the TD based on one or combined inputs:
+    - Serial Number
+    - Manufacturer Name
+    - Product Name
+    - Family Name
+    - Property
+
+2. Query to verify if there is a new TD version comparing to what I have loaded locally
+3. Possibility to search 1..n private repositories with corresponding token/s next to public one within one search request
+4. Contribution of TDs to public repository with well defined review process
+5. Automated pipelines for TD validation
+6. Pipelines releasing package (e.g. npm) with all public TDs
+
+## System Overview
+
+
 
 ## Test Scenarios
 
@@ -37,6 +56,6 @@ Required even for public repositories.
 
 ## Conclusion
 
-Idea of this test was to excercise the search API, as other aspects - interaction with the community, contributions, versioning, pipelines, etc. are working well. However, availability of the search API is not a hard requirement, as the catalogue should be by default shipped in form of a package with the app. Nevertheless, having the possibility to query the thing catalogue on the GitHub in case product was not found locally is a nice feature.
+Idea of this test was to excercise the search API, as other aspects - interaction with the community, contributions, versioning, pipelines, etc. are working well. However, availability of the search API is probably not a hard requirement, as the catalogue should be by default shipped in form of a package with the app. Nevertheless, having the possibility to query the thing catalogue on the GitHub in case the thing wasn't found locally is a nice feature.
 
-Overall, the search capabilities are fulfilling all the scenarios I identified. Even a combined search across more repositories, in case the company wants to keep some thing models private but combine search results with the public set, works very well. The big disadvantage, could be even a blocker, is the requirement for the access token in case of a public repository. Here I would talk to GitHub Team about this as the documentation contains information that public users should be able to access public repositories.
+Overall, the search capabilities are fulfilling all the scenarios (only those I had in mind). Even a combined search across more repositories, in case the company wants to keep thing models private but combine search results with the public set, works very well. The big disadvantage, could be even a blocker, is the requirement for the access token in case of a public repository. Here I would talk to the GitHub Team as the [documentation](https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28#rate-limit) is not super clear on this topic.
