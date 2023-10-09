@@ -19,7 +19,7 @@ Evaluating GitHub Code Search API feasibility for the Thing Catalogue hosted on 
 
 ## System Overview
 
-
+![Overview](overview.drawio.svg)
 
 ## Test Scenarios
 
